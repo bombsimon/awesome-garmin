@@ -1,0 +1,31 @@
+---
+name: Update README
+
+on:
+  schedule:
+    # Re-generate every Monday
+    - cron: "0 0 * * 1"
+
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate README
+        working-directory: ./awesome-generator
+        run: cargo run > ../README.md
+      - name: Commit updated README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Re-generate README"

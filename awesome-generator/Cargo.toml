@@ -1,0 +1,16 @@
+[package]
+name = "awesome-generator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.33"
+handlebars = "5.1.1"
+octocrab = "0.33.3"
+serde = { version = "1.0.196", features = ["derive"] }
+serde_with = { version = "3.5.1", features = ["chrono_0_4"] }
+tokio = { version = "1", features = ["full"] }
+toml = "0.8.8"
+url = "2.5.0"

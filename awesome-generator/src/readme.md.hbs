@@ -1,0 +1,130 @@
+# Awesome Garmin
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+A curated list of awesome Garmin application, both for Garmin devices and other
+tools.
+
+The idea is to mainly collect open source projects written in [Monkey C] but
+also serve as a resource base for everything Garmin development related. This
+includes tools to enhance your Garmin experience, tools around Garmin
+development and more.
+
+> **NOTE**: This README is generated!
+> To help exploring relevant resources the items in each segmented are _sorted
+> by last activity_ if available.
+>
+> _This README was last generated at {{ updated_at }}_.
+
+Any contributions are much appreciated! To add a new resource, **do not edit
+this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
+repository with a description you only need to add the URL. To add a custom
+name, set `name`, to add a description if missing, set `description`.
+
+## Contents
+
+- [Watch faces](#watch-faces)
+- [Data fields](#data-fields)
+- [Widgets](#widgets)
+- [Device Apps](#device-apps)
+- [Audio Content Providers](#audio-content-providers)
+- [Barrels](#barrels)
+- [Tools](#tools)
+- [Companion apps](#companion-apps)
+- [Miscellaneous](#miscellaneous)
+
+## Watch faces
+
+[Watch faces] are a special application type that display on the main screen of
+Garmin’s wearable devices. These application types are limited some ways to
+allow them to have minimal impact on the device’s battery life.
+
+{{#each resources.watch_face}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Data fields
+
+[Data fields] allow customers and third party developers to write additional
+metrics and data that will display with Garmin activities. The goal is to create
+a system that not only makes it easy for a user to make a quick data field based
+off our workout data, but also gives the developer the the ability to customize
+the presentation.
+
+{{#each resources.data_field}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Widgets
+
+[Widgets] are mini-apps that allow developers to provide glanceable views of
+information. The information may be from a cloud service, from the onboard
+sensors, or from other Connect IQ APIs. Widgets are launchable from a rotating
+carousel of pages accessible from the main screen of wearables, or from a side
+view on bike computers and outdoor handhelds. Unlike apps, Widgets time out
+after a period of inactivity and are not allowed to record activities, but they
+are also launchable at any time.
+
+{{#each resources.widget}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Device Apps
+
+Applications, or [Device Apps], are by far the most robust type of app
+available. These allow the most flexibility and customization to the app
+designer. They also provide the most access to the capabilities of the wearable
+device, such as accessing ANT+ sensors, the accelerometer and reading/recording
+FIT files.
+
+{{#each resources.device_app}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Audio content providers
+
+[Audio content providers]. Garmin media enabled devices are designed for active
+lifestyle users who want to listen to music without carrying their phone on
+their rides, runs or other activities. The media player allows the user to
+listen to their music, podcasts, and audio-books on the go.
+
+{{#each resources.audio_content_provider}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Barrels
+
+Developers can create custom Monkey C libraries, called [Monkey Barrels], that
+contain source code and resource information that are easily shared across
+Connect IQ Projects.
+
+{{#each resources.barrel}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Tools
+
+{{#each resources.tool}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Companion apps
+
+{{#each resources.companion_app}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+## Miscellaneous
+
+{{#each resources.miscellaneous}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/each}}
+
+[awesome-toml]: ./awesome-generator/awesome.toml
+[Watch faces]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#watchfaces
+[Monkey C]: https://developer.garmin.com/connect-iq/monkey-c/
+[Data fields]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#datafields
+[Widgets]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#widgets
+[Device Apps]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#deviceapps
+[Audio content providers]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#audiocontentproviders
+[Monkey Barrels]: https://developer.garmin.com/connect-iq/core-topics/shareable-libraries/
