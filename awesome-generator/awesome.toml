@@ -83,7 +83,7 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-BackHome" = { name = "Back to Home", description = "Indicates the distance and direction to be taken from the starting point of your activity" }
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-Battery" = { name = "Battery Level", description = "Show battery level" }
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-OC" = { name = "Compass orientation course", description = "Datafield for your Orientation Course" }
-
+"https://github.com/wwarby/walker" = {}
 
 [widgets]
 "https://github.com/11samype/CIQBitcoinWidget" = {}
@@ -131,7 +131,6 @@
 "https://github.com/klimeryk/garmodoro" = {}
 "https://github.com/alanfischer/hassiq" = {}
 "https://github.com/adamjakab/iHIIT" = {}
-"https://github.com/wwarby/walker" = {}
 "https://github.com/danielsiwiec/waypoints-app" = { description = "Easily send waypoints from Google Maps to your device. No registration required!" }
 "https://github.com/winds-mobi/winds-mobi-client-garmin" = {}
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
@@ -154,6 +153,7 @@
 "https://github.com/markw65/monkeyc-optimizer" = {}
 "https://github.com/markw65/prettier-extension-monkeyc" = {}
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
+"https://github.com/flocsy/garmin-dev-tools" = {}
 
 [companion_apps]
 "https://github.com/dougw/Garmin-ExampleApp-Swift" = {}
