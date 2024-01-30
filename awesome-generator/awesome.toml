@@ -106,6 +106,7 @@
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/dmuino/HMFields" = {}
 "https://github.com/ebolefeysot/CIQ_InstantPcMAS" = {}
+"https://github.com/fabiobaltieri/ciq-nrf-blinky" = {}
 "https://github.com/flocsy/BodyBatteryDF" = {}
 "https://github.com/flowstatedev/ciq-runpower" = {}
 "https://github.com/gcormier9/GRun" = {}
@@ -120,6 +121,7 @@
 "https://github.com/kopa/RunnersField" = {}
 "https://github.com/landnavapp/LandNavApp" = {}
 "https://github.com/lcj2/ciq_monkeyfuel" = {}
+"https://github.com/markdotai/emtb" = {}
 "https://github.com/matthiasmullie/connect-iq-datafield-accurate-pace" = {}
 "https://github.com/mattv23v/UVIndexDataField" = { description = "DataField to show UV index" }
 "https://github.com/mpl75/anyaBike" = { description = "Data field for cyclists who have their watch attached to their handlebars" }
@@ -161,11 +163,13 @@
 "https://github.com/desyat/OpenWeatherMapWidget" = { description = "Garmin Widget connecting to Open Weather Map" }
 "https://github.com/elgaard/buttonStroke" = {}
 "https://github.com/fhdeutschmann/ZuluTime" = {}
+"https://github.com/eternal-flame-AD/git-notifications-ciq" = {}
 "https://github.com/hakonrossebo/FootballFixtures" = {}
 "https://github.com/haraldh/SunCalc" = {}
 "https://github.com/hatl/hasscontrol" = {}
 "https://github.com/jctim/otp-ciq" = {}
 "https://github.com/lkjh654/HabitTree" = { description = "Garmin widget that supports resisting bad habits by growing a tree" }
+"https://github.com/macherel/Connect-IQ-QR-Code-Viewer" = { description = "A widget that can display QR Code on Garmin watch" }
 "https://github.com/mettyw/activity_view" = {}
 "https://github.com/miharekar/ForecastLine" = {}
 "https://github.com/mriscott/GarminRings" = {}
@@ -204,6 +208,7 @@
 "https://github.com/breber/nest-iq" = {}
 "https://github.com/cedric-dufour/connectiq-app-glidersk" = {}
 "https://github.com/cedric-dufour/connectiq-app-towplanesk" = {}
+"https://github.com/ch1bo/garmin-otp-authenticator" = {}
 "https://github.com/chanezgr/IQwprimebal" = {}
 "https://github.com/danielsiwiec/fitnessTimer" = { description = "Fitness timer" }
 "https://github.com/danielsiwiec/tabataTimer" = {}
@@ -245,6 +250,7 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Compass" = { name = "Compass App", description = "Compass" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Timer" = { name = "Timer", description = "Add several timer already registered" }
+"https://github.com/rxkaminski/Garmin-SportTimerHR" = {}
 
 [audio_content_providers]
 "https://github.com/memen45/SubMusic" = {}
@@ -262,6 +268,7 @@
 "https://github.com/markw65/monkeyc-optimizer" = {}
 "https://github.com/markw65/prettier-extension-monkeyc" = {}
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
+"https://github.com/pzl/ciqdb" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
 "https://www.angelcode.com/products/bmfont/" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
