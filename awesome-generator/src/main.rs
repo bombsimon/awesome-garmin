@@ -1,4 +1,5 @@
 use futures::StreamExt;
+use gitlab::api::AsyncQuery;
 use handlebars::{no_escape, Handlebars};
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
@@ -66,6 +67,12 @@ async fn main() -> Result<(), &'static str> {
             .build()
             .unwrap(),
     );
+    let glab = Arc::new(
+        gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN").unwrap())
+            .build_async()
+            .await
+            .unwrap(),
+    );
 
     let mut futures = Vec::new();
     for resources in [
@@ -81,9 +88,17 @@ async fn main() -> Result<(), &'static str> {
     ] {
         for (resource_url, resource) in resources.iter_mut() {
             let oc = octocrab.clone();
+            let gl = glab.clone();
 
             futures.push(async move {
-                update_resource(resource_url, resource, oc).await;
+                resource.url = resource_url.to_string();
+                eprintln!("Updating {}", resource.url);
+
+                if resource_url.contains("github.com") {
+                    update_github_resource(resource, oc).await;
+                } else if resource_url.contains("gitlab.com") {
+                    update_gitlab_resource(resource, gl).await;
+                }
             });
         }
     }
@@ -135,27 +150,15 @@ fn sorted_resources(resources: HashMap<String, Resource>) -> Vec<Resource> {
     r
 }
 
-async fn update_resource(
-    resource_url: &str,
-    resource: &mut Resource,
-    octocrab: Arc<octocrab::Octocrab>,
-) {
-    eprintln!("Updating {resource_url}");
-
-    resource.url = resource_url.to_string();
-
-    if !resource_url.contains("github.com") {
-        return;
-    }
-
-    let u = url::Url::parse(resource_url).unwrap();
+async fn update_github_resource(resource: &mut Resource, octocrab: Arc<octocrab::Octocrab>) {
+    let u = url::Url::parse(&resource.url).unwrap();
     let mut owner_repo = u.path().strip_prefix('/').unwrap().split('/');
     let owner = owner_repo.next().unwrap();
     let repo = owner_repo.next().unwrap();
     let result = match octocrab.repos(owner, repo).get().await {
         Ok(result) => result,
         Err(err) => {
-            eprintln!("⚠️ Could not get {resource_url}: {err}");
+            eprintln!("⚠️ Could not get {}: {err}", resource.url);
             return;
         }
     };
@@ -171,6 +174,31 @@ async fn update_resource(
     if let Some(archived) = result.archived {
         resource.is_archived = archived;
     }
+}
+
+async fn update_gitlab_resource(resource: &mut Resource, glab: Arc<gitlab::AsyncGitlab>) {
+    let u = url::Url::parse(&resource.url).unwrap();
+    let owner_repo = u.path().strip_prefix('/').unwrap();
+    let endpoint = gitlab::api::projects::Project::builder()
+        .project(owner_repo)
+        .build()
+        .unwrap();
+    let result: gitlab::Project = match endpoint.query_async(&*glab).await {
+        Ok(result) => result,
+        Err(err) => {
+            eprintln!("⚠️ Could not get {}: {err}", resource.url);
+            return;
+        }
+    };
+
+    if resource.description.is_none() {
+        resource.description = result.description;
+    }
+
+    resource.owner = Some(result.namespace.path);
+    resource.repo = Some(result.name);
+    resource.last_updated = Some(result.last_activity_at);
+    resource.is_archived = result.archived;
 }
 
 mod ymd_date {
