@@ -268,7 +268,6 @@
 "https://github.com/britiger/criticalmaps-garmin-widget" = {}
 "https://github.com/cedric-dufour/connectiq-widget-pilotaltimeter" = {}
 "https://github.com/cedric-dufour/connectiq-widget-pilotsrss" = {}
-"https://github.com/cedric-dufour/connectiq-widget-sunalmanac" = {}
 "https://github.com/cedric-dufour/connectiq-widget-totp" = {}
 "https://github.com/chemikadze/garmin-authenticator" = {}
 "https://github.com/danielsiwiec/garmin-connect-seed" = { description = "This is a seed project for writing Garmin Connect IQ application" }
@@ -363,7 +362,6 @@
 "https://github.com/danielsiwiec/waypoints-app" = { description = "Easily send waypoints from Google Maps to your device. No registration required!" }
 "https://github.com/danisik/nThlon" = {}
 "https://github.com/davedoesdemos/ConnectIQ-Watch-IoT" = {}
-"https://github.com/davidmct/HRVApp" = {}
 "https://github.com/dazey77/Horizontal-speedo-rep" = {}
 "https://github.com/derjust/sos-now" = {}
 "https://github.com/dkappler/kraken" = {}
