@@ -204,9 +204,9 @@ allow them to have minimal impact on the device’s battery life.
 - [z1_watchface](https://github.com/worksasdesigned/z1_watchface) (2015-08-11)
 - [Analog Plus](https://gitlab.com/nz_brian/garmin.watch.analogplus)
 - [Mountain Face](https://gitlab.com/ravenfeld/Connect-IQ-WatchFace)
-- [](https://gitlab.com/keithwberry/worldtime-crystal)
 - [Simplog](https://gitlab.com/jsteinkamp/Simplog)
-- [](https://gitlab.com/knusprjg/plotty-mcclockface)
+- [plotty-mcclockface](https://gitlab.com/knusprjg/plotty-mcclockface)
+- [worldtime-crystal](https://gitlab.com/keithwberry/worldtime-crystal)
 
 ## Data fields
 

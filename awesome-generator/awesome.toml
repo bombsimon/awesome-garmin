@@ -163,8 +163,8 @@
 "https://github.com/yarmatr/BGConnectUI" = {}
 "https://github.com/zetxek/aface-garmin-watchface" = {}
 "https://gitlab.com/jsteinkamp/Simplog" = { name = "Simplog" }
-"https://gitlab.com/keithwberry/worldtime-crystal" = {}
-"https://gitlab.com/knusprjg/plotty-mcclockface" = {}
+"https://gitlab.com/keithwberry/worldtime-crystal" = { name = "worldtime-crystal" }
+"https://gitlab.com/knusprjg/plotty-mcclockface" = { name = "plotty-mcclockface" }
 "https://gitlab.com/nz_brian/garmin.watch.analogplus" = { name = "Analog Plus" }
 "https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = { name = "Mountain Face" }
 
