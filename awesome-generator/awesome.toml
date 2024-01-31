@@ -162,11 +162,11 @@
 "https://github.com/xuxumatu/marathon" = {}
 "https://github.com/yarmatr/BGConnectUI" = {}
 "https://github.com/zetxek/aface-garmin-watchface" = {}
-"https://gitlab.com/jsteinkamp/Simplog" = { name = "Simplog" }
-"https://gitlab.com/keithwberry/worldtime-crystal" = { name = "worldtime-crystal" }
-"https://gitlab.com/knusprjg/plotty-mcclockface" = { name = "plotty-mcclockface" }
-"https://gitlab.com/nz_brian/garmin.watch.analogplus" = { name = "Analog Plus" }
-"https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = { name = "Mountain Face" }
+"https://gitlab.com/jsteinkamp/Simplog" = {}
+"https://gitlab.com/keithwberry/worldtime-crystal" = {}
+"https://gitlab.com/knusprjg/plotty-mcclockface" = {}
+"https://gitlab.com/nz_brian/garmin.watch.analogplus" = {}
+"https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = {}
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
@@ -242,15 +242,15 @@
 "https://github.com/vovan-/swimmer-datafiled-garmin" = {}
 "https://github.com/wubbl0rz/DataChampGarmin" = { description = "More than one data field for bike computers" }
 "https://github.com/wwarby/walker" = {}
-"https://gitlab.com/harryonline/smart-cadence" = { name = "Smart Cadence", description = "Data field shows the Cadence, but when you stop pedalling, it will show intermittently the total distance and time instead" }
-"https://gitlab.com/nz_brian/HiVisRunField" = { name = "HiVisRunField", description = "Easy to read data field" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-BackHome" = { name = "Back to Home", description = "Indicates the distance and direction to be taken from the starting point of your activity" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-Battery" = { name = "Battery Level", description = "Show battery level" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-GPS" = { name = "GPS", description = "Display level gps" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-OC" = { name = "Compass orientation course", description = "Datafield for your Orientation Course" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed" = { name = "Speed", description = "Colorized speed gauge" }
-"https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner" = { name = "Virtual Partner", description = "Virtual race partner" }
-"https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { name = "Run Assist", description = "Fields of data that can correct the distance course by pressing lap" }
+"https://gitlab.com/harryonline/smart-cadence" = {}
+"https://gitlab.com/nz_brian/HiVisRunField" = { description = "Easy to read data field" }
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-BackHome" = { description = "Indicates the distance and direction to be taken from the starting point of your activity" }
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-Battery" = {}
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-GPS" = {}
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-OC" = {}
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed" = { description = "Colorized speed gauge" }
+"https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner" = { description = "Virtual race partner" }
+"https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
 
 [widgets]
 "https://github.com/11samype/CIQBitcoinWidget" = {}
@@ -308,9 +308,9 @@
 "https://github.com/uaraven/otpauth-ciq" = {}
 "https://github.com/valgit/WeatherWid" = {}
 "https://github.com/zmullett/connectiq-sonos" = {}
-"https://gitlab.com/harryonline/emergencyinfo" = { name = "EmergencyInfo", description = "EmergencyInfo app for Connect IQ" }
-"https://gitlab.com/harryonline/fortune-quote" = { name = "fortune-quote", description = "This widget show a random quote from the Gigaset Fortune collection" }
-"https://gitlab.com/harryonline/timerwidget" = { name = "timerwidget", description = "A repeating timer widget for Connect IQ compatible Garmin watches" }
+"https://gitlab.com/harryonline/emergencyinfo" = {}
+"https://gitlab.com/harryonline/fortune-quote" = { description = "This widget show a random quote from the Gigaset Fortune collection" }
+"https://gitlab.com/harryonline/timerwidget" = {}
 
 [device_apps]
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
@@ -458,7 +458,7 @@
 "https://github.com/hurenkam/WidgetBarrel" = {}
 "https://github.com/mikkosh/AntAssetTracker" = {}
 "https://github.com/vtrifonov-esfiddle/ConnectIqDataPickers" = {}
-"https://gitlab.com/waterkip/opn-monkeyc" = { name = "OPN-MonkeyC", description = "A MonkeyC Barrel for OPN / Waterkip projects" }
+"https://gitlab.com/waterkip/opn-monkeyc" = {}
 
 [tools]
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
