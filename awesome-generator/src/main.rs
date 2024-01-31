@@ -1,3 +1,4 @@
+use futures::StreamExt;
 use handlebars::{no_escape, Handlebars};
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
@@ -8,6 +9,7 @@ use std::{
 };
 
 const TEMPLATE: &str = include_str!("readme.md.hbs");
+const MAX_CONCURRENT_REQUESTS: usize = 20;
 
 #[serde_as]
 #[derive(Debug, Serialize, Deserialize)]
@@ -65,6 +67,7 @@ async fn main() -> Result<(), &'static str> {
             .unwrap(),
     );
 
+    let mut futures = Vec::new();
     for resources in [
         &mut resources.watch_faces,
         &mut resources.data_fields,
@@ -77,9 +80,16 @@ async fn main() -> Result<(), &'static str> {
         &mut resources.miscellaneous,
     ] {
         for (resource_url, resource) in resources.iter_mut() {
-            update_resource(resource_url, resource, octocrab.clone()).await;
+            let oc = octocrab.clone();
+
+            futures.push(async move {
+                update_resource(resource_url, resource, oc).await;
+            });
         }
     }
+
+    let stream = futures::stream::iter(futures).buffer_unordered(MAX_CONCURRENT_REQUESTS);
+    stream.collect::<Vec<_>>().await;
 
     let mut data = BTreeMap::new();
     data.insert("watch_face", sorted_resources(resources.watch_faces));
@@ -130,6 +140,8 @@ async fn update_resource(
     resource: &mut Resource,
     octocrab: Arc<octocrab::Octocrab>,
 ) {
+    eprintln!("Updating {resource_url}");
+
     resource.url = resource_url.to_string();
 
     if !resource_url.contains("github.com") {
@@ -140,7 +152,13 @@ async fn update_resource(
     let mut owner_repo = u.path().strip_prefix('/').unwrap().split('/');
     let owner = owner_repo.next().unwrap();
     let repo = owner_repo.next().unwrap();
-    let result = octocrab.repos(owner, repo).get().await.unwrap();
+    let result = match octocrab.repos(owner, repo).get().await {
+        Ok(result) => result,
+        Err(err) => {
+            eprintln!("⚠️ Could not get {resource_url}: {err}");
+            return;
+        }
+    };
 
     if resource.description.is_none() {
         resource.description = result.description;
