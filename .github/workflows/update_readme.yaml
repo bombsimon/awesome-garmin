@@ -17,15 +17,15 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
       - name: Generate README
         working-directory: ./awesome-generator
         run: cargo run > ../README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       - name: Commit updated README
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
