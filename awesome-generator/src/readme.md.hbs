@@ -2,15 +2,15 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of awesome Garmin application, both for Garmin devices and other
-tools.
+An extensive list of Garmin application, both for Garmin devices and other tools.
 
 The idea is to mainly collect open source projects written in [Monkey C] but
 also serve as a resource base for everything Garmin development related. This
 includes tools to enhance your Garmin experience, tools around Garmin
 development and more.
 
-> **NOTE**: This README is generated!
+> [!NOTE]
+> This README is generated!
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
@@ -20,6 +20,11 @@ Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
 repository with a description you only need to add the URL. To add a custom
 name, set `name`, to add a description if missing, set `description`.
+
+Since a lot of the resources in this file is old, all watch faces, widgets, data
+fields and device apps that have not seen any activity in the last 2 years from
+when this file was generated will be put under a collapsible section to reduce
+noise.
 
 ## Contents
 
@@ -40,8 +45,23 @@ Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
 {{#each resources.watch_face}}
+{{#unless this.is_old ~}}
 - [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/unless ~}}
 {{/each}}
+
+### Older resources
+
+<details>
+  <summary>Click to expand</summary>
+
+{{#each resources.watch_face}}
+{{#if this.is_old ~}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/if~}}
+{{/each}}
+
+</details>
 
 ## Data fields
 
@@ -52,8 +72,23 @@ off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
 {{#each resources.data_field}}
+{{#unless this.is_old ~}}
 - [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/unless ~}}
 {{/each}}
+
+### Older resources
+
+<details>
+  <summary>Click to expand</summary>
+
+{{#each resources.data_field}}
+{{#unless this.is_old ~}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/unless ~}}
+{{/each}}
+
+</details>
 
 ## Widgets
 
@@ -66,8 +101,23 @@ after a period of inactivity and are not allowed to record activities, but they
 are also launchable at any time.
 
 {{#each resources.widget}}
+{{#unless this.is_old ~}}
 - [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/unless ~}}
 {{/each}}
+
+### Older resources
+
+<details>
+  <summary>Click to expand</summary>
+
+{{#each resources.widget}}
+{{#if this.is_old ~}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/if ~}}
+{{/each}}
+
+</details>
 
 ## Device Apps
 
@@ -78,8 +128,23 @@ device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
 {{#each resources.device_app}}
+{{#unless this.is_old ~}}
 - [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/unless ~}}
 {{/each}}
+
+### Older resources
+
+<details>
+  <summary>Click to expand</summary>
+
+{{#each resources.device_app}}
+{{#if this.is_old ~}}
+- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+{{/if ~}}
+{{/each}}
+
+</details>
 
 ## Audio content providers
 

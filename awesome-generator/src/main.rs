@@ -10,7 +10,14 @@ use std::{
 };
 
 const TEMPLATE: &str = include_str!("readme.md.hbs");
+
+/// We do concurrent requests to GitHub and GitLab to speed up the process but we don't want to
+/// hammer too hard so we limit the concurrent requests.
 const MAX_CONCURRENT_REQUESTS: usize = 20;
+
+/// If a repository has been inactive for more than 2 years we consider it to be inactive. These
+/// might still be useful for reference but are put away under a separate menu to reduce noise.
+const MAX_AGE_BEFORE_OLD: std::time::Duration = std::time::Duration::from_secs(86400 * 365 * 2);
 
 #[serde_as]
 #[derive(Debug, Serialize, Deserialize)]
@@ -31,6 +38,8 @@ struct Resource {
     last_updated: Option<chrono::DateTime<chrono::Utc>>,
     #[serde(default)]
     is_archived: bool,
+    #[serde(default)]
+    is_old: bool,
 }
 
 #[derive(Debug, Deserialize)]
@@ -170,9 +179,10 @@ async fn update_github_resource(resource: &mut Resource, octocrab: Arc<octocrab:
     resource.owner = Some(owner.to_string());
     resource.repo = Some(repo.to_string());
     resource.last_updated = result.pushed_at;
+    resource.is_archived = result.archived.unwrap_or_default();
 
-    if let Some(archived) = result.archived {
-        resource.is_archived = archived;
+    if let Some(pushed_at) = result.pushed_at {
+        resource.is_old = pushed_at < chrono::Utc::now() - MAX_AGE_BEFORE_OLD;
     }
 }
 
@@ -199,6 +209,7 @@ async fn update_gitlab_resource(resource: &mut Resource, glab: Arc<gitlab::Async
     resource.repo = Some(result.name);
     resource.last_updated = Some(result.last_activity_at);
     resource.is_archived = result.archived;
+    resource.is_old = result.last_activity_at < chrono::Utc::now() - MAX_AGE_BEFORE_OLD;
 }
 
 mod ymd_date {

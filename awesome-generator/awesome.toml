@@ -186,7 +186,7 @@
 "https://github.com/der-Dod/jumps" = {}
 "https://github.com/dhague/bt-ats-ciq-datafield" = {}
 "https://github.com/dmuino/HMFields" = {}
-"https://github.com/dodor84/data-field" = {}
+"https://github.com/dodor84/data-field" = { description = "Test data field" }
 "https://github.com/ebolefeysot/CIQ_InstantPcMAS" = {}
 "https://github.com/ebolefeysot/CIQ_PcvVo2max" = {}
 "https://github.com/ebottacin/OmniBikeField" = {}
