@@ -171,6 +171,7 @@
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
 "https://github.com/Bimtino/ActivityMonitor" = {}
+"https://github.com/ViktorStagge/ZoneTraining" = { description = "A Zone Training app for Garmin Watches." }
 "https://github.com/adamml/tempo-trainer" = {}
 "https://github.com/axl13/PowerAdjuster" = {}
 "https://github.com/britiger/PauseTimer-connectiq" = {}
