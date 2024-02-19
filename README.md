@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-02-12_.
+> _This README was last generated at 2024-02-19_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,6 +44,8 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
+- [HandAvoidance](https://github.com/pierre-muth/HandAvoidance) (2024-02-17)
+- [crystal-face](https://github.com/warmsound/crystal-face) (2024-02-15)
 - [late](https://github.com/myneur/late) (2024-02-09)
 - [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) (2024-02-09)
 - [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-02-04)
@@ -55,7 +57,6 @@ allow them to have minimal impact on the device’s battery life.
 - [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) (2024-01-18)
 - [garmin-celestial-watchface](https://github.com/Cutwell/garmin-celestial-watchface) (2024-01-09)
 - [garmin-watchface-protomolecule](https://github.com/blotspot/garmin-watchface-protomolecule) (2024-01-09)
-- [crystal-face](https://github.com/warmsound/crystal-face) (2024-01-01)
 - [daytimeWatchFace](https://github.com/supercoder3000/daytimeWatchFace) (2023-12-27)
 - [garmin-mini-chrono](https://github.com/adamdanielczyk/garmin-mini-chrono) (2023-12-02)
 - [Garmin](https://github.com/botagergo/Garmin) (2023-11-11)
@@ -229,8 +230,9 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
+- [DFDetector](https://github.com/flocsy/DFDetector) - Garmin datafield for developers to demonstrate how multiple datafields can be detected (2024-02-13)
+- [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2024-02-13)
 - [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) - A Zone Training app for Garmin Watches. (2024-02-09)
-- [DFDetector](https://github.com/flocsy/DFDetector) - Garmin datafield for developers to demonstrate how multiple datafields can be detected (2024-02-08)
 - [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-01-29)
 - [GRun](https://github.com/gcormier9/GRun) - Configurable Garmin Watch datafield (2024-01-25)
 - [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
@@ -253,7 +255,6 @@ the presentation.
 - [DF_RoadBook](https://github.com/prenard/DF_RoadBook) - This data field allows display of a rolling roadbook on your Garmin Edge 820/1000 (2023-04-26)
 - [DF_TorqueAVG](https://github.com/prenard/DF_TorqueAVG) - Display average torque value in N-m during your training (2023-04-25)
 - [Garmin-Datafield-sample-code](https://github.com/ActiveLook/Garmin-Datafield-sample-code) - ActiveLook Garmin Datafield (2023-04-25)
-- [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2023-03-03)
 - [HiVisRunField](https://gitlab.com/nz_brian/HiVisRunField) - Easy to read data field (2023-02-16)
 - [ciq-nrf-blinky](https://github.com/fabiobaltieri/ciq-nrf-blinky) - Connect IQ application client for Nordic nRF Blinky BLE example (2023-02-11)
 - [Connect-IQ-DataField-Speed](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed) - Colorized speed gauge (2022-12-21)
@@ -272,8 +273,9 @@ the presentation.
 <details>
   <summary>Click to expand</summary>
 
+- [DFDetector](https://github.com/flocsy/DFDetector) - Garmin datafield for developers to demonstrate how multiple datafields can be detected (2024-02-13)
+- [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2024-02-13)
 - [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) - A Zone Training app for Garmin Watches. (2024-02-09)
-- [DFDetector](https://github.com/flocsy/DFDetector) - Garmin datafield for developers to demonstrate how multiple datafields can be detected (2024-02-08)
 - [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-01-29)
 - [GRun](https://github.com/gcormier9/GRun) - Configurable Garmin Watch datafield (2024-01-25)
 - [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
@@ -296,7 +298,6 @@ the presentation.
 - [DF_RoadBook](https://github.com/prenard/DF_RoadBook) - This data field allows display of a rolling roadbook on your Garmin Edge 820/1000 (2023-04-26)
 - [DF_TorqueAVG](https://github.com/prenard/DF_TorqueAVG) - Display average torque value in N-m during your training (2023-04-25)
 - [Garmin-Datafield-sample-code](https://github.com/ActiveLook/Garmin-Datafield-sample-code) - ActiveLook Garmin Datafield (2023-04-25)
-- [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2023-03-03)
 - [HiVisRunField](https://gitlab.com/nz_brian/HiVisRunField) - Easy to read data field (2023-02-16)
 - [ciq-nrf-blinky](https://github.com/fabiobaltieri/ciq-nrf-blinky) - Connect IQ application client for Nordic nRF Blinky BLE example (2023-02-11)
 - [Connect-IQ-DataField-Speed](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed) - Colorized speed gauge (2022-12-21)
@@ -356,8 +357,8 @@ are also launchable at any time.
 - [activity_view](https://github.com/mettyw/activity_view) - Garmin Forerunner 235 activity view widget (2021-04-10)
 - [Connect-IQ-QR-Code-Viewer](https://github.com/macherel/Connect-IQ-QR-Code-Viewer) - A widget that can display QR Code on Garmin watch (2021-02-16)
 - [WordOfTheDay](https://github.com/pedlarstudios/WordOfTheDay) - A widget for Garmin's Connect IQ mobile platform that displays the "word of the day" from Wordnik.com (2021-01-19)
-- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [ForecastLine](https://github.com/miharekar/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
+- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [WeatherWid](https://github.com/valgit/WeatherWid) - Garrmin Connect Weather Widget (2020-10-19)
 - [ConnectIQ](https://github.com/admsteck/ConnectIQ) - Garmin ConnectIQ projects (2020-10-08)
 - [SunCalc](https://github.com/haraldh/SunCalc) - Garmin Connect IQ Widget to calculate Dusk, Dawn, Sunset, Sunrise, Blue Hour, etc. (2020-10-02)
@@ -397,14 +398,13 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
-- [Garmin_SD](https://github.com/OpenSeizureDetector/Garmin_SD) - Garmin Watch Seizure Detector - A seizure detector data source based on Garmin IQ watches such as Vivoactive HR (2024-02-11)
+- [Garmoticz](https://github.com/akamming/Garmoticz) - Garmin ConnectIQ Frontend for Domoticz (2024-02-17)
+- [badminton](https://github.com/matco/badminton) - Badminton application for Garmin watches (2024-02-15)
+- [Garmin_SD](https://github.com/OpenSeizureDetector/Garmin_SD) - Garmin Watch Seizure Detector - A seizure detector data source based on Garmin IQ watches such as Vivoactive HR (2024-02-12)
 - [Garmin-Cold-Plunge](https://github.com/aiMonster/Garmin-Cold-Plunge) - An application for Garmin watches to take a cold plunge bath (2024-02-11)
-- [badminton](https://github.com/matco/badminton) - Badminton application for Garmin watches (2024-02-11)
-- [Garmoticz](https://github.com/akamming/Garmoticz) - Garmin ConnectIQ Frontend for Domoticz (2024-02-10)
 - [worktrail-garmin-connect-iq](https://github.com/worktrail/worktrail-garmin-connect-iq) - Garmin Connect IQ App for WorkTrail (2024-02-08)
 - [garmodoro](https://github.com/klimeryk/garmodoro) - Pomodoro for Garmin devices using Connect IQ (2024-02-06)
 - [garmin-pace-calculator](https://github.com/bombsimon/garmin-pace-calculator) - 👟 A Garmin app to convert speed to pace and pace to speed (2024-02-03)
-- [garmin_monkey](https://github.com/byzanzm/garmin_monkey) -  (2024-01-29)
 - [low-battery-mode](https://github.com/rexMingla/low-battery-mode) - Garmin Connect Monkey C Application for lower battery mode in longer activities (ie. Ironman) (2024-01-28)
 - [garmin-curling](https://github.com/phil-mitchell/garmin-curling) - A curling activity tracker for Garmin devices (2024-01-20)
 - [connectiq-sailing](https://github.com/dmrrlc/connectiq-sailing) - Sailing app for connectIQ Garmin fenix 3 (2024-01-15)
@@ -441,8 +441,8 @@ FIT files.
 - [CockpitOnlineGarminClient](https://github.com/mrohmer/CockpitOnlineGarminClient) - Garmin Watch Client for Cockpit XP Online via cockpit-online.rohmer.rocks (2022-12-18)
 - [connectiq-app-towplanesk](https://github.com/cedric-dufour/connectiq-app-towplanesk) - The Towplane Swiss Knife for Garmin ConnectIQ devices [GPLv3] (2022-12-07)
 - [connectiq-app-glidersk](https://github.com/cedric-dufour/connectiq-app-glidersk) - The Glider Swiss Knife for Garmin ConnectIQ devices [GPLv3] (2022-12-07)
-- [ciq-orange-theory](https://github.com/werkkrew/ciq-orange-theory) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
 - [ciq-hiit-tracker](https://github.com/werkkrew/ciq-hiit-tracker) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
+- [ciq-orange-theory](https://github.com/werkkrew/ciq-orange-theory) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
 - [Meditate](https://github.com/vtrifonov-esfiddle/Meditate) - Meditation app for Garmin smartwatches (2022-11-15)
 - [Garmin-Coin-Flip](https://github.com/DylanBarratt/Garmin-Coin-Flip) - A coin flipper for the Garmin Forerunner 945 (and maybe other models, I haven't tested) (2022-09-14)
 - [SailingTimer](https://github.com/spikyjt/SailingTimer) - Sailing start timer for Garmin Connect IQ (2022-08-31)
@@ -455,6 +455,7 @@ FIT files.
 - [brandon-garmin](https://github.com/brandon-rhodes/brandon-garmin) - Simple Garmin apps for backcountry navigation (2022-05-11)
 - [virtual_sailing](https://github.com/valgit/virtual_sailing) - virtual sailing garmin app (2022-04-25)
 - [EggTimer](https://github.com/pedlarstudios/EggTimer) - A simple timer application for Garmin devices using the Connect IQ framework (2022-03-26)
+- [](https://github.com/byzanzm/garmin_monkey) - 
 
 ### Older resources
 
@@ -565,11 +566,11 @@ Connect IQ Projects.
 
 ## Tools
 
-- [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) - Tools for Garmin CIQ developers (2024-02-07)
-- [GarminDB](https://github.com/tcgoetz/GarminDB) - Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks. (2024-02-05)
-- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-01-27)
-- [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-01-27)
-- [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-01-26)
+- [GarminDB](https://github.com/tcgoetz/GarminDB) - Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks. (2024-02-18)
+- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-02-18)
+- [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-02-18)
+- [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-02-18)
+- [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) - Tools for Garmin CIQ developers (2024-02-15)
 - [garmin-tilemapper](https://github.com/sunpazed/garmin-tilemapper) - A command line tool that helps developers build tile-mapped anti-aliased graphics for Garmin wearables. (2023-10-03)
 - [docker-connectiq](https://github.com/kalemena/docker-connectiq) - Garmin Tools - Connect IQ SDK and Eclipse IDE plugins as a Docker container (2023-04-20)
 - [connectiq-app-rawlogger](https://github.com/cedric-dufour/connectiq-app-rawlogger) - RawLogger (Garmin ConnectIQ) App [GPLv3] (2022-06-10)
