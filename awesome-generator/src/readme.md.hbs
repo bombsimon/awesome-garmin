@@ -21,7 +21,7 @@ this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
 repository with a description you only need to add the URL. To add a custom
 name, set `name`, to add a description if missing, set `description`.
 
-Since a lot of the resources in this file is old, all watch faces, widgets, data
+Since a lot of the resources in this file are old, all watch faces, widgets, data
 fields and device apps that have not seen any activity in the last 2 years from
 when this file was generated will be put under a collapsible section to reduce
 noise.
@@ -44,10 +44,8 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
-{{#each resources.watch_face}}
-{{#unless this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/unless ~}}
+{{#each resources.watch_face_active}}
+- [{{this.name}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ### Older resources
@@ -55,10 +53,8 @@ allow them to have minimal impact on the device’s battery life.
 <details>
   <summary>Click to expand</summary>
 
-{{#each resources.watch_face}}
-{{#if this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/if~}}
+{{#each resources.watch_face_inactive}}
+- [{{this.name}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 </details>
@@ -71,10 +67,8 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
-{{#each resources.data_field}}
-{{#unless this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/unless ~}}
+{{#each resources.data_field_active}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ### Older resources
@@ -82,10 +76,8 @@ the presentation.
 <details>
   <summary>Click to expand</summary>
 
-{{#each resources.data_field}}
-{{#unless this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/unless ~}}
+{{#each resources.data_field_inactive}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 </details>
@@ -100,10 +92,8 @@ view on bike computers and outdoor handhelds. Unlike apps, Widgets time out
 after a period of inactivity and are not allowed to record activities, but they
 are also launchable at any time.
 
-{{#each resources.widget}}
-{{#unless this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/unless ~}}
+{{#each resources.widget_active}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ### Older resources
@@ -111,10 +101,8 @@ are also launchable at any time.
 <details>
   <summary>Click to expand</summary>
 
-{{#each resources.widget}}
-{{#if this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/if ~}}
+{{#each resources.widget_inactive}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 </details>
@@ -127,10 +115,8 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
-{{#each resources.device_app}}
-{{#unless this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/unless ~}}
+{{#each resources.device_app_active}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ### Older resources
@@ -138,10 +124,8 @@ FIT files.
 <details>
   <summary>Click to expand</summary>
 
-{{#each resources.device_app}}
-{{#if this.is_old ~}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/if ~}}
+{{#each resources.device_app_inactive}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 </details>
@@ -154,7 +138,7 @@ their rides, runs or other activities. The media player allows the user to
 listen to their music, podcasts, and audio-books on the go.
 
 {{#each resources.audio_content_provider}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ## Barrels
@@ -164,25 +148,25 @@ contain source code and resource information that are easily shared across
 Connect IQ Projects.
 
 {{#each resources.barrel}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ## Tools
 
 {{#each resources.tool}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ## Companion apps
 
 {{#each resources.companion_app}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 ## Miscellaneous
 
 {{#each resources.miscellaneous}}
-- [{{#if this.name}}{{this.name}}{{else}}{{this.repo}}{{/if}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
+- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
 {{/each}}
 
 [awesome-toml]: ./awesome-generator/awesome.toml
