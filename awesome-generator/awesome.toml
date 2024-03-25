@@ -169,6 +169,8 @@
 "https://gitlab.com/nz_brian/garmin.watch.analogplus" = {}
 "https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = {}
 "https://github.com/MrJacquers/GarminBlendWatchFace" = {}
+"https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
+"https://github.com/kevin940726/shy-watch-face" = {}
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
