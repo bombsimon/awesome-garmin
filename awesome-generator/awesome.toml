@@ -317,6 +317,7 @@
 "https://gitlab.com/harryonline/emergencyinfo" = {}
 "https://gitlab.com/harryonline/fortune-quote" = { description = "This widget show a random quote from the Gigaset Fortune collection" }
 "https://gitlab.com/harryonline/timerwidget" = {}
+"https://github.com/BleachDev/Rainy" = {}
 
 [device_apps]
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
