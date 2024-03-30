@@ -171,6 +171,7 @@
 "https://github.com/MrJacquers/GarminBlendWatchFace" = {}
 "https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
 "https://github.com/kevin940726/shy-watch-face" = {}
+"https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
@@ -318,6 +319,7 @@
 "https://gitlab.com/harryonline/fortune-quote" = { description = "This widget show a random quote from the Gigaset Fortune collection" }
 "https://gitlab.com/harryonline/timerwidget" = {}
 "https://github.com/BleachDev/Rainy" = {}
+"https://github.com/individual-it/BatteryGuesstimate" = {}
 
 [device_apps]
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
