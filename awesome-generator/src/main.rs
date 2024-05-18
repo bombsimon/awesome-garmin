@@ -350,3 +350,62 @@ mod ymd_date {
         }
     }
 }
+
+#[cfg(test)]
+mod test {
+    use std::sync::Arc;
+
+    use crate::TomlFileItem;
+
+    #[tokio::test]
+    async fn test_github() {
+        let empy_toml = TomlFileItem {
+            name: None,
+            description: None,
+        };
+        let octocrab = Arc::new(
+            octocrab::OctocrabBuilder::new()
+                .personal_token(std::env::var("GITHUB_TOKEN").unwrap())
+                .build()
+                .unwrap(),
+        );
+
+        let url = "https://github.com/bombsimon/garmin-seaside";
+        let (resource, _) =
+            super::update_github_resource(url.to_string(), &empy_toml, octocrab.clone()).await;
+
+        assert!(resource.is_some());
+
+        let resource_data = resource.unwrap();
+        assert!(resource_data.description.is_some());
+        assert_eq!(resource_data.name, "garmin-seaside".to_string());
+        assert_eq!(resource_data.url, url.to_string());
+        assert!(!resource_data.is_archived);
+    }
+
+    #[tokio::test]
+    async fn test_gitlab() {
+        let empy_toml = TomlFileItem {
+            name: None,
+            description: None,
+        };
+        let glab = Arc::new(
+            gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN").unwrap())
+                .build_async()
+                .await
+                .unwrap(),
+        );
+
+        let url = "https://gitlab.com/knusprjg/plotty-mcclockface";
+        let (resource, _) =
+            super::update_gitlab_resource(url.to_string(), &empy_toml, glab.clone()).await;
+
+        assert!(resource.is_some());
+
+        let resource_data = resource.unwrap();
+        assert!(resource_data.description.is_some());
+        assert_eq!(resource_data.name, "Plotty McClockface".to_string());
+        assert_eq!(resource_data.url, url.to_string());
+        assert!(!resource_data.is_archived);
+    }
+}
