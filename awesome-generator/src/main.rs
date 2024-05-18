@@ -10,6 +10,7 @@ use std::{
     sync::{Arc, Mutex},
 };
 
+/// The template that will be used to render the README.
 const TEMPLATE: &str = include_str!("readme.md.hbs");
 
 /// We do concurrent requests to GitHub and GitLab to speed up the process but we don't want to
@@ -20,6 +21,9 @@ const MAX_CONCURRENT_REQUESTS: usize = 20;
 /// might still be useful for reference but are put away under a separate menu to reduce noise.
 const MAX_AGE_BEFORE_OLD: std::time::Duration = std::time::Duration::from_secs(86400 * 365 * 2);
 
+/// A resource type is the type a resource can have mapped to the Garmin ecosystem. This also
+/// includes some extra types for those projects not related to device app development.
+/// https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/
 #[derive(Clone)]
 enum ResourceType {
     WatchFace,
@@ -34,6 +38,9 @@ enum ResourceType {
 }
 
 impl ResourceType {
+    /// The map key is the key that will be used in the [`BTreeMap`] used for rendering the
+    /// template file. Resources that have a section for old/inactive resources will have two keys,
+    /// one prefixed `_active` and one prefixed `_inactive`.
     fn map_key(&self, is_old: bool) -> String {
         let key = match self {
             Self::WatchFace => "watch_face",
@@ -55,6 +62,9 @@ impl ResourceType {
     }
 }
 
+/// The TomlFileItem represents a single row in the TOML file that is used to define resources.
+/// Currently it only contains support for a custom name and a description. This is mostly useful
+/// if the resource is not a GitHub or GitLab repository.
 #[serde_as]
 #[derive(Debug, Serialize, Deserialize)]
 struct TomlFileItem {
@@ -66,6 +76,7 @@ struct TomlFileItem {
     description: Option<String>,
 }
 
+/// The TOML file holds all resources that should be generated in the final README.
 #[derive(Debug, Deserialize)]
 struct TomlFile {
     watch_faces: HashMap<String, TomlFileItem>,
@@ -79,6 +90,9 @@ struct TomlFile {
     miscellaneous: HashMap<String, TomlFileItem>,
 }
 
+/// A [`GarminResource`] is the resource that is populated after resolving the TOML file contents
+/// and fetching additional information from an API. It holds all the data used to render the
+/// README items.
 #[derive(Debug, Serialize)]
 struct GarminResource {
     name: String,
@@ -89,10 +103,22 @@ struct GarminResource {
     is_archived: bool,
 }
 
+/// The data that is passed to render the template. It contains all the resolved Garmin resources
+/// grouped by type and a timestamp to set when the file was generated.
 #[derive(Serialize)]
 struct Template {
     resources: BTreeMap<String, Vec<GarminResource>>,
     updated_at: String,
+}
+
+/// The GitLab client does not come with pre-defined types, instead it will deserialize to whatever
+/// type the user define. This is the only data we're currently interested in.
+#[derive(Debug, Deserialize)]
+struct GitLabProject {
+    name: String,
+    description: Option<String>,
+    last_activity_at: chrono::DateTime<chrono::Utc>,
+    archived: bool,
 }
 
 #[tokio::main]
@@ -173,6 +199,7 @@ async fn main() -> Result<(), &'static str> {
     Ok(())
 }
 
+/// The resources will be sorted by date - if they have any, and then by name.
 fn sorted_resources(resources: &mut [GarminResource]) {
     resources.sort_by(|a, b| match (a.last_updated, b.last_updated) {
         (None, None) => a.name.cmp(&b.name),
@@ -182,6 +209,8 @@ fn sorted_resources(resources: &mut [GarminResource]) {
     });
 }
 
+/// A single resources is updated based on the URL. It will be added to the `BTreeMap` once
+/// resolved and not return any data.
 async fn update_resource(
     resource_type: ResourceType,
     resource_url: String,
@@ -219,6 +248,7 @@ async fn update_resource(
     }
 }
 
+/// Will poll the GitHub API and fetch information about the repo.
 async fn update_github_resource(
     resource_url: String,
     resource: &TomlFileItem,
@@ -258,6 +288,7 @@ async fn update_github_resource(
     (Some(garmin_resource), is_old)
 }
 
+/// Will poll the GitLab API and fetch information about the repo.
 async fn update_gitlab_resource(
     resource_url: String,
     resource: &TomlFileItem,
@@ -269,7 +300,7 @@ async fn update_gitlab_resource(
         .project(owner_repo)
         .build()
         .unwrap();
-    let result: gitlab::Project = match endpoint.query_async(&*glab).await {
+    let result: GitLabProject = match endpoint.query_async(&*glab).await {
         Ok(result) => result,
         Err(err) => {
             eprintln!("⚠️ Could not get {}: {err}", resource_url);
@@ -296,6 +327,8 @@ async fn update_gitlab_resource(
     )
 }
 
+/// [`ymd_date`] implements a serializer to show a more condensed date in the README. It will only
+/// show YYYY-MM-DD.
 mod ymd_date {
     use serde::{self, Serializer};
 

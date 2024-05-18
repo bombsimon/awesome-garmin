@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 chrono = "0.4.33"
 futures = "0.3.30"
-gitlab = "0.1608.0"
+gitlab = "0.1611.1"
 handlebars = "5.1.0"
 octocrab = "0.33.3"
 serde = { version = "1.0.196", features = ["derive"] }
