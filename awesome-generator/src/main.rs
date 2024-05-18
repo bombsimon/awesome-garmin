@@ -1,6 +1,7 @@
 use futures::StreamExt;
-use gitlab::api::AsyncQuery;
+use gitlab::{api::AsyncQuery, AsyncGitlab};
 use handlebars::{no_escape, Handlebars};
+use octocrab::Octocrab;
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
 use std::{
@@ -119,8 +120,7 @@ async fn main() -> Result<(), &'static str> {
     let data: Arc<Mutex<BTreeMap<String, Vec<GarminResource>>>> =
         Arc::new(Mutex::new(BTreeMap::new()));
 
-    let mut futures = Vec::new();
-    for (resource_type, resources) in [
+    let resource_types = vec![
         (ResourceType::WatchFace, resources.watch_faces),
         (ResourceType::DataField, resources.data_fields),
         (ResourceType::Widget, resources.widgets),
@@ -133,42 +133,19 @@ async fn main() -> Result<(), &'static str> {
         (ResourceType::Tool, resources.tools),
         (ResourceType::CompanionApp, resources.companion_apps),
         (ResourceType::Miscellaneous, resources.miscellaneous),
-    ] {
+    ];
+
+    let mut futures = Vec::new();
+    for (resource_type, resources) in resource_types {
         for (resource_url, resource) in resources {
-            let rt = resource_type.clone();
-            let oc = octocrab.clone();
-            let gl = glab.clone();
-            let d = data.clone();
-
-            futures.push(async move {
-                eprintln!("Updating {}", resource_url);
-
-                let (resource, is_old) = if resource_url.contains("github.com") {
-                    update_github_resource(resource_url, &resource, oc).await
-                } else if resource_url.contains("gitlab.com") {
-                    update_gitlab_resource(resource_url, &resource, gl).await
-                } else if let Some(name) = resource.name {
-                    (
-                        Some(GarminResource {
-                            name,
-                            description: resource.description,
-                            url: resource_url,
-                            last_updated: None,
-                            is_archived: false,
-                        }),
-                        true,
-                    )
-                } else {
-                    return;
-                };
-
-                if let Some(resource) = resource {
-                    let key = rt.map_key(is_old);
-                    let mut m = d.lock().unwrap();
-                    let elem = m.entry(key).or_default();
-                    elem.push(resource)
-                }
-            });
+            futures.push(update_resource(
+                resource_type.clone(),
+                resource_url,
+                resource,
+                octocrab.clone(),
+                glab.clone(),
+                data.clone(),
+            ));
         }
     }
 
@@ -203,6 +180,43 @@ fn sorted_resources(resources: &mut [GarminResource]) {
         (None, Some(_)) => std::cmp::Ordering::Greater,
         (Some(_), None) => std::cmp::Ordering::Less,
     });
+}
+
+async fn update_resource(
+    resource_type: ResourceType,
+    resource_url: String,
+    resource: TomlFileItem,
+    octocrab: Arc<Octocrab>,
+    glab: Arc<AsyncGitlab>,
+    data: Arc<Mutex<BTreeMap<String, Vec<GarminResource>>>>,
+) {
+    eprintln!("Updating {}", resource_url);
+
+    let (resource, is_old) = if resource_url.contains("github.com") {
+        update_github_resource(resource_url, &resource, octocrab).await
+    } else if resource_url.contains("gitlab.com") {
+        update_gitlab_resource(resource_url, &resource, glab).await
+    } else if let Some(name) = resource.name {
+        (
+            Some(GarminResource {
+                name,
+                description: resource.description,
+                url: resource_url,
+                last_updated: None,
+                is_archived: false,
+            }),
+            true,
+        )
+    } else {
+        return;
+    };
+
+    if let Some(resource) = resource {
+        let key = resource_type.map_key(is_old);
+        let mut m = data.lock().unwrap();
+        let elem = m.entry(key).or_default();
+        elem.push(resource)
+    }
 }
 
 async fn update_github_resource(
