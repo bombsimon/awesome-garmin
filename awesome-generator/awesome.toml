@@ -186,7 +186,6 @@
 "https://github.com/clementbarthes/GarminCogDisplay" = {}
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/danielmitd/datafields" = {}
-"https://github.com/danielp27/Lap-average-vertical-speed" = {}
 "https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Average vertical lap speed" }
 "https://github.com/davisben/edgecycle" = {}
 "https://github.com/der-Dod/jumps" = {}
@@ -337,12 +336,11 @@
 "https://github.com/Sonicious/GarminApps" = {}
 "https://github.com/SverreWisloff/TackingMaster" = {}
 "https://github.com/Tamarpe/CatFacts" = {}
-"https://github.com/Tkadla-GSG/garmin" = { description = "Collection of apps for Garmin wearable hardware writen in Monkey C" }
+"https://github.com/Tkadla-GSG/garmin" = { description = "Collection of apps for Garmin wearable hardware written in Monkey C" }
 "https://github.com/TrainAsONE/trainasone-connectiq" = {}
 "https://github.com/YoungChulDK/CryptoPricesGarmin" = {}
 "https://github.com/abs0/GarminWebRequestTest" = {}
 "https://github.com/adamjakab/iHIIT" = {}
-"https://github.com/aiMonster/Garmin-Cold-Plunge" = { description = "An application for Garmin watches to take a cold plunge bath" }
 "https://github.com/aiMonster/Garmin-Contrast-Shower" = {}
 "https://github.com/akamming/Garmoticz" = {}
 "https://github.com/alanfischer/hassiq" = {}
