@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-05-18_.
+> _This README was last generated at 2024-05-20_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,11 +44,11 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
+- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-05-19)
 - [HandAvoidance](https://github.com/pierre-muth/HandAvoidance) (2024-05-07)
 - [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-05-04)
 - [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) (2024-05-01)
 - [crystal-face](https://github.com/warmsound/crystal-face) (2024-04-30)
-- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-04-21)
 - [aface-garmin-watchface](https://github.com/zetxek/aface-garmin-watchface) (2024-04-01)
 - [GarminBlendWatchFace](https://github.com/MrJacquers/GarminBlendWatchFace) (2024-03-25)
 - [garmin-watchface-protomolecule](https://github.com/blotspot/garmin-watchface-protomolecule) (2024-03-20)
@@ -243,8 +243,8 @@ the presentation.
 - [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2024-02-13)
 - [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) - A Zone Training app for Garmin Watches. (2024-02-09)
 - [GRun](https://github.com/gcormier9/GRun) - Configurable Garmin Watch datafield (2024-01-25)
-- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [CIQ_InstantPcMAS](https://github.com/ebolefeysot/CIQ_InstantPcMAS) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
+- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [ciq-battery-field](https://github.com/fabiobaltieri/ciq-battery-field) - Connect IQ field for battery level with Fit logging (2023-12-15)
 - [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2023-11-28)
 - [connectiq-hr-zones](https://github.com/peregin/connectiq-hr-zones) - Heart rate and zones with histogram data field for Garmin IQ (2023-11-20)
@@ -336,7 +336,7 @@ view on bike computers and outdoor handhelds. Unlike apps, Widgets time out
 after a period of inactivity and are not allowed to record activities, but they
 are also launchable at any time.
 
-- [hasscontrol](https://github.com/hatl/hasscontrol) - Simple garmin widget to control home assistant scenes (2024-05-18)
+- [hasscontrol](https://github.com/hatl/hasscontrol) - Simple garmin widget to control home assistant scenes (2024-05-19)
 - [Rainy](https://github.com/BleachDev/Rainy) - My Garmin weather app. (2024-05-17)
 - [Garmin-NBA-Widget](https://github.com/singh144401/Garmin-NBA-Widget) - NBA widget gives score of Live NBA games with Timer | Monkey C (2024-04-16)
 - [connectiq-sonos](https://github.com/zmullett/connectiq-sonos) - A Garmin Connect IQ watch widget that controls Sonos speaker groups. (2024-02-11)
@@ -373,8 +373,8 @@ are also launchable at any time.
 - [activity_view](https://github.com/mettyw/activity_view) - Garmin Forerunner 235 activity view widget (2021-04-10)
 - [Connect-IQ-QR-Code-Viewer](https://github.com/macherel/Connect-IQ-QR-Code-Viewer) - A widget that can display QR Code on Garmin watch (2021-02-16)
 - [WordOfTheDay](https://github.com/pedlarstudios/WordOfTheDay) - A widget for Garmin's Connect IQ mobile platform that displays the "word of the day" from Wordnik.com (2021-01-19)
-- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [ForecastLine](https://github.com/miharekar/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
+- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [WeatherWid](https://github.com/valgit/WeatherWid) - Garrmin Connect Weather Widget (2020-10-19)
 - [ConnectIQ](https://github.com/admsteck/ConnectIQ) - Garmin ConnectIQ projects (2020-10-08)
 - [SunCalc](https://github.com/haraldh/SunCalc) - Garmin Connect IQ Widget to calculate Dusk, Dawn, Sunset, Sunrise, Blue Hour, etc. (2020-10-02)
