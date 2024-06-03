@@ -262,6 +262,7 @@
 "https://github.com/11samype/CIQBitcoinWidget" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
 "https://github.com/PlanetTeamSpeakk/UC-Widget" = {}
+"https://github.com/TheNinth7/evcc-garmin" = { description = "A widget and a glance for displaying information from evcc" }
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
 "https://github.com/admsteck/ConnectIQ" = {}
 "https://github.com/aleung/ConnectIQ-LogIt" = {}
