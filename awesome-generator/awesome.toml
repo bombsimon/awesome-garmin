@@ -323,6 +323,7 @@
 
 [device_apps]
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
+"https://github.com/CernovApps/rubik-watch-timer" = { description = "This is a timer for Rubik Cube, with features that makes it similar to the WCA rules." }
 "https://github.com/Cybermite/GolfApp" = {}
 "https://github.com/DaWenning/garmin-football-ref-watch" = {}
 "https://github.com/DylanBarratt/Garmin-Coin-Flip" = {}
