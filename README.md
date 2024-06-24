@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-06-17_.
+> _This README was last generated at 2024-06-24_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -105,13 +105,13 @@ allow them to have minimal impact on the device’s battery life.
 - [Connect-IQ-WatchFace](https://gitlab.com/ravenfeld/Connect-IQ-WatchFace) (2022-12-21)
 - [DR6c0](https://github.com/JoopVerdoorn/DR6c0) (2022-12-18)
 - [garmin-connect-iq](https://github.com/dennybiasiolli/garmin-connect-iq) (2022-10-10)
-- [eleven-forty-five](https://github.com/starryalley/eleven-forty-five) (2022-06-23)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [eleven-forty-five](https://github.com/starryalley/eleven-forty-five) (2022-06-23)
 - [stValentineFace](https://github.com/shurupyan/stValentineFace) (2022-06-12)
 - [WWF](https://github.com/fabrikant/WWF) (2022-05-31)
 - [fitface](https://github.com/ldscavo/fitface) (2022-05-07)
@@ -234,6 +234,7 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
+- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2024-06-19)
 - [anyaBike](https://github.com/mpl75/anyaBike) - Data field for cyclists who have their watch attached to their handlebars (2024-06-10)
 - [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) - A Zone Training app for Garmin Watches. (2024-05-29)
 - [DFDetector](https://github.com/flocsy/DFDetector) - Garmin datafield for developers to demonstrate how multiple datafields can be detected (2024-05-28)
@@ -246,7 +247,6 @@ the presentation.
 - [CIQ_InstantPcMAS](https://github.com/ebolefeysot/CIQ_InstantPcMAS) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [ciq-battery-field](https://github.com/fabiobaltieri/ciq-battery-field) - Connect IQ field for battery level with Fit logging (2023-12-15)
-- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2023-11-28)
 - [connectiq-hr-zones](https://github.com/peregin/connectiq-hr-zones) - Heart rate and zones with histogram data field for Garmin IQ (2023-11-20)
 - [UVIndexDataField](https://github.com/mattv23v/UVIndexDataField) - DataField to show UV index (2023-11-10)
 - [DataChampGarmin](https://github.com/wubbl0rz/DataChampGarmin) - More than one data field for bike computers (2023-11-04)
@@ -361,21 +361,21 @@ are also launchable at any time.
 - [connectiq-widget-pilotaltimeter](https://github.com/cedric-dufour/connectiq-widget-pilotaltimeter) - Pilot ICAO/ISA Altimeter for Garmin ConnectIQ devices [GPLv3] (2022-07-15)
 - [TogglIQ](https://github.com/gcaufield/TogglIQ) - ConnectIQ widget for controlling a Toggl Track Timer (2022-06-26)
 - [connectiq-widget-totp](https://github.com/cedric-dufour/connectiq-widget-totp) - TOTP (RFC6238) implementation for Garmin ConnectIQ devices [GPLv3] (2022-06-26)
-- [garmin-birds-around](https://github.com/starryalley/garmin-birds-around) - A Garmin Connect IQ widget showing possible bird species around your location (2022-06-23)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [garmin-birds-around](https://github.com/starryalley/garmin-birds-around) - A Garmin Connect IQ widget showing possible bird species around your location (2022-06-23)
 - [BetterBatteryWidget](https://github.com/tumb1er/BetterBatteryWidget) - Battery widget for Connect IQ (2022-02-02)
 - [WebRequestGlance-Widget](https://github.com/aronsommer/WebRequestGlance-Widget) - Modified version of the Garmin IQ Connect WebRequest sample (2022-01-21)
 - [WebRequestMultiple-Widget](https://github.com/aronsommer/WebRequestMultiple-Widget) - Garmin Connect IQ WebRequest sample with multiple WebRequests (2022-01-08)
 - [activity_view](https://github.com/mettyw/activity_view) - Garmin Forerunner 235 activity view widget (2021-04-10)
 - [Connect-IQ-QR-Code-Viewer](https://github.com/macherel/Connect-IQ-QR-Code-Viewer) - A widget that can display QR Code on Garmin watch (2021-02-16)
 - [WordOfTheDay](https://github.com/pedlarstudios/WordOfTheDay) - A widget for Garmin's Connect IQ mobile platform that displays the "word of the day" from Wordnik.com (2021-01-19)
-- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [ForecastLine](https://github.com/miharekar/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
+- [ForecastLine](https://github.com/mrfoto/ForecastLine) - Connect IQ App inspired by Weather Line (2020-12-16)
 - [WeatherWid](https://github.com/valgit/WeatherWid) - Garrmin Connect Weather Widget (2020-10-19)
 - [ConnectIQ](https://github.com/admsteck/ConnectIQ) - Garmin ConnectIQ projects (2020-10-08)
 - [SunCalc](https://github.com/haraldh/SunCalc) - Garmin Connect IQ Widget to calculate Dusk, Dawn, Sunset, Sunrise, Blue Hour, etc. (2020-10-02)
@@ -414,8 +414,9 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
+- [iHIIT](https://github.com/adamjakab/iHIIT) - High Intensity Interval Training (HIIT) GarminIQ App (2024-06-23)
+- [Garmin-Coin-Flip](https://github.com/DylanBarratt/Garmin-Coin-Flip) - A coin flipper for the Garmin Forerunner 945 (2024-06-21)
 - [garmin-otp-authenticator](https://github.com/ch1bo/garmin-otp-authenticator) - Garmin ConnectIQ Widget for One Time Passwords (HOTP / TOTP / Steam Guard) (2024-06-16)
-- [iHIIT](https://github.com/adamjakab/iHIIT) - High Intensity Interval Training - GarminIQ App (2024-06-10)
 - [connectiq-sailing](https://github.com/dmrrlc/connectiq-sailing) - Sailing app for connectIQ Garmin fenix 3 (2024-06-10)
 - [SailingTools](https://github.com/pintail105/SailingTools) - A Garmin watch IQ app designed for sailing. (2024-06-09)
 - [garmin-football-ref-watch](https://github.com/DaWenning/garmin-football-ref-watch) - Garmin Monkey C Application for Football Referees (2024-05-30)
@@ -463,7 +464,6 @@ FIT files.
 - [ciq-hiit-tracker](https://github.com/werkkrew/ciq-hiit-tracker) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
 - [ciq-orange-theory](https://github.com/werkkrew/ciq-orange-theory) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
 - [Meditate](https://github.com/vtrifonov-esfiddle/Meditate) - Meditation app for Garmin smartwatches (2022-11-15)
-- [Garmin-Coin-Flip](https://github.com/DylanBarratt/Garmin-Coin-Flip) - A coin flipper for the Garmin Forerunner 945 (2022-09-14)
 - [SailingTimer](https://github.com/spikyjt/SailingTimer) - Sailing start timer for Garmin Connect IQ (2022-08-31)
 - [GarminSailing](https://github.com/pukao/GarminSailing) - Sailing app for connectIQ Garmin (2022-07-27)
 - [Garmin-SportTimerHR](https://github.com/rxkaminski/Garmin-SportTimerHR) - Application for Garmin sport watches to recording activity for sport. Used: Monkey C language. (2022-07-18)
@@ -609,7 +609,7 @@ Connect IQ Projects.
 
 ## Miscellaneous
 
-- [open-location-code](https://github.com/google/open-location-code) - Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. (2024-06-14)
+- [open-location-code](https://github.com/google/open-location-code) - Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. (2024-06-21)
 - [NextMatchReminder](https://github.com/ZachXu/NextMatchReminder) - Garmin Application including WatchFace project ,Widget project and a share lib which synchronizing data  (2024-05-03)
 - [VibraTest](https://github.com/flocsy/VibraTest) - vibration and tone tester for Garmin developers (2024-03-25)
 - [connectiq-samples](https://github.com/douglasr/connectiq-samples) - Connect IQ sample apps, libraries and code snippets (2024-03-12)
