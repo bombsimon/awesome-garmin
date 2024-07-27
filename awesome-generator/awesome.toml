@@ -33,6 +33,7 @@
 "https://github.com/JoshuaTheMiller/Multivision-Watch" = {}
 "https://github.com/Korimsoft/ConnectIQ-ProgbarWatchFace" = {}
 "https://github.com/Laverlin/Yet-Another-WatchFace" = {}
+"https://github.com/MrJacquers/GarminBlendWatchFace" = {}
 "https://github.com/NickSteen/BYOD-Watchface" = {}
 "https://github.com/OliverHannover/Aviatorlike" = {}
 "https://github.com/OliverHannover/Formula_1" = {}
@@ -80,7 +81,9 @@
 "https://github.com/dbcm/KISSFace" = {}
 "https://github.com/dennybiasiolli/garmin-connect-iq" = {}
 "https://github.com/dimasmith/binary-clock" = {}
+"https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
 "https://github.com/domosia/Retro-Quartz-Digital-Watch" = {}
+"https://github.com/douglasr/connectiq-logo-analog" = {}
 "https://github.com/eiveiv/erock20" = {}
 "https://github.com/elp87/elp87GarminWatchFace" = {}
 "https://github.com/fabrikant/LowEnergyFace" = {}
@@ -90,6 +93,7 @@
 "https://github.com/groovc/connectiq-watch-faces" = {}
 "https://github.com/hiddewie/garmin-watch-face" = {}
 "https://github.com/hurenkam/AnalogExplorerWatchFace" = {}
+"https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
 "https://github.com/jensws80/JSClock" = {}
 "https://github.com/joakim-ribier/ftw-garmin" = {}
 "https://github.com/johndifini/cryptocurrency-watchface" = {}
@@ -98,6 +102,7 @@
 "https://github.com/jonathandaliva/Fenix5" = {}
 "https://github.com/jpg63/crystal-face-jpg63" = {}
 "https://github.com/kelnage/digital-simplicity" = {}
+"https://github.com/kevin940726/shy-watch-face" = {}
 "https://github.com/kevinboone/BAWF" = {}
 "https://github.com/kromar/garmin_fenix3" = {}
 "https://github.com/lanker/wf01" = {}
@@ -168,10 +173,6 @@
 "https://gitlab.com/knusprjg/plotty-mcclockface" = {}
 "https://gitlab.com/nz_brian/garmin.watch.analogplus" = {}
 "https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = {}
-"https://github.com/MrJacquers/GarminBlendWatchFace" = {}
-"https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
-"https://github.com/kevin940726/shy-watch-face" = {}
-"https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
@@ -481,6 +482,7 @@
 "https://github.com/pzl/ciqdb" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
+"https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont/" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
 
 [companion_apps]
@@ -498,6 +500,7 @@
 [miscellaneous]
 "https://developer.garmin.com/connect-iq/overview/" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
 "https://forums.garmin.com/developer/connect-iq" = { name = "Connect IQ developer forum", description = "Forum to talk anything Connect IQ related" }
+"https://garmin.watchfacebuilder.com/" = { name = "Watch Face Builder", description = "Build (or download) watch faces in the browser" }
 "https://github.com/Artaud/CIQ-Comm-failure-sample" = {}
 "https://github.com/Peterdedecker/connectiq" = {}
 "https://github.com/Shmuma/garmin-public" = {}
@@ -505,17 +508,15 @@
 "https://github.com/ZachXu/NextMatchReminder" = {}
 "https://github.com/creacominc/connectiq-PowerFieldTests" = {}
 "https://github.com/dorindanciu/ConnectIQ" = {}
-"https://github.com/douglasr/connectiq-logo-analog" = {}
 "https://github.com/douglasr/connectiq-samples" = {}
 "https://github.com/ekutter/CIQTest" = {}
 "https://github.com/flocsy/VibraTest" = {}
 "https://github.com/garmin/connectiq-apps" = {}
 "https://github.com/google/open-location-code" = {}
-"https://github.com/iperformance/garmin-conect" = {}
+"https://github.com/iperformance/garmin-conect" = { description = "A collection of Connect IQ apps and libraries" }
 "https://github.com/jstringer1/garmin-connectiq" = {}
 "https://github.com/rbsexton/workspace-ConnectIQ" = {}
 "https://github.com/sunpazed/garmin-ciqsummit17" = { description = "A basic widget that displays tweets from #ciqsummit17" }
 "https://github.com/sunpazed/garmin-complicate" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-complicate-circle" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-waketest" = { description = "Watchface to verify timings, and poll frequency of `onUpdate()`" }
-"https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
