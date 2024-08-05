@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-07-29_.
+> _This README was last generated at 2024-08-05_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,10 +44,11 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
-- [crystal-face](https://github.com/warmsound/crystal-face) (2024-07-25)
+- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-08-04)
+- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-08-03)
+- [AlniLargeTimeWatchFace](https://github.com/alni/AlniLargeTimeWatchFace) (2024-08-03)
+- [crystal-face](https://github.com/warmsound/crystal-face) (2024-08-02)
 - [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) (2024-07-15)
-- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-06-30)
-- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-06-08)
 - [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) (2024-06-04)
 - [garmin-watchface-protomolecule](https://github.com/blotspot/garmin-watchface-protomolecule) (2024-05-31)
 - [HandAvoidance](https://github.com/pierre-muth/HandAvoidance) (2024-05-07)
@@ -178,7 +179,6 @@ allow them to have minimal impact on the device’s battery life.
 - [Fenix5](https://github.com/jonathandaliva/Fenix5) (2018-07-22)
 - [worldtime-crystal](https://gitlab.com/keithwberry/worldtime-crystal) (2018-07-15)
 - [ActiAnalog3](https://github.com/usernzb/ActiAnalog3) (2018-07-04)
-- [AlniLargeTimeWatchFace](https://github.com/alni/AlniLargeTimeWatchFace) (2018-06-23)
 - [MyBigDate](https://github.com/DeCaPa/MyBigDate) (2018-05-01)
 - [erock20](https://github.com/eiveiv/erock20) (2018-04-30)
 - [DayRound](https://github.com/rain-dl/DayRound) (2018-03-18)
@@ -234,8 +234,8 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
-- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2024-07-26)
-- [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-07-18)
+- [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-07-31)
+- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2024-07-29)
 - [Garmin-Datafield-sample-code](https://github.com/ActiveLook/Garmin-Datafield-sample-code) - ActiveLook Garmin Datafield (2024-07-16)
 - [GRun](https://github.com/gcormier9/GRun) - Configurable Garmin Watch datafield (2024-06-30)
 - [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2024-06-26)
@@ -414,7 +414,7 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
-- [winds-mobi-client-garmin](https://github.com/winds-mobi/winds-mobi-client-garmin) - Real-time weather observations: Garmin client (2024-07-28)
+- [winds-mobi-client-garmin](https://github.com/winds-mobi/winds-mobi-client-garmin) - Real-time weather observations: Garmin client (2024-08-04)
 - [wormnav](https://github.com/andan67/wormnav) - Track navigation for Garmin watches (2024-07-20)
 - [Garmin_SD](https://github.com/OpenSeizureDetector/Garmin_SD) - Garmin Watch Seizure Detector - A seizure detector data source based on Garmin IQ watches such as Vivoactive HR (2024-07-08)
 - [iHIIT](https://github.com/adamjakab/iHIIT) - High Intensity Interval Training (HIIT) GarminIQ App (2024-07-07)
@@ -582,9 +582,9 @@ Connect IQ Projects.
 
 ## Tools
 
-- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-07-26)
+- [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-07-29)
+- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-07-29)
 - [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-07-26)
-- [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-07-23)
 - [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) - Tools for Garmin CIQ developers (2024-06-26)
 - [connectiq-app-rawlogger](https://github.com/cedric-dufour/connectiq-app-rawlogger) - RawLogger (Garmin ConnectIQ) App [GPLv3] (2024-05-30)
 - [ciqdb](https://github.com/pzl/ciqdb) - Connect IQ (PRG) parser and debugger (2024-04-20)
