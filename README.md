@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-08-05_.
+> _This README was last generated at 2024-08-12_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,7 +44,8 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
-- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-08-04)
+- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-08-10)
+- [dotter](https://github.com/psjo/dotter) (2024-08-10)
 - [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-08-03)
 - [AlniLargeTimeWatchFace](https://github.com/alni/AlniLargeTimeWatchFace) (2024-08-03)
 - [crystal-face](https://github.com/warmsound/crystal-face) (2024-08-02)
@@ -88,7 +89,6 @@ allow them to have minimal impact on the device’s battery life.
 - [RetroFace](https://github.com/nicolas-gte/RetroFace) (2023-06-21)
 - [garmin_mnmlst_watchface](https://github.com/mrmarbury/garmin_mnmlst_watchface) (2023-06-12)
 - [SolarStatus-Garmin](https://github.com/dividebysandwich/SolarStatus-Garmin) (2023-06-11)
-- [dotter](https://github.com/psjo/dotter) (2023-05-18)
 - [gweatherwatch](https://github.com/ankineri/gweatherwatch) (2023-05-07)
 - [VirtualStarPetGarmin](https://github.com/SarahBass/VirtualStarPetGarmin) (2023-05-04)
 - [VirtualStarWatchGARMIN](https://github.com/SarahBass/VirtualStarWatchGARMIN) (2023-04-26)
@@ -234,8 +234,9 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
+- [PowerAdjuster](https://github.com/axl13/PowerAdjuster) - Connect IQ Power Adjuster (2024-08-11)
+- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2024-08-06)
 - [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-07-31)
-- [GarminSlopeDatafield](https://github.com/mizamae/GarminSlopeDatafield) - Datafield that shows the current slope (in %) that you are in (2024-07-29)
 - [Garmin-Datafield-sample-code](https://github.com/ActiveLook/Garmin-Datafield-sample-code) - ActiveLook Garmin Datafield (2024-07-16)
 - [GRun](https://github.com/gcormier9/GRun) - Configurable Garmin Watch datafield (2024-06-30)
 - [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) - Body Battery data field for Garmin watches (2024-06-26)
@@ -277,7 +278,6 @@ the presentation.
 - [ORun](https://github.com/grafstrom/ORun) - Orienteering data-field for Garmin Connect IQ devices (2022-06-12)
 - [Connect-IQ-DataField-Runner](https://gitlab.com/ravenfeld/connect-iq-datafield-runner) - Fields of data that can correct the distance course by pressing lap (2022-04-23)
 - [jumps](https://github.com/der-Dod/jumps) - Garmin datafield for jumps (2022-03-18)
-- [PowerAdjuster](https://github.com/axl13/PowerAdjuster) - Connect IQ Power Adjuster (2022-02-01)
 - [RollingAverage](https://github.com/simonl-ciq/RollingAverage) - A Garmin Connect IQ data field showing rolling average pace or speed for a run or other activity (2021-10-28)
 - [AuxHR](https://github.com/imgrant/AuxHR) - Connect IQ data field for secondary ANT+ heart rate monitor (2021-09-13)
 - [PauseTimer-connectiq-cm](https://github.com/britiger/PauseTimer-connectiq-cm) - Same as https://github.com/britiger/PauseTimer-connectiq but sending Position to CriticalMaps (2021-01-23)
@@ -582,6 +582,7 @@ Connect IQ Projects.
 
 ## Tools
 
+- [garmin-screenshot](https://github.com/bombsimon/garmin-screenshot) - Build your project for all configured devices, fire it up in the Connect IQ Simulator and take a screenshot (2024-08-10)
 - [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-07-29)
 - [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-07-29)
 - [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-07-26)
