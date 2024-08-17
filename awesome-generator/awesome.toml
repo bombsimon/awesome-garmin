@@ -81,7 +81,6 @@
 "https://github.com/dbcm/KISSFace" = {}
 "https://github.com/dennybiasiolli/garmin-connect-iq" = {}
 "https://github.com/dimasmith/binary-clock" = {}
-"https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
 "https://github.com/domosia/Retro-Quartz-Digital-Watch" = {}
 "https://github.com/douglasr/connectiq-logo-analog" = {}
 "https://github.com/eiveiv/erock20" = {}
@@ -262,6 +261,7 @@
 
 [widgets]
 "https://github.com/11samype/CIQBitcoinWidget" = {}
+"https://github.com/BleachDev/Rainy" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
 "https://github.com/PlanetTeamSpeakk/UC-Widget" = {}
 "https://github.com/TheNinth7/evcc-garmin" = { description = "A widget and a glance for displaying information from evcc" }
@@ -281,6 +281,7 @@
 "https://github.com/chemikadze/garmin-authenticator" = {}
 "https://github.com/danielsiwiec/garmin-connect-seed" = { description = "This is a seed project for writing Garmin Connect IQ application" }
 "https://github.com/desyat/OpenWeatherMapWidget" = { description = "Garmin Widget connecting to Open Weather Map" }
+"https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
 "https://github.com/elgaard/buttonStroke" = {}
 "https://github.com/eternal-flame-AD/git-notifications-ciq" = {}
 "https://github.com/fhdeutschmann/ZuluTime" = {}
@@ -290,6 +291,7 @@
 "https://github.com/haraldh/SunCalc" = {}
 "https://github.com/hatl/hasscontrol" = {}
 "https://github.com/hexaguin/Connect-IQ-ThingSpeak-Client" = {}
+"https://github.com/individual-it/BatteryGuesstimate" = {}
 "https://github.com/jctim/otp-ciq" = {}
 "https://github.com/jimmycaille/SensorHistoryWidget" = {}
 "https://github.com/jonathanburchmore/Enphase" = {}
@@ -320,8 +322,6 @@
 "https://gitlab.com/harryonline/emergencyinfo" = {}
 "https://gitlab.com/harryonline/fortune-quote" = { description = "This widget show a random quote from the Gigaset Fortune collection" }
 "https://gitlab.com/harryonline/timerwidget" = {}
-"https://github.com/BleachDev/Rainy" = {}
-"https://github.com/individual-it/BatteryGuesstimate" = {}
 
 [device_apps]
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
