@@ -258,6 +258,7 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed" = { description = "Colorized speed gauge" }
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner" = { description = "Virtual race partner" }
 "https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
+"https://github.com/ray0711/BTHomeIQ" = { description = "ConnectIQ datafield for displaying and recording BTHome temperature broadcasts" }
 
 [widgets]
 "https://github.com/11samype/CIQBitcoinWidget" = {}
