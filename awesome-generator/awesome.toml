@@ -40,16 +40,27 @@
 "https://github.com/Peterdedecker/kudos" = {}
 "https://github.com/Prime1Code/OnAGlimpse" = {}
 "https://github.com/RyanDam/Infocal" = {}
+"https://github.com/SarahBass/BanjoGarmin" = {}
 "https://github.com/SarahBass/BeachKittyGarmin" = {}
+"https://github.com/SarahBass/BeetleJuice" = {}
+"https://github.com/SarahBass/CandyAdventure" = {}
 "https://github.com/SarahBass/Cycle-View-Garmin-Watch-Pig" = {}
 "https://github.com/SarahBass/Data-Heavy-Garmin-Watchface" = {}
+"https://github.com/SarahBass/GarminKirby" = {}
 "https://github.com/SarahBass/HalloweenCat" = {}
+"https://github.com/SarahBass/Ocean" = {}
+"https://github.com/SarahBass/PocketAsh" = {}
+"https://github.com/SarahBass/PocketPika" = {}
+"https://github.com/SarahBass/PokemonFishing" = {}
 "https://github.com/SarahBass/PokemonGarmin" = {}
 "https://github.com/SarahBass/PoolPanda" = {}
+"https://github.com/SarahBass/Rainforest" = {}
 "https://github.com/SarahBass/Virtual-Garmin-Pet" = {}
 "https://github.com/SarahBass/VirtualPetMonkey" = {}
 "https://github.com/SarahBass/VirtualStarPetGarmin" = {}
 "https://github.com/SarahBass/VirtualStarWatchGARMIN" = {}
+"https://github.com/SarahBass/YoshiGarmin" = {}
+"https://github.com/SarahBass/blackcatGarmin" = {}
 "https://github.com/StefanStefanoff/VivoactiveAtreliosWatchFace" = {}
 "https://github.com/ToryStark/connect-iq" = {}
 "https://github.com/WHalford/WHatch4Me" = {}
@@ -201,6 +212,7 @@
 "https://github.com/fabiobaltieri/spotlight" = {}
 "https://github.com/flocsy/BodyBatteryDF" = {}
 "https://github.com/flocsy/DFDetector" = {}
+"https://github.com/flocsy/FitFieldWasterDF" = {}
 "https://github.com/flowstatedev/ciq-runpower" = {}
 "https://github.com/gcormier9/GRun" = {}
 "https://github.com/grafstrom/ORun" = {}
@@ -517,6 +529,7 @@
 "https://github.com/YAWNICK/MonkeyAOC" = { description = "[Advent of Code](https://adventofcode.com) in Monkey C" }
 "https://github.com/ZachXu/NextMatchReminder" = {}
 "https://github.com/creacominc/connectiq-PowerFieldTests" = {}
+"https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
 "https://github.com/douglasr/connectiq-samples" = {}
 "https://github.com/ekutter/CIQTest" = {}
 "https://github.com/flocsy/VibraTest" = {}
