@@ -4,6 +4,7 @@
 "https://github.com/AYCHPlus/AYCHFace" = {}
 "https://github.com/AmitPandya007/GarminSampleWatch" = {}
 "https://github.com/BodyFatControl/garmin_watchface" = {}
+"https://github.com/Chemaclass/BinaryWatchFace" = {}
 "https://github.com/Chiocciola/Graphomatic" = {}
 "https://github.com/ChrisWeldon/GarminMinimalVenuWatchface" = {}
 "https://github.com/CodyJung/connectiq-apps" = {}
@@ -36,6 +37,7 @@
 "https://github.com/MrJacquers/GarminBlendWatchFace" = {}
 "https://github.com/NickSteen/BYOD-Watchface" = {}
 "https://github.com/OliverHannover/Aviatorlike" = {}
+"https://github.com/OliverHannover/Aviatorlike_1Hz" = {}
 "https://github.com/OliverHannover/Formula_1" = {}
 "https://github.com/Peterdedecker/kudos" = {}
 "https://github.com/Prime1Code/OnAGlimpse" = {}
@@ -82,6 +84,7 @@
 "https://github.com/botagergo/Garmin" = {}
 "https://github.com/cekeller6121/Garmin-Watchface" = {}
 "https://github.com/cizi/Sundance" = {}
+"https://github.com/claudiocandio/Garmin-WatchCLC" = {}
 "https://github.com/cy384/copernicus" = {}
 "https://github.com/danpowell88/nightscoutwatch" = {}
 "https://github.com/darrencroton/Snapshot" = {}
@@ -91,12 +94,16 @@
 "https://github.com/dbanno/ConnectIQ-8-BitWatch" = {}
 "https://github.com/dbcm/KISSFace" = {}
 "https://github.com/dennybiasiolli/garmin-connect-iq" = {}
+"https://github.com/deviammx/dexli-watchface" = {}
 "https://github.com/dimasmith/binary-clock" = {}
+"https://github.com/dmllr/vaguetime-watch-face" = {}
 "https://github.com/domosia/Retro-Quartz-Digital-Watch" = {}
 "https://github.com/douglasr/connectiq-logo-analog" = {}
+"https://github.com/drg-developer/DRG-Nathos" = {}
 "https://github.com/eiveiv/erock20" = {}
 "https://github.com/eldes/presbyopia-watch-face" = {}
 "https://github.com/elp87/elp87GarminWatchFace" = {}
+"https://github.com/erikvb/Digital5Reloaded" = {}
 "https://github.com/fabrikant/LowEnergyFace" = {}
 "https://github.com/fabrikant/WWF" = {}
 "https://github.com/fevieira27/MoveToBeActive" = {}
@@ -104,7 +111,9 @@
 "https://github.com/groovc/connectiq-watch-faces" = {}
 "https://github.com/hiddewie/garmin-watch-face" = {}
 "https://github.com/hurenkam/AnalogExplorerWatchFace" = {}
+"https://github.com/jchabsi/RunnerAttitude" = {}
 "https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
+"https://github.com/jeffwyeh/Infocal" = {}
 "https://github.com/jensws80/JSClock" = {}
 "https://github.com/joakim-ribier/ftw-garmin" = {}
 "https://github.com/johndifini/cryptocurrency-watchface" = {}
@@ -120,13 +129,17 @@
 "https://github.com/laurencee9/Watch-Face-Garmin" = {}
 "https://github.com/lcj2/ciq_binarywatch" = {}
 "https://github.com/ldscavo/fitface" = {}
+"https://github.com/le-cds/connectiq-faceymcwatchface" = {}
 "https://github.com/lukaszgruca/SilverWatchFace" = {}
+"https://github.com/macherel/DaylightWF" = {}
 "https://github.com/matei-tm/garmin-m8m" = {}
+"https://github.com/miamo/batman" = {}
 "https://github.com/micooke/LetsGetDigital" = {}
 "https://github.com/mpl75/anyaWatches" = {}
 "https://github.com/mrmarbury/garmin_mnmlst_watchface" = {}
 "https://github.com/myneur/late" = {}
 "https://github.com/nicolas-gte/RetroFace" = {}
+"https://github.com/nldroid/Spotlight" = {}
 "https://github.com/okdar/smartarcs" = {}
 "https://github.com/okdar/smartarcsactive" = {}
 "https://github.com/okdar/smartarcstrip" = {}
@@ -134,6 +147,7 @@
 "https://github.com/oyvindse/Anker" = {}
 "https://github.com/pencilitin/orbit-face" = {}
 "https://github.com/pierre-muth/HandAvoidance" = {}
+"https://github.com/plaets/connectiq-xclock" = {}
 "https://github.com/psjo/arcsin" = {}
 "https://github.com/psjo/darktimes" = {}
 "https://github.com/psjo/dotter" = {}
@@ -146,12 +160,14 @@
 "https://github.com/shurupyan/stValentineFace" = {}
 "https://github.com/simllll/garmin-pedro-watchface" = {}
 "https://github.com/sixtop/Watch-Face-Garmin" = {}
+"https://github.com/slakhani1231/Triforce-Watch-Face" = {}
 "https://github.com/slyoldfox/slyface" = {}
 "https://github.com/smeyac/connect-iq" = {}
 "https://github.com/sparksp/Analog24" = {}
 "https://github.com/springle/sleepy_monkey" = {}
 "https://github.com/starryalley/eleven-forty-five" = {}
 "https://github.com/ste616/garmin-sidereal-watchface" = {}
+"https://github.com/sudarsanyes/thirdface" = {}
 "https://github.com/sunpazed/garmin-djcat" = {}
 "https://github.com/sunpazed/garmin-drawaa" = {}
 "https://github.com/sunpazed/garmin-flags" = {}
@@ -173,11 +189,13 @@
 "https://github.com/voseldop/timeless" = {}
 "https://github.com/warmsound/crystal-face" = {}
 "https://github.com/willful-it/cara-one" = {}
+"https://github.com/wolffshots/snout" = {}
 "https://github.com/worksasdesigned/z1_watchface" = {}
 "https://github.com/wwarby/iconic" = {}
 "https://github.com/xuxumatu/marathon" = {}
 "https://github.com/yarmatr/BGConnectUI" = {}
 "https://github.com/zRenard/zRenardWatch" = {}
+"https://github.com/zRenard/zRenardWatch2" = {}
 "https://github.com/zetxek/aface-garmin-watchface" = {}
 "https://gitlab.com/jsteinkamp/Simplog" = {}
 "https://gitlab.com/keithwberry/worldtime-crystal" = {}
@@ -187,7 +205,10 @@
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
+"https://github.com/AlexBarinov/HikeDifficulty" = { description = "Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site" }
 "https://github.com/Bimtino/ActivityMonitor" = {}
+"https://github.com/Fra-Sti/Sailing-Instrument" = {}
+"https://github.com/Likenttt/GRun-Chinese" = {}
 "https://github.com/ViktorStagge/ZoneTraining" = { description = "A Zone Training app for Garmin Watches." }
 "https://github.com/adamml/tempo-trainer" = {}
 "https://github.com/axl13/PowerAdjuster" = {}
@@ -195,21 +216,27 @@
 "https://github.com/britiger/PauseTimer-connectiq-cm" = {}
 "https://github.com/bugjam/garmin-eta" = {}
 "https://github.com/chfr/garmin-avg-speed-plus" = {}
+"https://github.com/christoph-lucas/garmin-minutes-per-powerkilometer-field" = { description = "A data field for Garmin devices that displays the minutes per power kilometer" }
 "https://github.com/clementbarthes/GarminCogDisplay" = {}
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/danielmitd/datafields" = {}
+"https://github.com/danielp27/Lap-average-vertical-speed" = { description = "Performance per kilometer calculation" }
 "https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Average vertical lap speed" }
 "https://github.com/davisben/edgecycle" = {}
 "https://github.com/der-Dod/jumps" = {}
 "https://github.com/dhague/bt-ats-ciq-datafield" = {}
+"https://github.com/djs2014/whatpower" = { description = "What app power" }
+"https://github.com/djs2014/whatspeed" = { description = "What app speed" }
 "https://github.com/dmuino/HMFields" = {}
 "https://github.com/dodor84/data-field" = { description = "Test data field" }
+"https://github.com/dyuri/garmin-repafield" = {}
 "https://github.com/ebolefeysot/CIQ_InstantPcMAS" = {}
 "https://github.com/ebolefeysot/CIQ_PcvVo2max" = {}
 "https://github.com/ebottacin/OmniBikeField" = {}
 "https://github.com/fabiobaltieri/ciq-battery-field" = {}
 "https://github.com/fabiobaltieri/ciq-nrf-blinky" = {}
 "https://github.com/fabiobaltieri/spotlight" = {}
+"https://github.com/fellrnr/Fellrnrs-Datafield-ActiveLook" = {}
 "https://github.com/flocsy/BodyBatteryDF" = {}
 "https://github.com/flocsy/DFDetector" = {}
 "https://github.com/flocsy/FitFieldWasterDF" = {}
@@ -217,6 +244,7 @@
 "https://github.com/gcormier9/GRun" = {}
 "https://github.com/grafstrom/ORun" = {}
 "https://github.com/guibber/4caster" = {}
+"https://github.com/holubp/Connect-IQ-lap-max-speed" = {}
 "https://github.com/imgrant/AuxHR" = {}
 "https://github.com/imgrant/EnergyExpenditureField" = {}
 "https://github.com/imgrant/FlexiRunner" = {}
@@ -230,7 +258,10 @@
 "https://github.com/landnavapp/LandNavApp" = {}
 "https://github.com/larspnw/larsBikeDatafields" = {}
 "https://github.com/lcj2/ciq_monkeyfuel" = {}
+"https://github.com/maca88/E-Bike-Edge-MultiField" = { description = "Displays up to 10 data fields from an ANT+ LEV (Light Electronic Vehicle) device" }
+"https://github.com/maca88/SmartBikeLights" = {}
 "https://github.com/markdotai/emtb" = {}
+"https://github.com/markwmuller/GRun" = {}
 "https://github.com/matthiasmullie/connect-iq-datafield-accurate-pace" = {}
 "https://github.com/matthiasmullie/connect-iq-datafield-calories-equivalent" = {}
 "https://github.com/mattv23v/UVIndexDataField" = { description = "DataField to show UV index" }
@@ -238,13 +269,20 @@
 "https://github.com/mirko77/PRun" = { description = "Configurable Garmin FR645M datafield" }
 "https://github.com/mizamae/GarminSlopeDatafield" = {}
 "https://github.com/mpl75/anyaBike" = { description = "Data field for cyclists who have their watch attached to their handlebars" }
+"https://github.com/nickmacias/Garmin-AvgGrade" = {}
+"https://github.com/nickmacias/Garmin-ClimbRate" = {}
+"https://github.com/nickmacias/Garmin-LSGrade" = {}
 "https://github.com/peregin/connectiq-hr-zones" = {}
 "https://github.com/peregin/connectiq-time-battery" = {}
+"https://github.com/pinselimo/BackAtDaylight" = {}
 "https://github.com/prenard/DF_RoadBook" = { description = "This data field allows display of a rolling roadbook on your Garmin Edge 820/1000" }
 "https://github.com/prenard/DF_TorqueAVG" = { description = "Display average torque value in N-m during your training" }
+"https://github.com/ray0711/BTHomeIQ" = {}
 "https://github.com/rconradharris/DaylightLeft" = {}
 "https://github.com/rgergely/polesteps" = {}
+"https://github.com/rgergely/steps2fit" = {}
 "https://github.com/roelofk/HeartRateRunner" = {}
+"https://github.com/samueldumont/RaceWithPower" = {}
 "https://github.com/seajay/ColourHR" = {}
 "https://github.com/simonl-ciq/RollingAverage" = {}
 "https://github.com/simonmacmullen/chart-datafields" = {}
@@ -252,8 +290,10 @@
 "https://github.com/stirnim/garmin-andytimer" = {}
 "https://github.com/stirnim/garmin-lastsplit" = {}
 "https://github.com/stirnim/garmin-swissgrid" = {}
+"https://github.com/tao-j/Keiser2Garmin" = {}
 "https://github.com/to-ko/EveryTile" = {}
 "https://github.com/tobiaslj/TrendPace" = { description = "This data field shows the average pace for the past 30 seconds together with a trend indication" }
+"https://github.com/torhovland/garmin-endurance-in-zone" = {}
 "https://github.com/travisvitek/connectiq_laps_datafield" = {}
 "https://github.com/victornottat/garmin-trimp" = {}
 "https://github.com/victornottat/garmin-trimp-perhour" = {}
@@ -270,17 +310,20 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed" = { description = "Colorized speed gauge" }
 "https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner" = { description = "Virtual race partner" }
 "https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
-"https://github.com/ray0711/BTHomeIQ" = {}
 
 [widgets]
 "https://github.com/11samype/CIQBitcoinWidget" = {}
+"https://github.com/GuMiner/garmin-JustOneButton" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
+"https://github.com/Likenttt/DogecoinToTheMoon" = {}
+"https://github.com/Marios007/WoP" = { description = "Pregnancy Widget for Garmin Watches" }
 "https://github.com/PlanetTeamSpeakk/UC-Widget" = {}
 "https://github.com/SylvainGa/Calculator" = {}
 "https://github.com/SylvainGa/Flashlight" = {}
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
 "https://github.com/SylvainGa/Tesla-Link" = {}
 "https://github.com/TheNinth7/evcc-garmin" = { description = "A widget and a glance for displaying information from evcc" }
+"https://github.com/Vertumnus/garmin-ioBrokerVis" = {}
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
 "https://github.com/ad220/gopro-remote-connectiq" = {}
 "https://github.com/admsteck/ConnectIQ" = {}
@@ -291,6 +334,8 @@
 "https://github.com/aronsommer/WebRequestMultiple-Widget" = {}
 "https://github.com/ascending-edge/garmin-tally" = {}
 "https://github.com/bbary/Jokes" = {}
+"https://github.com/bbary/book_read_counters" = { description = "Basic counter widget with 3 different counters to keep track of book reading or memorization" }
+"https://github.com/bbary/counters" = {}
 "https://github.com/blaskovicz/garmin-nest-camera-control" = {}
 "https://github.com/bombsimon/garmin-swish-qr" = {}
 "https://github.com/britiger/criticalmaps-garmin-widget" = {}
@@ -298,33 +343,49 @@
 "https://github.com/cedric-dufour/connectiq-widget-pilotsrss" = {}
 "https://github.com/cedric-dufour/connectiq-widget-totp" = {}
 "https://github.com/chemikadze/garmin-authenticator" = {}
+"https://github.com/dabastynator/GarminSmartHome" = {}
 "https://github.com/danielsiwiec/garmin-connect-seed" = { description = "This is a seed project for writing Garmin Connect IQ application" }
+"https://github.com/dbucher97/iqbeerpongwidget" = {}
 "https://github.com/desyat/OpenWeatherMapWidget" = { description = "Garmin Widget connecting to Open Weather Map" }
 "https://github.com/dividebysandwich/SolarStatus-Garmin" = {}
+"https://github.com/djdevin/septa-rr-garmin" = {}
 "https://github.com/elgaard/buttonStroke" = {}
 "https://github.com/eternal-flame-AD/git-notifications-ciq" = {}
 "https://github.com/felwal/avganar" = {}
 "https://github.com/fhdeutschmann/ZuluTime" = {}
 "https://github.com/frontdevops/garmin-widget-battery" = {}
 "https://github.com/gcaufield/TogglIQ" = {}
+"https://github.com/geel97/dcc-connectiq" = {}
 "https://github.com/hakonrossebo/FootballFixtures" = {}
 "https://github.com/haraldh/SunCalc" = {}
+"https://github.com/hasscontrol/hasscontrol" = {}
 "https://github.com/hatl/hasscontrol" = {}
 "https://github.com/hexaguin/Connect-IQ-ThingSpeak-Client" = {}
 "https://github.com/individual-it/BatteryGuesstimate" = {}
 "https://github.com/jctim/otp-ciq" = {}
 "https://github.com/jimmycaille/SensorHistoryWidget" = {}
 "https://github.com/jonathanburchmore/Enphase" = {}
+"https://github.com/jurask/authentificator" = {}
 "https://github.com/lkjh654/HabitTree" = { description = "Garmin widget that supports resisting bad habits by growing a tree" }
+"https://github.com/maca88/BikeLightsControl" = {}
 "https://github.com/macherel/Barcode-Wallet" = { description = "Display various type of barcodes (Simple barcode or 2D barcodes like QR code or Aztec code)" }
 "https://github.com/macherel/Connect-IQ-QR-Code-Viewer" = { description = "A widget that can display QR Code on Garmin watch" }
+"https://github.com/madskonradsen/garmin-iq-shortsweather" = {}
+"https://github.com/markwmuller/PregnancyWidget" = {}
+"https://github.com/mayaleh/Maya.CryptoFiatPrice" = { description = "Explore the exchange rate of some crypto currencies" }
 "https://github.com/mettyw/activity_view" = {}
 "https://github.com/miharekar/ForecastLine" = {}
+"https://github.com/mikeller/garmin-divesite-weather-widget" = {}
 "https://github.com/mrfoto/ForecastLine" = {}
 "https://github.com/mriscott/GarminRings" = {}
 "https://github.com/natabat/FertiliQ" = {}
+"https://github.com/okdar/lostandfound" = {}
 "https://github.com/pedlarstudios/WordOfTheDay" = {}
+"https://github.com/pyrob2142/FastingWidget" = {}
 "https://github.com/serhuz/CryptoMarket" = {}
+"https://github.com/sigsegvat/connectIqIotButton" = {}
+"https://github.com/simonl-ciq/MagneticDeclination" = {}
+"https://github.com/simonl-ciq/SimplySolar" = {}
 "https://github.com/simonmacmullen/activity-widget" = {}
 "https://github.com/simonmacmullen/hr-widget" = {}
 "https://github.com/simonmacmullen/instrument-panel" = {}
@@ -339,6 +400,7 @@
 "https://github.com/tumb1er/BetterBatteryWidget" = {}
 "https://github.com/uaraven/otpauth-ciq" = {}
 "https://github.com/valgit/WeatherWid" = {}
+"https://github.com/yamaserif/garminSmartLockApi" = { description = "Garmin Smartwatch Widget for Smart Lock with API provided" }
 "https://github.com/zmullett/connectiq-sonos" = {}
 "https://gitlab.com/harryonline/emergencyinfo" = {}
 "https://gitlab.com/harryonline/fortune-quote" = { description = "This widget show a random quote from the Gigaset Fortune collection" }
@@ -356,11 +418,13 @@
 "https://github.com/KatieXC/GarMenu_GarminConnectIQApp" = {}
 "https://github.com/KieranDotCo/whats-the-score" = {}
 "https://github.com/Laverlin/Yet-Another-Sailing-App" = {}
+"https://github.com/MarkusDatgloi/ebikeApp" = {}
 "https://github.com/OpenSeizureDetector/Garmin_SD" = {}
 "https://github.com/ROSENET-BTU/Garmin-App" = {}
 "https://github.com/Siratigui/garmin_app" = {}
 "https://github.com/Sonicious/GarminApps" = {}
 "https://github.com/SverreWisloff/TackingMaster" = {}
+"https://github.com/TDF-PL/TAKWatch-IQ" = {}
 "https://github.com/Tamarpe/CatFacts" = {}
 "https://github.com/Tkadla-GSG/garmin" = { description = "Collection of apps for Garmin wearable hardware written in Monkey C" }
 "https://github.com/TrainAsONE/trainasone-connectiq" = {}
@@ -375,14 +439,18 @@
 "https://github.com/andan67/wormnav" = {}
 "https://github.com/anickle060193/rep_track_react_native" = {}
 "https://github.com/arquicanedo/barbecueboss" = {}
+"https://github.com/bbary/Salati" = {}
 "https://github.com/bderusha/GarminIQ-CoachCompanion" = {}
 "https://github.com/blackdogit/connectiq-apps" = {}
 "https://github.com/blaskovicz/garmin-tplink-cloud-control" = {}
+"https://github.com/blkfribourg/WheelDash" = { description = "This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV" }
 "https://github.com/bombsimon/garmin-pace-calculator" = {}
 "https://github.com/brandon-rhodes/brandon-garmin" = {}
 "https://github.com/breber/2048-iq" = {}
 "https://github.com/breber/helicopter-iq" = { description = "Helicopter game for Garmin" }
 "https://github.com/breber/nest-iq" = {}
+"https://github.com/capoaira/TicTacToe_Garmin_Connect_IQ" = {}
+"https://github.com/capoaira/Timer_Garmin_Connect_IQ" = {}
 "https://github.com/cedric-dufour/connectiq-app-glidersk" = {}
 "https://github.com/cedric-dufour/connectiq-app-towplanesk" = {}
 "https://github.com/celo-vschi/garmin-intervals" = { description = "Intervals applcation for Forerunner® 235, Forerunner ® 245 (Music) and all fēnix® 6 Pro devices." }
@@ -390,6 +458,7 @@
 "https://github.com/ch1bo/garmin-otp-authenticator" = {}
 "https://github.com/chakflying/hkoradar" = {}
 "https://github.com/chanezgr/IQwprimebal" = {}
+"https://github.com/csekri/fenix-calculator" = {}
 "https://github.com/danielsiwiec/fitnessTimer" = { description = "Fitness timer" }
 "https://github.com/danielsiwiec/tabataTimer" = {}
 "https://github.com/danielsiwiec/timebomb" = {}
@@ -427,6 +496,7 @@
 "https://github.com/klimeryk/garmodoro" = {}
 "https://github.com/kolitiri/garmin-myBus-app" = {}
 "https://github.com/ldscavo/tea-timer" = {}
+"https://github.com/leCapi/RepCounter" = { description = "Repetition counter for Garmin" }
 "https://github.com/lucamrod/TriathlonDuathlonAquathlon" = {}
 "https://github.com/lucasasselli/garmin-podcasts" = {}
 "https://github.com/lukasbeckercode/CPR-Timer" = {}
@@ -441,6 +511,7 @@
 "https://github.com/mirmousaviii/Persian-Calendar-for-Garmin-Watch" = {}
 "https://github.com/miss-architect/garmin-squash" = {}
 "https://github.com/mrohmer/CockpitOnlineGarminClient" = { description = "Garmin Watch Client for Cockpit XP Online via cockpit-online.rohmer.rocks" }
+"https://github.com/n-lahmi/GarminCallControls" = {}
 "https://github.com/noln/doughnuts-burnt" = {}
 "https://github.com/nubissurveying/Garmin_vivoactiveHR" = {}
 "https://github.com/pchng/connect-iq-totp" = {}
@@ -484,7 +555,10 @@
 "https://github.com/xtruan/MorseCode" = {}
 "https://github.com/xtruan/TempoBPM" = {}
 "https://github.com/xtruan/WorkoutTimer" = {}
+"https://github.com/ydutertre/myvario" = {}
+"https://github.com/ydutertre/myvariolite" = {}
 "https://github.com/zbraniecki/ultitimer" = {}
+"https://github.com/zlelik/ConnectIqSailingApp" = {}
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Compass" = { name = "Compass App", description = "Compass" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Timer" = { name = "Timer", description = "Add several timer already registered" }
@@ -515,7 +589,7 @@
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
-"https://www.angelcode.com/products/bmfont/" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
+"https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
 
 [companion_apps]
 "https://github.com/AldoSusanto/mHealth-Project" = {}
@@ -532,10 +606,11 @@
 "https://github.com/urbandroid-team/Sleep-as-Android-Garmin-Addon" = {}
 
 [miscellaneous]
-"https://developer.garmin.com/connect-iq/overview/" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
+"https://developer.garmin.com/connect-iq/overview" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
 "https://forums.garmin.com/developer/connect-iq" = { name = "Connect IQ developer forum", description = "Forum to talk anything Connect IQ related" }
-"https://garmin.watchfacebuilder.com/" = { name = "Watch Face Builder", description = "Build (or download) watch faces in the browser" }
+"https://garmin.watchfacebuilder.com" = { name = "Watch Face Builder", description = "Build (or download) watch faces in the browser" }
 "https://github.com/Artaud/CIQ-Comm-failure-sample" = {}
+"https://github.com/Likenttt/garmin-games" = {}
 "https://github.com/Peterdedecker/connectiq" = {}
 "https://github.com/Shmuma/garmin-public" = {}
 "https://github.com/YAWNICK/MonkeyAOC" = { description = "[Advent of Code](https://adventofcode.com) in Monkey C" }
@@ -545,6 +620,8 @@
 "https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
 "https://github.com/douglasr/connectiq-samples" = {}
 "https://github.com/ekutter/CIQTest" = {}
+"https://github.com/fagalto/ConnectIQ" = { description = "Collection of ConnectIQ apps" }
+"https://github.com/ferranpujolcamins/GarminApps" = {}
 "https://github.com/flocsy/VibraTest" = {}
 "https://github.com/garmin/connectiq-apps" = {}
 "https://github.com/google/open-location-code" = {}
