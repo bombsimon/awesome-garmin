@@ -5,10 +5,12 @@ use octocrab::Octocrab;
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
 use std::{
-    collections::{BTreeMap, HashMap},
+    collections::{BTreeMap, HashMap, HashSet},
     io::Read,
     sync::{Arc, Mutex},
 };
+
+pub mod search;
 
 /// The template that will be used to render the README.
 const TEMPLATE: &str = include_str!("readme.md.hbs");
@@ -24,7 +26,7 @@ const MAX_AGE_BEFORE_OLD: std::time::Duration = std::time::Duration::from_secs(8
 /// A resource type is the type a resource can have mapped to the Garmin ecosystem. This also
 /// includes some extra types for those projects not related to device app development.
 /// https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 enum ResourceType {
     WatchFace,
     DataField,
@@ -35,6 +37,21 @@ enum ResourceType {
     Tool,
     CompanionApp,
     Miscellaneous,
+}
+
+impl TryFrom<String> for ResourceType {
+    type Error = anyhow::Error;
+
+    fn try_from(value: String) -> Result<Self, Self::Error> {
+        match value.as_str() {
+            "1" => Ok(Self::WatchFace),
+            "2" => Ok(Self::DeviceApp),
+            "3" => Ok(Self::Widget),
+            "4" => Ok(Self::DataField),
+            "5" => Ok(Self::AudioContentProvider),
+            id => Err(anyhow::anyhow!("invalid type id: {}", id)),
+        }
+    }
 }
 
 impl ResourceType {
@@ -121,26 +138,20 @@ struct GitLabProject {
     archived: bool,
 }
 
-#[tokio::main]
-async fn main() -> Result<(), &'static str> {
-    let mut toml_content = String::new();
-    std::fs::File::open("awesome.toml")
-        .expect("Failed to open awesome.toml")
-        .read_to_string(&mut toml_content)
-        .expect("Failed to read awesome.toml");
-
-    let resources: TomlFile = toml::from_str(&toml_content).expect("Failed to parse TOML");
+/// Generate the README based on all the contents in `awesome.toml`. If the element is a link to
+/// GitHub or GitLab their API will be called to fetch description and information about last
+/// activity.
+pub async fn generate_readme() -> anyhow::Result<()> {
+    let resources = read_toml_file()?;
     let octocrab = Arc::new(
         octocrab::OctocrabBuilder::new()
             .personal_token(std::env::var("GITHUB_TOKEN").unwrap())
-            .build()
-            .unwrap(),
+            .build()?,
     );
     let glab = Arc::new(
-        gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN").unwrap())
+        gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN")?)
             .build_async()
-            .await
-            .unwrap(),
+            .await?,
     );
 
     let data: Arc<Mutex<BTreeMap<String, Vec<GarminResource>>>> =
@@ -190,13 +201,24 @@ async fn main() -> Result<(), &'static str> {
     }
 
     let template = Template {
-        resources: Arc::try_unwrap(data).unwrap().into_inner().unwrap(),
+        resources: Arc::try_unwrap(data).unwrap().into_inner()?,
         updated_at: chrono::Utc::now().format("%Y-%m-%d").to_string(),
     };
 
-    println!("{}", hb.render("readme", &template).unwrap());
+    println!("{}", hb.render("readme", &template)?);
 
     Ok(())
+}
+
+/// Read the toml file and return the prased file as a [`TomlFile`].
+fn read_toml_file() -> anyhow::Result<TomlFile> {
+    let mut toml_content = String::new();
+    std::fs::File::open("awesome.toml")
+        .expect("Failed to open awesome.toml")
+        .read_to_string(&mut toml_content)
+        .expect("Failed to read awesome.toml");
+
+    Ok(toml::from_str(&toml_content)?)
 }
 
 /// The resources will be sorted by date - if they have any, and then by name.
@@ -325,6 +347,114 @@ async fn update_gitlab_resource(
         Some(garmin_resource),
         result.last_activity_at < chrono::Utc::now() - MAX_AGE_BEFORE_OLD,
     )
+}
+
+/// Compare what's in the `awesome.toml` file with all the found search results based on the given
+/// `keyword`. This is a manual but easy way to see which resources are not listed yet.
+///
+/// The output will look just like the toml file to make it easy to compare or copy/paste.
+pub async fn compare(keyword: &str) -> anyhow::Result<()> {
+    let resources = read_toml_file()?;
+    let toml_file_keys = vec![
+        resources.watch_faces.keys().collect::<HashSet<_>>(),
+        resources.data_fields.keys().collect::<HashSet<_>>(),
+        resources.widgets.keys().collect::<HashSet<_>>(),
+        resources.device_apps.keys().collect::<HashSet<_>>(),
+        resources
+            .audio_content_providers
+            .keys()
+            .collect::<HashSet<_>>(),
+        resources.barrels.keys().collect::<HashSet<_>>(),
+        resources.tools.keys().collect::<HashSet<_>>(),
+        resources.companion_apps.keys().collect::<HashSet<_>>(),
+        resources.miscellaneous.keys().collect::<HashSet<_>>(),
+    ];
+
+    let tomle_file_urls = toml_file_keys
+        .into_iter()
+        .flatten()
+        .map(|i| i.to_owned())
+        .collect::<HashSet<String>>();
+
+    let search_result = crate::search::search_garmin_apps(keyword).await?;
+
+    // Store each app type in a separate `HashSet` so we can print it properly.
+    let mut watch_faces = HashSet::new();
+    let mut data_fields = HashSet::new();
+    let mut widgets = HashSet::new();
+    let mut device_apps = HashSet::new();
+    let mut audio_content_providers = HashSet::new();
+
+    for app in search_result {
+        if app.website_url.is_empty() {
+            continue;
+        }
+
+        if !app.website_url.starts_with("https://github")
+            && !app.website_url.starts_with("https://gitlab")
+        {
+            continue;
+        }
+
+        // A lot of URLs goes to paths in a multi repo or have a trailing slash. This list only
+        // contains full repos so we only care about the repo base URL.
+        let parsed_url = url::Url::parse(&app.website_url)?;
+        let repo_base_url = format!(
+            "{}://{}{}",
+            parsed_url.scheme(),
+            parsed_url.host_str().unwrap(),
+            parsed_url
+                .path()
+                .split('/')
+                .take(3)
+                .collect::<Vec<_>>()
+                .join("/")
+        );
+
+        if tomle_file_urls.contains(&repo_base_url) {
+            continue;
+        }
+
+        let resource_type = ResourceType::try_from(app.type_id)?;
+        match resource_type {
+            ResourceType::WatchFace => watch_faces.insert(app.website_url),
+            ResourceType::DataField => data_fields.insert(app.website_url.clone()),
+            ResourceType::Widget => widgets.insert(app.website_url.clone()),
+            ResourceType::DeviceApp => device_apps.insert(app.website_url.clone()),
+            ResourceType::AudioContentProvider => {
+                audio_content_providers.insert(app.website_url.clone())
+            }
+            _ => unreachable!(),
+        };
+    }
+
+    println!(
+        "Found {} URLs not in list\n",
+        watch_faces.len()
+            + data_fields.len()
+            + widgets.len()
+            + device_apps.len()
+            + audio_content_providers.len()
+    );
+
+    for (app_set, header) in [
+        (watch_faces, "watch_faces"),
+        (data_fields, "data_fields"),
+        (widgets, "widgets"),
+        (device_apps, "device_apps"),
+        (audio_content_providers, "audio_content_providers"),
+    ] {
+        if !app_set.is_empty() {
+            println!("[{header}]");
+            for u in app_set {
+                println!("\"{u}\" = {{}}");
+            }
+
+            println!();
+        }
+    }
+
+    Ok(())
 }
 
 /// [`ymd_date`] implements a serializer to show a more condensed date in the README. It will only

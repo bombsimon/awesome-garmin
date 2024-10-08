@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Generate README
         working-directory: ./awesome-generator
-        run: cargo run > ../README.md
+        run: cargo run generate-readme > ../README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
