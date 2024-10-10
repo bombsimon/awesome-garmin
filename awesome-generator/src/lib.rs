@@ -384,7 +384,7 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
     let mut audio_content_providers = HashSet::new();
 
     let mut s = crate::search::ConnectIQSearch::new(keyword.to_string());
-    while let Some(app) = s.next_item().await {
+    while let Some(app) = s.next().await {
         if app.website_url.is_empty() {
             continue;
         }
