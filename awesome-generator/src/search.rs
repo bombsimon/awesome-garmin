@@ -86,6 +86,17 @@ pub struct ConnectIQ {
     pub apps: Vec<ConnectIQApp>,
 }
 
+#[derive(Debug, Default, serde::Deserialize)]
+#[serde(default, rename_all = "camelCase")]
+pub struct ConnectIQDeviceType {
+    pub additional_names: Vec<String>,
+    pub id: String,
+    pub image_url: String,
+    pub name: String,
+    pub part_number: String,
+    pub url_name: String,
+}
+
 #[pin_project]
 pub struct ConnectIQSearch {
     client: std::sync::Arc<reqwest::Client>,
@@ -145,8 +156,15 @@ impl ConnectIQSearch {
             Poll::Pending => Poll::Pending,
         }
     }
-}
 
+    pub async fn device_types(&self) -> anyhow::Result<Vec<ConnectIQDeviceType>> {
+        let u = Url::parse(
+            "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/deviceTypes",
+        )?;
+
+        Ok(self.client.get(u.as_str()).send().await?.json().await?)
+    }
+}
 async fn fetch_page(
     client: std::sync::Arc<reqwest::Client>,
     keyword: String,
