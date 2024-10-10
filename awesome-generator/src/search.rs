@@ -1,5 +1,7 @@
 //! The search module holds all types returned from <https://apps.garmin.com/api> and supports
 //! searching their app catalog by keyword.
+use std::collections::VecDeque;
+
 use serde_with::{formats::Flexible, serde_as, TimestampMilliSeconds};
 use url::Url;
 
@@ -65,48 +67,65 @@ pub struct ConnectIQ {
     pub apps: Vec<ConnectIQApp>,
 }
 
-/// Search https://apps.garmin.com for Garmin apps by passing a keyword. The method will use the
-/// pagination and iterate over all pages and store them in a vector which means that the result
-/// size can blow up.
-pub async fn search_garmin_apps(keyword: &str) -> anyhow::Result<Vec<ConnectIQApp>> {
-    let client = reqwest::Client::new();
+pub struct ConnectIQSearch {
+    client: reqwest::Client,
+    keyword: String,
+    apps: VecDeque<ConnectIQApp>,
+    start_page_index: i64,
+    has_more_pages: bool,
+}
 
-    let mut u = Url::parse(
-        "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/apps/keywords",
-    )?;
+impl ConnectIQSearch {
+    pub fn new(keyword: String) -> Self {
+        Self {
+            client: reqwest::Client::new(),
+            apps: VecDeque::new(),
+            start_page_index: 0,
+            has_more_pages: true,
+            keyword,
+        }
+    }
 
-    let mut start_page_index = 0;
-    let page_size = 30;
+    pub async fn next_item(&mut self) -> Option<ConnectIQApp> {
+        if self.apps.is_empty() && self.has_more_pages {
+            self.next_page().await.ok();
+        }
 
-    let pairs = [
-        ("keywords", keyword),
-        ("pageSize", &page_size.to_string()),
-        ("sortType", "mostPopular"),
-    ];
+        self.apps.pop_front()
+    }
 
-    let mut apps = Vec::new();
+    async fn next_page(&mut self) -> anyhow::Result<()> {
+        let mut u = Url::parse(
+            "https://apps.garmin.com/api/appsLibraryExternalServices/api/asw/apps/keywords",
+        )?;
 
-    loop {
+        let page_size = 30;
+
+        let pairs = [
+            ("keywords", self.keyword.as_str()),
+            ("pageSize", &30.to_string()),
+            ("sortType", "mostPopular"),
+        ];
+
         u.query_pairs_mut()
             .clear()
             .extend_pairs(pairs)
-            .append_pair("startPageIndex", &start_page_index.to_string());
+            .append_pair("startPageIndex", &self.start_page_index.to_string());
 
-        let page: ConnectIQ = client.get(u.as_str()).send().await?.json().await?;
-        apps.extend(page.apps);
+        let page: ConnectIQ = self.client.get(u.as_str()).send().await?.json().await?;
+        self.apps = VecDeque::from(page.apps);
 
-        if start_page_index + page_size >= page.total_count {
-            break;
-        }
+        self.has_more_pages = self.start_page_index + page_size < page.total_count;
+        self.start_page_index += page_size;
 
-        start_page_index += page_size;
+        Ok(())
     }
-
-    Ok(apps)
 }
 
 pub async fn print_resource_urls(keyword: &str) -> anyhow::Result<()> {
-    for app in search_garmin_apps(keyword).await? {
+    let mut s = ConnectIQSearch::new(keyword.to_string());
+
+    while let Some(app) = s.next_item().await {
         if !app.website_url.is_empty() {
             let resource_type = format!("{:?}", crate::ResourceType::try_from(app.type_id)?);
 

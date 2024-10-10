@@ -376,8 +376,6 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
         .map(|i| i.to_owned())
         .collect::<HashSet<String>>();
 
-    let search_result = crate::search::search_garmin_apps(keyword).await?;
-
     // Store each app type in a separate `HashSet` so we can print it properly.
     let mut watch_faces = HashSet::new();
     let mut data_fields = HashSet::new();
@@ -385,7 +383,8 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
     let mut device_apps = HashSet::new();
     let mut audio_content_providers = HashSet::new();
 
-    for app in search_result {
+    let mut s = crate::search::ConnectIQSearch::new(keyword.to_string());
+    while let Some(app) = s.next_item().await {
         if app.website_url.is_empty() {
             continue;
         }
