@@ -415,6 +415,7 @@
 "https://github.com/DylanBarratt/Garmin-Coin-Flip" = {}
 "https://github.com/HerrRiebmann/Stretch" = {}
 "https://github.com/IrishMarineInstitute/connectiq-ido" = {}
+"https://github.com/K4pes/ultiCount" = { name = "UltiCount", description = "Keep track of scores and gender ratios during games of Ultimate Frisbee" }
 "https://github.com/KatieXC/GarMenu_GarminConnectIQApp" = {}
 "https://github.com/KieranDotCo/whats-the-score" = {}
 "https://github.com/Laverlin/Yet-Another-Sailing-App" = {}
@@ -562,7 +563,6 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Compass" = { name = "Compass App", description = "Compass" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Timer" = { name = "Timer", description = "Add several timer already registered" }
-"https://github.com/K4pes/ultiCount" = { name = "UltiCount", description = "Keep track of scores and gender ratios during games of Ultimate Frisbee" }
 
 [audio_content_providers]
 "https://github.com/memen45/SubMusic" = {}
