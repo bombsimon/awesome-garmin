@@ -7,6 +7,7 @@ use std::task::{ready, Poll};
 
 use futures::StreamExt;
 use pin_project::pin_project;
+use prettytable::{row, Table};
 use serde_with::{formats::Flexible, serde_as, TimestampMilliSeconds};
 use url::Url;
 
@@ -213,16 +214,18 @@ impl futures::Stream for ConnectIQSearch {
 pub async fn print_resource_urls(keyword: &str) -> anyhow::Result<()> {
     let mut s = ConnectIQSearch::new(keyword.to_string());
 
+    let mut table = Table::new();
+    table.set_format(*prettytable::format::consts::FORMAT_NO_BORDER_LINE_SEPARATOR);
+    table.set_titles(row!["Change date", "Type", "URL"]);
+
     while let Some(app) = s.next().await {
         if !app.website_url.is_empty() {
             let resource_type = format!("{:?}", crate::ResourceType::try_from(app.type_id)?);
-
-            println!(
-                "{} - {:<20} - {}",
-                app.changed_date, resource_type, app.website_url
-            );
+            table.add_row(row![app.changed_date, resource_type, app.website_url]);
         }
     }
+
+    table.printstd();
 
     Ok(())
 }
