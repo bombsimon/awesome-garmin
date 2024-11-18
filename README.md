@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-11-11_.
+> _This README was last generated at 2024-11-18_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,12 +44,12 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
-- [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) (2024-11-09)
+- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-11-17)
+- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-11-17)
+- [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) (2024-11-11)
 - [wf01](https://github.com/lanker/wf01) (2024-11-04)
 - [garmin-watchface-protomolecule](https://github.com/blotspot/garmin-watchface-protomolecule) (2024-10-29)
-- [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-10-27)
 - [Yet-Another-WatchFace](https://github.com/Laverlin/Yet-Another-WatchFace) (2024-10-26)
-- [garmin-seaside](https://github.com/bombsimon/garmin-seaside) (2024-10-23)
 - [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) (2024-09-28)
 - [Rainforest](https://github.com/SarahBass/Rainforest) (2024-09-28)
 - [Ocean](https://github.com/SarahBass/Ocean) (2024-09-28)
@@ -162,8 +162,8 @@ allow them to have minimal impact on the device’s battery life.
 - [JSClock](https://github.com/jensws80/JSClock) (2021-01-19)
 - [DRG-Clutterless](https://github.com/DRG-developer/DRG-Clutterless) (2021-01-17)
 - [kudos](https://github.com/Peterdedecker/kudos) (2021-01-01)
-- [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) (2020-10-08)
 - [DRG-Nathos](https://github.com/DRG-developer/DRG-Nathos) (2020-10-08)
+- [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) (2020-10-08)
 - [Digital5Reloaded](https://github.com/erikvb/Digital5Reloaded) (2020-10-04)
 - [DRG_SNT_3](https://github.com/DRG-developer/DRG_SNT_3) (2020-09-22)
 - [garmin_fenix3](https://github.com/kromar/garmin_fenix3) (2020-09-12)
@@ -264,6 +264,7 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
+- [Fellrnrs-Datafield-ActiveLook](https://github.com/fellrnr/Fellrnrs-Datafield-ActiveLook) - Fellrnr's Modification of ActiveLook Garmin Datafield (2024-11-11)
 - [SmartBikeLights](https://github.com/maca88/SmartBikeLights) - Garmin application for ANT+ bike lights (2024-11-10)
 - [spotlight](https://github.com/fabiobaltieri/spotlight) - Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. (2024-10-09)
 - [ciq-nrf-blinky](https://github.com/fabiobaltieri/ciq-nrf-blinky) - Connect IQ application client for Nordic nRF Blinky BLE example (2024-10-07)
@@ -279,14 +280,13 @@ the presentation.
 - [Garmin-Datafield-sample-code](https://github.com/ActiveLook/Garmin-Datafield-sample-code) - ActiveLook Garmin Datafield (2024-08-13)
 - [PowerAdjuster](https://github.com/axl13/PowerAdjuster) - Connect IQ Power Adjuster (2024-08-11)
 - [FitFieldWasterDF](https://github.com/flocsy/FitFieldWasterDF) -  (2024-07-03)
-- [Fellrnrs-Datafield-ActiveLook](https://github.com/fellrnr/Fellrnrs-Datafield-ActiveLook) - Fellrnr's Modification of ActiveLook Garmin Datafield (2024-06-11)
 - [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) - A Zone Training app for Garmin Watches. (2024-05-29)
 - [GRun-Chinese](https://github.com/Likenttt/GRun-Chinese) - Forked from GRun but localized for Chinese (2024-03-17)
 - [emtb](https://github.com/markdotai/emtb) - A data field allowing Garmin watches to show information about a Shimano STEPS e-bike. (2024-03-08)
 - [garmin-lastsplit](https://github.com/stirnim/garmin-lastsplit) - Last Split - a Garmin Connect IQ data field (2024-03-05)
 - [Sailing-Instrument](https://github.com/Fra-Sti/Sailing-Instrument) - Garmin sailing instrument connecting to a Calypso Ultrasonic (2024-02-07)
-- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [CIQ_InstantPcMAS](https://github.com/ebolefeysot/CIQ_InstantPcMAS) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
+- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [ciq-battery-field](https://github.com/fabiobaltieri/ciq-battery-field) - Connect IQ field for battery level with Fit logging (2023-12-15)
 - [connectiq-hr-zones](https://github.com/peregin/connectiq-hr-zones) - Heart rate and zones with histogram data field for Garmin IQ (2023-11-20)
 - [UVIndexDataField](https://github.com/mattv23v/UVIndexDataField) - DataField to show UV index (2023-11-10)
@@ -499,6 +499,7 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
+- [Meditate](https://github.com/dliedke/Meditate) - Totally free application developed by vtrifonov and compiled/enhanced for newer Garmin watch models by dliedke. Published in Garmin Connect IQ store at https://apps.garmin.com/en-US/apps/c5fc5ea5-7d12-4fb9-be9c-701663a39db7 (2024-11-17)
 - [mybiketraffic](https://github.com/kartoone/mybiketraffic) - ConnectIQ app for processing Garmin Varia radar data and counting vehicles. (2024-11-10)
 - [ultiCount](https://github.com/K4pes/ultiCount) - Keep track of scores and gender ratios during games of Ultimate Frisbee (2024-11-09)
 - [WheelDash](https://github.com/blkfribourg/WheelDash) - This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV (2024-11-08)
@@ -509,7 +510,6 @@ FIT files.
 - [trainasone-connectiq](https://github.com/TrainAsONE/trainasone-connectiq) - TrainAsONE Garmin workout download app (Connect IQ) app (2024-11-01)
 - [shotgunsports](https://github.com/mikkosh/shotgunsports) - Shotgun Sports app for Garmin ConnectIQ (2024-11-01)
 - [SnakeIQ](https://github.com/mazefest/SnakeIQ) - Simple snake game created for Garmin Connect IQ capable devices. (2024-10-26)
-- [Meditate](https://github.com/dliedke/Meditate) - Totally free application developed by vtrifonov and compiled/enhanced for newer Garmin watch models by dliedke. Published in Garmin Connect IQ store at https://apps.garmin.com/en-US/apps/c5fc5ea5-7d12-4fb9-be9c-701663a39db7 (2024-10-26)
 - [garmin-football-ref-watch](https://github.com/DaWenning/garmin-football-ref-watch) - Garmin Monkey C Application for Football Referees (2024-10-17)
 - [garmodoro](https://github.com/klimeryk/garmodoro) - Pomodoro for Garmin devices using Connect IQ (2024-10-15)
 - [WorkoutTimer](https://github.com/xtruan/WorkoutTimer) - Workout Timer app for Garmin ConnectIQ (2024-09-18)
@@ -565,13 +565,13 @@ FIT files.
 - [connectiq-app-glidersk](https://github.com/cedric-dufour/connectiq-app-glidersk) - The Glider Swiss Knife for Garmin ConnectIQ devices [GPLv3] (2022-12-07)
 - [ciq-hiit-tracker](https://github.com/werkkrew/ciq-hiit-tracker) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
 - [ciq-orange-theory](https://github.com/werkkrew/ciq-orange-theory) - Orange Theory Fitness - Garmin Connect IQ App (2022-12-02)
-- [Meditate](https://github.com/vtrifonov-esfiddle/Meditate) - Meditation app for Garmin smartwatches (2022-11-15)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [Meditate](https://github.com/vtrifonov-esfiddle/Meditate) - Meditation app for Garmin smartwatches (2022-11-15)
 - [SailingTimer](https://github.com/spikyjt/SailingTimer) - Sailing start timer for Garmin Connect IQ (2022-08-31)
 - [GarminSailing](https://github.com/pukao/GarminSailing) - Sailing app for connectIQ Garmin (2022-07-27)
 - [Garmin-SportTimerHR](https://github.com/rxkaminski/Garmin-SportTimerHR) - Application for Garmin sport watches to recording activity for sport. Used: Monkey C language. (2022-07-18)
