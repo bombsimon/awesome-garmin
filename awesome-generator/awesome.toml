@@ -569,6 +569,7 @@
 
 [barrels]
 "https://github.com/Likenttt/garmin-ciq-page-indicator" = {}
+"https://github.com/bombsimon/garmin-touch-keypad" = {}
 "https://github.com/britiger/CriticalMapsAPIBarrel" = {}
 "https://github.com/hurenkam/WidgetBarrel" = {}
 "https://github.com/mikkosh/AntAssetTracker" = {}
