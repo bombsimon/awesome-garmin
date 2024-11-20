@@ -12,24 +12,26 @@ GitLab.
 
 ## Search
 
-The tool supports searching the[Connect IQ app library] and print any
+The tool supports searching the [Connect IQ app library] and print any
 application that has a website URL linked which usually points to the source
 code.
 
 ```sh
 › cargo run search sailing
 
-2024-06-08 22:04:10 UTC - DeviceApp            - https://github.com/pintail105/SailingTools
-2018-12-05 15:09:37 UTC - DeviceApp            - https://github.com/antgoldbloom/VMG-Connect-IQ-App
-2023-10-25 07:04:22 UTC - DeviceApp            - https://github.com/AlexanderLJX/Sailing-Windsurfing-Foiling
-2024-09-02 12:43:09 UTC - DeviceApp            - https://github.com/dmrrlc/connectiq-sailing
-2018-12-05 15:28:10 UTC - DeviceApp            - https://github.com/spikyjt/SailingTimer
-2024-03-14 17:18:57 UTC - DeviceApp            - https://github.com/Laverlin/Yet-Another-Sailing-App
-2021-04-16 09:25:18 UTC - DeviceApp            - https://github.com/alexphredorg/ConnectIqSailingApp
-2023-10-25 07:37:00 UTC - DeviceApp            - https://github.com/pukao/GarminSailing
-2024-02-14 00:30:24 UTC - DataField            - https://github.com/Fra-Sti/Sailing-Instrument
-2023-12-04 06:43:39 UTC - DeviceApp            - https://seatouch.dev/#/foilstart
-2024-07-11 05:05:21 UTC - DeviceApp            - https://github.com/zlelik/ConnectIqSailingApp
+ Change date             | Type      | URL
+-------------------------+-----------+-------------------------------------------------------------
+ 2024-06-08 22:04:10 UTC | DeviceApp | https://github.com/pintail105/SailingTools
+ 2018-12-05 15:09:37 UTC | DeviceApp | https://github.com/antgoldbloom/VMG-Connect-IQ-App
+ 2023-10-25 07:04:22 UTC | DeviceApp | https://github.com/AlexanderLJX/Sailing-Windsurfing-Foiling
+ 2024-09-02 12:43:09 UTC | DeviceApp | https://github.com/dmrrlc/connectiq-sailing
+ 2018-12-05 15:28:10 UTC | DeviceApp | https://github.com/spikyjt/SailingTimer
+ 2024-11-04 08:04:27 UTC | DeviceApp | https://github.com/Laverlin/Yet-Another-Sailing-App
+ 2021-04-16 09:25:18 UTC | DeviceApp | https://github.com/alexphredorg/ConnectIqSailingApp
+ 2023-10-25 07:37:00 UTC | DeviceApp | https://github.com/pukao/GarminSailing
+ 2024-02-14 00:30:24 UTC | DataField | https://github.com/Fra-Sti/Sailing-Instrument
+ 2023-12-04 06:43:39 UTC | DeviceApp | https://seatouch.dev/#/foilstart
+ 2024-07-11 05:05:21 UTC | DeviceApp | https://github.com/zlelik/ConnectIqSailingApp
 ```
 
 ## Compare
