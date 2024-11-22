@@ -563,6 +563,7 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Compass" = { name = "Compass App", description = "Compass" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Timer" = { name = "Timer", description = "Add several timer already registered" }
+"https://github.com/BleachDev/GarminQ" = {}
 
 [audio_content_providers]
 "https://github.com/memen45/SubMusic" = {}
