@@ -30,7 +30,7 @@ jobs:
           exit "$exit_code"
 
       - name: Post PR Comment
-        if: always()
+        if: github.event_name == 'pull_request'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
