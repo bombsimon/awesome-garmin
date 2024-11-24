@@ -24,13 +24,13 @@ done
 
 if [ $exit_code -ne 0 ]; then
     cat <<-EOF
-Thanks for adding new resources to this project!
+Thank you for adding new resources to this project!
 
-To help with consistency and easie maintenance, e.g. spot duplicates the items in each section is sorted alphanumerically
+To ensure consistency and easier maintenance (e.g., spotting duplicates), the items in each section are sorted alphanumerically.
 
-Your change doesn't conform to this so please ensure the section(s) you've edited are sorted!
+Your recent changes don't follow this convention, so please ensure the section(s) you've edited are properly sorted.
 
-These sections are currently not sorted:
+The following sections are currently not sorted:
 
 EOF
 
