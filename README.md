@@ -14,7 +14,7 @@ development and more.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2024-12-16_.
+> _This README was last generated at 2024-12-23_.
 
 Any contributions are much appreciated! To add a new resource, **do not edit
 this file**! Instead, add it to [`awesome.toml`][awesome-toml]. If it's a GitHub
@@ -44,9 +44,9 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
+- [SimplePixels](https://github.com/shbumba/SimplePixels) (2024-12-21)
 - [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) (2024-12-11)
 - [Yet-Another-WatchFace](https://github.com/Laverlin/Yet-Another-WatchFace) (2024-12-07)
-- [SimplePixels](https://github.com/shbumba/SimplePixels) (2024-12-03)
 - [garmin-watchface-40d-mip-power](https://github.com/dryotta/garmin-watchface-40d-mip-power) (2024-11-23)
 - [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) (2024-11-19)
 - [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) (2024-11-18)
@@ -132,17 +132,17 @@ allow them to have minimal impact on the device’s battery life.
 - [DR7c2](https://github.com/JoopVerdoorn/DR7c2) (2022-12-24)
 - [DR6c1](https://github.com/JoopVerdoorn/DR6c1) (2022-12-24)
 - [DR6c2](https://github.com/JoopVerdoorn/DR6c2) (2022-12-24)
-- [DR5c2](https://github.com/JoopVerdoorn/DR5c2) (2022-12-23)
-- [garmin_wordclock](https://github.com/thekr1s/garmin_wordclock) (2022-12-21)
-- [DR7c0](https://github.com/JoopVerdoorn/DR7c0) (2022-12-21)
-- [Connect-IQ-WatchFace](https://gitlab.com/ravenfeld/Connect-IQ-WatchFace) (2022-12-21)
-- [DR6c0](https://github.com/JoopVerdoorn/DR6c0) (2022-12-18)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [DR5c2](https://github.com/JoopVerdoorn/DR5c2) (2022-12-23)
+- [garmin_wordclock](https://github.com/thekr1s/garmin_wordclock) (2022-12-21)
+- [DR7c0](https://github.com/JoopVerdoorn/DR7c0) (2022-12-21)
+- [Connect-IQ-WatchFace](https://gitlab.com/ravenfeld/Connect-IQ-WatchFace) (2022-12-21)
+- [DR6c0](https://github.com/JoopVerdoorn/DR6c0) (2022-12-18)
 - [garmin-connect-iq](https://github.com/dennybiasiolli/garmin-connect-iq) (2022-10-10)
 - [RunnerAttitude](https://github.com/jchabsi/RunnerAttitude) (2022-07-23)
 - [eleven-forty-five](https://github.com/starryalley/eleven-forty-five) (2022-06-23)
@@ -170,8 +170,8 @@ allow them to have minimal impact on the device’s battery life.
 - [JSClock](https://github.com/jensws80/JSClock) (2021-01-19)
 - [DRG-Clutterless](https://github.com/DRG-developer/DRG-Clutterless) (2021-01-17)
 - [kudos](https://github.com/Peterdedecker/kudos) (2021-01-01)
-- [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) (2020-10-08)
 - [DRG-Nathos](https://github.com/DRG-developer/DRG-Nathos) (2020-10-08)
+- [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) (2020-10-08)
 - [Digital5Reloaded](https://github.com/erikvb/Digital5Reloaded) (2020-10-04)
 - [DRG_SNT_3](https://github.com/DRG-developer/DRG_SNT_3) (2020-09-22)
 - [garmin_fenix3](https://github.com/kromar/garmin_fenix3) (2020-09-12)
@@ -273,6 +273,8 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
+- [polesteps](https://github.com/rgergely/polesteps) - This is a Connect IQ datafield for counting steps on compatible Garmin wearable devices when using trekking poles.  (2024-12-19)
+- [steps2fit](https://github.com/rgergely/steps2fit) - Garmin Connect IQ datafiled for counting steps during activities (2024-12-19)
 - [walker](https://github.com/wwarby/walker) - A free data field for Garmin watches to provide stats for walking activities (2024-12-13)
 - [DaylightLeft](https://github.com/rconradharris/DaylightLeft) - Daylight Left DataField for Garmin ConnectIQ Watches (2024-11-25)
 - [Fellrnrs-Datafield-ActiveLook](https://github.com/fellrnr/Fellrnrs-Datafield-ActiveLook) - Fellrnr's Modification of ActiveLook Garmin Datafield (2024-11-11)
@@ -296,15 +298,13 @@ the presentation.
 - [emtb](https://github.com/markdotai/emtb) - A data field allowing Garmin watches to show information about a Shimano STEPS e-bike. (2024-03-08)
 - [garmin-lastsplit](https://github.com/stirnim/garmin-lastsplit) - Last Split - a Garmin Connect IQ data field (2024-03-05)
 - [Sailing-Instrument](https://github.com/Fra-Sti/Sailing-Instrument) - Garmin sailing instrument connecting to a Calypso Ultrasonic (2024-02-07)
-- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [CIQ_InstantPcMAS](https://github.com/ebolefeysot/CIQ_InstantPcMAS) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
+- [CIQ_PcvVo2max](https://github.com/ebolefeysot/CIQ_PcvVo2max) - Garmin connect IQ data field to display current speed in percent of vVo2max (2024-01-05)
 - [ciq-battery-field](https://github.com/fabiobaltieri/ciq-battery-field) - Connect IQ field for battery level with Fit logging (2023-12-15)
 - [connectiq-hr-zones](https://github.com/peregin/connectiq-hr-zones) - Heart rate and zones with histogram data field for Garmin IQ (2023-11-20)
 - [UVIndexDataField](https://github.com/mattv23v/UVIndexDataField) - DataField to show UV index (2023-11-10)
 - [DataChampGarmin](https://github.com/wubbl0rz/DataChampGarmin) - More than one data field for bike computers (2023-11-04)
 - [HikeDifficulty](https://github.com/AlexBarinov/HikeDifficulty) - Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site (2023-10-28)
-- [steps2fit](https://github.com/rgergely/steps2fit) - Garmin Connect IQ datafiled for counting steps during activities (2023-10-08)
-- [polesteps](https://github.com/rgergely/polesteps) - This is a Connect IQ datafield for counting steps on compatible Garmin wearable devices when using trekking poles.  (2023-10-08)
 - [HeartRateRunner](https://github.com/roelofk/HeartRateRunner) - Garmin connect IQ HeartRateRunner fields (2023-09-21)
 - [Connect-IQ-DataField-BackHome](https://gitlab.com/ravenfeld/Connect-IQ-DataField-BackHome) - Indicates the distance and direction to be taken from the starting point of your activity (2023-09-14)
 - [Connect-IQ-DataField-OC](https://gitlab.com/ravenfeld/Connect-IQ-DataField-OC) - Datafield Garmin connect iq for orientation course (2023-09-14)
@@ -316,16 +316,16 @@ the presentation.
 - [whatpower](https://github.com/djs2014/whatpower) - What app power (2023-04-05)
 - [garmin-endurance-in-zone](https://github.com/torhovland/garmin-endurance-in-zone) - A Garmin IQ Data Field that can show time within a zone as a percentage of a target duration. (2023-02-20)
 - [HiVisRunField](https://gitlab.com/nz_brian/HiVisRunField) - Easy to read data field (2023-02-16)
-- [Connect-IQ-DataField-Speed](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed) - Colorized speed gauge (2022-12-21)
-- [Connect-IQ-DataField-VirtualPartner](https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner) - Virtual race partner (2022-12-21)
-- [Connect-IQ-DataField-GPS](https://gitlab.com/ravenfeld/Connect-IQ-DataField-GPS) - Datafield Garmin connect iq GPS (2022-12-21)
-- [Connect-IQ-DataField-Battery](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Battery) - Datafield Garmin connect iq battery (2022-12-21)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [Connect-IQ-DataField-Speed](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Speed) - Colorized speed gauge (2022-12-21)
+- [Connect-IQ-DataField-VirtualPartner](https://gitlab.com/ravenfeld/Connect-IQ-DataField-VirtualPartner) - Virtual race partner (2022-12-21)
+- [Connect-IQ-DataField-GPS](https://gitlab.com/ravenfeld/Connect-IQ-DataField-GPS) - Datafield Garmin connect iq GPS (2022-12-21)
+- [Connect-IQ-DataField-Battery](https://gitlab.com/ravenfeld/Connect-IQ-DataField-Battery) - Datafield Garmin connect iq battery (2022-12-21)
 - [EveryTile](https://github.com/to-ko/EveryTile) - DataField App for garmin edge cycling computers (2022-10-01)
 - [4caster](https://github.com/guibber/4caster) - DataField for Garmin devices that predicts milestone times based upon current speed and progress (2022-09-11)
 - [RaceWithPower](https://github.com/samueldumont/RaceWithPower) - Datafield dedicated to racing with power, for Garmin Watches (2022-07-15)
@@ -398,13 +398,16 @@ view on bike computers and outdoor handhelds. Unlike apps, Widgets time out
 after a period of inactivity and are not allowed to record activities, but they
 are also launchable at any time.
 
+- [Garmin-WeeWX](https://github.com/SylvainGa/Garmin-WeeWX) - Get WeeWX data directly from your Garmin watch (2024-12-22)
+- [Flashlight](https://github.com/SylvainGa/Flashlight) - Flashlight for Garmin watches (2024-12-22)
+- [Calculator](https://github.com/SylvainGa/Calculator) -  (2024-12-19)
+- [Tesla-Link](https://github.com/SylvainGa/Tesla-Link) - ConnectIQ widget for Tesla vehicle control (2024-12-19)
+- [GarminSmartHome](https://github.com/dabastynator/GarminSmartHome) - SmartHome client for Garmin Watches (2024-12-19)
+- [lostandfound](https://github.com/okdar/lostandfound) - Lost and Found Garmin widget (2024-12-18)
+- [garmin-divesite-weather-widget](https://github.com/mikeller/garmin-divesite-weather-widget) - Show the Weather Conditions at Your Favourite Divesite as a Widget on Your Garmin Watch. (2024-12-16)
 - [hasscontrol](https://github.com/hatl/hasscontrol) - Simple garmin widget to control home assistant scenes (2024-12-14)
-- [lostandfound](https://github.com/okdar/lostandfound) - Lost and Found Garmin widget (2024-12-13)
 - [CIQBitcoinWidget](https://github.com/11samype/CIQBitcoinWidget) - A Connect IQ widget that gets the current Bitcoin price. (2024-12-12)
-- [garmin-divesite-weather-widget](https://github.com/mikeller/garmin-divesite-weather-widget) - Show the Weather Conditions at Your Favourite Divesite as a Widget on Your Garmin Watch. (2024-12-12)
-- [Tesla-Link](https://github.com/SylvainGa/Tesla-Link) - ConnectIQ widget for Tesla vehicle control (2024-12-03)
 - [garmin-JustOneButton](https://github.com/GuMiner/garmin-JustOneButton) - A Garmin Watchface with one button to interact with a https://www.home-assistant.io/ switch (2024-11-26)
-- [GarminSmartHome](https://github.com/dabastynator/GarminSmartHome) - SmartHome client for Garmin Watches (2024-11-23)
 - [authentificator](https://github.com/jurask/authentificator) - OTP authentificator for Garmin devices (2024-11-10)
 - [evcc-garmin](https://github.com/TheNinth7/evcc-garmin) - A widget and a glance for displaying information from evcc (2024-10-18)
 - [gopro-remote-connectiq](https://github.com/ad220/gopro-remote-connectiq) - Garmin ConnectIQ widget to control a GoPro from your wrist (2024-10-17)
@@ -415,9 +418,6 @@ are also launchable at any time.
 - [emergencyinfo](https://gitlab.com/harryonline/emergencyinfo) - EmergencyInfo app for Connect IQ (2024-09-22)
 - [connectiq-sonos](https://github.com/zmullett/connectiq-sonos) - A Garmin Connect IQ watch widget that controls Sonos speaker groups. (2024-09-19)
 - [BikeLightsControl](https://github.com/maca88/BikeLightsControl) - Garmin widget for controlling ANT+ lights (2024-09-11)
-- [Garmin-WeeWX](https://github.com/SylvainGa/Garmin-WeeWX) - Get WeeWX data directly from your Garmin watch (2024-09-06)
-- [Flashlight](https://github.com/SylvainGa/Flashlight) - Flashlight for Garmin watches (2024-09-05)
-- [Calculator](https://github.com/SylvainGa/Calculator) -  (2024-09-05)
 - [Barcode-Wallet](https://github.com/macherel/Barcode-Wallet) - Display various type of barcodes (Simple barcode or 2D barcodes like QR code or Aztec code) (2024-09-01)
 - [otpauth-ciq](https://github.com/uaraven/otpauth-ciq) - ConnectIQ widget for generating TOTP authentication codes. (2024-08-31)
 - [SolarStatus-Garmin](https://github.com/dividebysandwich/SolarStatus-Garmin) - A solar status display for the Garmin Epix (2024-08-28)
@@ -513,7 +513,7 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
-- [garmin-otp-authenticator](https://github.com/ch1bo/garmin-otp-authenticator) - Garmin ConnectIQ Widget for One Time Passwords (HOTP / TOTP / Steam Guard) (2024-12-15)
+- [garmin-otp-authenticator](https://github.com/ch1bo/garmin-otp-authenticator) - Garmin ConnectIQ Widget for One Time Passwords (HOTP / TOTP / Steam Guard) (2024-12-19)
 - [mybiketraffic](https://github.com/kartoone/mybiketraffic) - ConnectIQ app for processing Garmin Varia radar data and counting vehicles. (2024-12-14)
 - [Meditate](https://github.com/dliedke/Meditate) - Totally free application developed by vtrifonov and compiled/enhanced for newer Garmin watch models by dliedke. Published in Garmin Connect IQ store at https://apps.garmin.com/en-US/apps/c5fc5ea5-7d12-4fb9-be9c-701663a39db7 (2024-12-14)
 - [garmin-pace-calculator](https://github.com/bombsimon/garmin-pace-calculator) - 👟 A Garmin app to convert speed to pace and pace to speed (2024-12-10)
@@ -575,14 +575,14 @@ FIT files.
 - [fenix-calculator](https://github.com/csekri/fenix-calculator) - Scientific calculator for Garmin watches (2023-06-03)
 - [waypoints-app](https://github.com/danielsiwiec/waypoints-app) - Easily send waypoints from Google Maps to your device. No registration required! (2023-04-11, archived)
 - [8-min-abs](https://github.com/toomasr/8-min-abs) - App for Garmin watches to follow the 8 minute abs workout (2023-03-05)
-- [Connect-IQ-App-ChronoGym](https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym) - Set count and rest timer (2022-12-21)
-- [CockpitOnlineGarminClient](https://github.com/mrohmer/CockpitOnlineGarminClient) - Garmin Watch Client for Cockpit XP Online via cockpit-online.rohmer.rocks (2022-12-18)
 
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
+- [Connect-IQ-App-ChronoGym](https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym) - Set count and rest timer (2022-12-21)
+- [CockpitOnlineGarminClient](https://github.com/mrohmer/CockpitOnlineGarminClient) - Garmin Watch Client for Cockpit XP Online via cockpit-online.rohmer.rocks (2022-12-18)
 - [myvariolite](https://github.com/ydutertre/myvariolite) -  (2022-12-14)
 - [connectiq-app-towplanesk](https://github.com/cedric-dufour/connectiq-app-towplanesk) - The Towplane Swiss Knife for Garmin ConnectIQ devices [GPLv3] (2022-12-07)
 - [connectiq-app-glidersk](https://github.com/cedric-dufour/connectiq-app-glidersk) - The Glider Swiss Knife for Garmin ConnectIQ devices [GPLv3] (2022-12-07)
@@ -710,8 +710,8 @@ Connect IQ Projects.
 
 ## Tools
 
-- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-12-15)
-- [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-12-15)
+- [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) - Utilities for optimizing monkeyc projects (2024-12-22)
+- [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) - A VSCode extension for Garmin MonkeyC (2024-12-19)
 - [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) - A prettier plugin for Garmin monkey-c (2024-12-15)
 - [GarminDB](https://github.com/tcgoetz/GarminDB) - Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks. (2024-12-12)
 - [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) - Tools for Garmin CIQ developers (2024-09-15)
@@ -743,8 +743,8 @@ Connect IQ Projects.
 
 ## Miscellaneous
 
-- [open-location-code](https://github.com/google/open-location-code) - Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. (2024-12-13)
-- [home-assistant-garmin_connect](https://github.com/cyberjunky/home-assistant-garmin_connect) - The Garmin Connect integration allows you to expose data from Garmin Connect to Home Assistant. (2024-12-12)
+- [open-location-code](https://github.com/google/open-location-code) - Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. (2024-12-20)
+- [home-assistant-garmin_connect](https://github.com/cyberjunky/home-assistant-garmin_connect) - The Garmin Connect integration allows you to expose data from Garmin Connect to Home Assistant. (2024-12-20)
 - [MonkeyAOC](https://github.com/YAWNICK/MonkeyAOC) - [Advent of Code](https://adventofcode.com) in Monkey C (2024-12-03)
 - [NextMatchReminder](https://github.com/ZachXu/NextMatchReminder) - Garmin Application including WatchFace project ,Widget project and a share lib which synchronizing data  (2024-10-14)
 - [garmin-complicate-circle](https://github.com/sunpazed/garmin-complicate-circle) - An example application that demonstrates system6 complications (2024-08-30)
