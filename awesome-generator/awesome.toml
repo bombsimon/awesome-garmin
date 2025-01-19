@@ -18,6 +18,7 @@
 "https://github.com/HanSolo/digital" = {}
 "https://github.com/HanSolo/digital5" = {}
 "https://github.com/HikiQ/DistanceFace" = {}
+"https://github.com/Holger-L/EasyDisplay" = {}
 "https://github.com/HookyQR/TidyWatch" = {}
 "https://github.com/IanGrainger/philippe-watchface" = {}
 "https://github.com/JoopVerdoorn/DR4c0" = {}
@@ -143,6 +144,7 @@
 "https://github.com/matei-tm/garmin-m8m" = {}
 "https://github.com/miamo/batman" = {}
 "https://github.com/micooke/LetsGetDigital" = {}
+"https://github.com/modus75/RaVel-GarminDigitalWatchFace" = {}
 "https://github.com/mpl75/anyaWatches" = {}
 "https://github.com/mrmarbury/garmin_mnmlst_watchface" = {}
 "https://github.com/myneur/late" = {}
@@ -534,6 +536,7 @@
 "https://github.com/nubissurveying/Garmin_vivoactiveHR" = {}
 "https://github.com/pchng/connect-iq-totp" = {}
 "https://github.com/pedlarstudios/EggTimer" = {}
+"https://github.com/pedrorijo91/garmin-padel" = {}
 "https://github.com/phil-mitchell/garmin-curling" = {}
 "https://github.com/pintail105/SailingTools" = {}
 "https://github.com/pukao/GarminEmergencyContact" = {}
@@ -598,17 +601,24 @@
 "https://gitlab.com/waterkip/opn-monkeyc" = {}
 
 [tools]
+"https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/bombsimon/garmin-screenshot" = {}
 "https://github.com/cedric-dufour/connectiq-app-rawlogger" = {}
+"https://github.com/cjsmith/react-native-connect-iq-mobile-sdk" = {}
 "https://github.com/flocsy/garmin-dev-tools" = {}
 "https://github.com/ggoraa/kumitateru" = {}
 "https://github.com/hacdias/flowfit" = {}
+"https://github.com/jagbanana/jg-garmin-excel-csv" = {}
 "https://github.com/kalemena/docker-connectiq" = {}
+"https://github.com/lindig/fit" = {}
 "https://github.com/markw65/monkeyc-optimizer" = {}
 "https://github.com/markw65/prettier-extension-monkeyc" = {}
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
+"https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connect-iq-tester`"}
+"https://github.com/matco/connectiq-tester" = {}
 "https://github.com/pzl/ciqdb" = {}
+"https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
@@ -632,6 +642,7 @@
 "https://developer.garmin.com/connect-iq/overview" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
 "https://forums.garmin.com/developer/connect-iq" = { name = "Connect IQ developer forum", description = "Forum to talk anything Connect IQ related" }
 "https://garmin.watchfacebuilder.com" = { name = "Watch Face Builder", description = "Build (or download) watch faces in the browser" }
+"https://github.com/AndrewKhassapov/connect-iq" = {}
 "https://github.com/Artaud/CIQ-Comm-failure-sample" = {}
 "https://github.com/Likenttt/garmin-games" = {}
 "https://github.com/Peterdedecker/connectiq" = {}
