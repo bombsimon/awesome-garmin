@@ -1,4 +1,6 @@
 [watch_faces]
+"https://github.com/bhugh/ElegantAnalog-Watchface" = {}
+"https://github.com/BDH-Software/ThePlanets-Watchface" = {}
 "https://github.com/30Wedge/SwagginNumerals" = {}
 "https://github.com/ATGH15102AFMLD/Watchface-Cuphead" = {}
 "https://github.com/AYCHPlus/AYCHFace" = {}
@@ -323,6 +325,9 @@
 "https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
 
 [widgets]
+"https://github.com/bhugh/slope-widget" = {}
+"https://github.com/BDH-Software/ThePlanets-Widget" = {}
+"https://github.com/TimZander/slope-widget" = {}
 "https://github.com/11samype/CIQBitcoinWidget" = {}
 "https://github.com/GuMiner/garmin-JustOneButton" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
@@ -423,6 +428,8 @@
 "https://gitlab.com/harryonline/timerwidget" = {}
 
 [device_apps]
+"https://github.com/bhugh/ThePlanets" = {}
+"https://github.com/BDH-Software/TheStars" = {}
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
 "https://github.com/BleachDev/GarminQ" = {}
 "https://github.com/BleachDev/Rainy" = {}
