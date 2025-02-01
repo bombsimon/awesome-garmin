@@ -48,6 +48,8 @@ jobs:
             else
               gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
             fi
+
+            exit 1
           else
             if [ -n "$EXISTING_COMMENT" ]; then
               # Currently the gh cli and the API fail to delete comments so we
