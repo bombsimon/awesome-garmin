@@ -1,10 +1,9 @@
 [watch_faces]
-"https://github.com/bhugh/ElegantAnalog-Watchface" = {}
-"https://github.com/BDH-Software/ThePlanets-Watchface" = {}
 "https://github.com/30Wedge/SwagginNumerals" = {}
 "https://github.com/ATGH15102AFMLD/Watchface-Cuphead" = {}
 "https://github.com/AYCHPlus/AYCHFace" = {}
 "https://github.com/AmitPandya007/GarminSampleWatch" = {}
+"https://github.com/BDH-Software/ThePlanets-Watchface" = {}
 "https://github.com/BodyFatControl/garmin_watchface" = {}
 "https://github.com/Chemaclass/BinaryWatchFace" = {}
 "https://github.com/Chiocciola/Graphomatic" = {}
@@ -80,6 +79,7 @@
 "https://github.com/ayaromenok/WatchFaceMonospace" = {}
 "https://github.com/backface/AnalogSeed" = {}
 "https://github.com/berryk/ConnectIQ-WorldTime-Face" = {}
+"https://github.com/bhugh/ElegantAnalog-Watchface" = {}
 "https://github.com/blotspot/garmin-watchface-protomolecule" = {}
 "https://github.com/bodnar13/JBWatch" = {}
 "https://github.com/bodyazn/COVID19WF" = {}
@@ -325,10 +325,8 @@
 "https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
 
 [widgets]
-"https://github.com/bhugh/slope-widget" = {}
-"https://github.com/BDH-Software/ThePlanets-Widget" = {}
-"https://github.com/TimZander/slope-widget" = {}
 "https://github.com/11samype/CIQBitcoinWidget" = {}
+"https://github.com/BDH-Software/ThePlanets-Widget" = {}
 "https://github.com/GuMiner/garmin-JustOneButton" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
 "https://github.com/Likenttt/DogecoinToTheMoon" = {}
@@ -339,6 +337,7 @@
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
 "https://github.com/SylvainGa/Tesla-Link" = {}
 "https://github.com/TheNinth7/evcc-garmin" = { description = "A widget and a glance for displaying information from evcc" }
+"https://github.com/TimZander/slope-widget" = {}
 "https://github.com/Vertumnus/garmin-ioBrokerVis" = {}
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
 "https://github.com/ad220/gopro-remote-connectiq" = {}
@@ -352,6 +351,7 @@
 "https://github.com/bbary/Jokes" = {}
 "https://github.com/bbary/book_read_counters" = { description = "Basic counter widget with 3 different counters to keep track of book reading or memorization" }
 "https://github.com/bbary/counters" = {}
+"https://github.com/bhugh/slope-widget" = {}
 "https://github.com/blaskovicz/garmin-nest-camera-control" = {}
 "https://github.com/bombsimon/garmin-swish-qr" = {}
 "https://github.com/britiger/criticalmaps-garmin-widget" = {}
@@ -428,9 +428,8 @@
 "https://gitlab.com/harryonline/timerwidget" = {}
 
 [device_apps]
-"https://github.com/bhugh/ThePlanets" = {}
-"https://github.com/BDH-Software/TheStars" = {}
 "https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
+"https://github.com/BDH-Software/TheStars" = {}
 "https://github.com/BleachDev/GarminQ" = {}
 "https://github.com/BleachDev/Rainy" = {}
 "https://github.com/CernovApps/rubik-watch-timer" = { description = "This is a timer for Rubik Cube, with features that makes it similar to the WCA rules." }
@@ -466,6 +465,7 @@
 "https://github.com/arquicanedo/barbecueboss" = {}
 "https://github.com/bbary/Salati" = {}
 "https://github.com/bderusha/GarminIQ-CoachCompanion" = {}
+"https://github.com/bhugh/ThePlanets" = {}
 "https://github.com/blackdogit/connectiq-apps" = {}
 "https://github.com/blaskovicz/garmin-tplink-cloud-control" = {}
 "https://github.com/blkfribourg/WheelDash" = { description = "This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV" }
