@@ -145,7 +145,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     let resources = read_toml_file()?;
     let octocrab = Arc::new(
         octocrab::OctocrabBuilder::new()
-            .personal_token(std::env::var("GITHUB_TOKEN").unwrap())
+            .personal_token(std::env::var("GITHUB_TOKEN")?)
             .build()?,
     );
     let glab = Arc::new(
@@ -322,7 +322,7 @@ async fn update_gitlab_resource(
         .project(owner_repo)
         .build()
         .unwrap();
-    let result: GitLabProject = match endpoint.query_async(&*glab).await {
+    let result: GitLabProject = match endpoint.query_async(glab.as_ref()).await {
         Ok(result) => result,
         Err(err) => {
             eprintln!("⚠️ Could not get {}: {err}", resource_url);
