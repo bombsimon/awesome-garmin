@@ -1,6 +1,6 @@
 use futures::StreamExt;
 use gitlab::{api::AsyncQuery, AsyncGitlab};
-use handlebars::{no_escape, Handlebars};
+use handlebars::{no_escape, Context, Handlebars, Helper, HelperResult, Output, RenderContext};
 use octocrab::Octocrab;
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
@@ -192,6 +192,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     let mut hb = Handlebars::new();
     hb.register_escape_fn(no_escape);
     hb.register_template_string("readme", TEMPLATE).unwrap();
+    hb.register_helper("resourceList", Box::new(resource_list_helper));
 
     {
         let mut d = data.lock().unwrap();
@@ -208,6 +209,81 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     println!("{}", hb.render("readme", &template)?);
 
     Ok(())
+}
+
+fn resource_list_helper(
+    h: &Helper,
+    _: &Handlebars,
+    _: &Context,
+    _: &mut RenderContext,
+    out: &mut dyn Output,
+) -> HelperResult {
+    let mut output = String::new();
+
+    let show_description = h
+        .param(2)
+        .map_or(true, |p| p.value().as_bool().unwrap_or(true));
+
+    let active = h.param(0).unwrap().value();
+    output.push_str(&resources_to_str(active, show_description));
+
+    if let Some(inactive_list) = h.param(1) {
+        let inactive = resources_to_str(inactive_list.value(), show_description);
+        if !inactive.is_empty() {
+            output.push_str(
+                r#"
+### Older resources
+
+<details>
+  <summary>Click to expand</summary>
+
+"#,
+            );
+
+            output.push_str(&inactive);
+            output.push_str("\n</details>");
+        }
+    }
+
+    out.write(output.as_str())?;
+
+    Ok(())
+}
+
+fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> String {
+    let mut output = String::new();
+
+    if let Some(active_list) = resources.as_array() {
+        for resource in active_list {
+            if let Some(name) = resource.get("name").and_then(|n| n.as_str()) {
+                let url = resource.get("url").and_then(|u| u.as_str()).unwrap_or("#");
+                let description = resource.get("description").and_then(|d| d.as_str());
+                let last_updated = resource.get("last_updated").and_then(|l| l.as_str());
+                let is_archived = resource.get("is_archived").and_then(|a| a.as_bool());
+
+                output.push_str(&format!("- [{}]({})", name, url));
+
+                if show_description {
+                    if let Some(description) = description {
+                        output.push_str(&format!(" - {description}"));
+                    }
+                }
+
+                if let Some(date) = last_updated {
+                    output.push_str(&format!(" ({date}"));
+                    if let Some(true) = is_archived {
+                        output.push_str(", archived");
+                    }
+
+                    output.push(')');
+                }
+
+                output.push('\n');
+            }
+        }
+    }
+
+    output
 }
 
 /// Read the toml file and return the prased file as a [`TomlFile`].

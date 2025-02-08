@@ -44,20 +44,7 @@ noise.
 Garmin’s wearable devices. These application types are limited some ways to
 allow them to have minimal impact on the device’s battery life.
 
-{{#each resources.watch_face_active}}
-- [{{this.name}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-### Older resources
-
-<details>
-  <summary>Click to expand</summary>
-
-{{#each resources.watch_face_inactive}}
-- [{{this.name}}]({{this.url}}){{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-</details>
+{{{resourceList resources.watch_face_active resources.watch_face_inactive false}}}
 
 ## Data fields
 
@@ -67,20 +54,7 @@ a system that not only makes it easy for a user to make a quick data field based
 off our workout data, but also gives the developer the the ability to customize
 the presentation.
 
-{{#each resources.data_field_active}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-### Older resources
-
-<details>
-  <summary>Click to expand</summary>
-
-{{#each resources.data_field_inactive}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-</details>
+{{{resourceList resources.data_field_active resources.data_field_inactive}}}
 
 ## Widgets
 
@@ -92,20 +66,7 @@ view on bike computers and outdoor handhelds. Unlike apps, Widgets time out
 after a period of inactivity and are not allowed to record activities, but they
 are also launchable at any time.
 
-{{#each resources.widget_active}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-### Older resources
-
-<details>
-  <summary>Click to expand</summary>
-
-{{#each resources.widget_inactive}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-</details>
+{{{resourceList resources.widget_active resources.widget_inactive}}}
 
 ## Device Apps
 
@@ -115,20 +76,7 @@ designer. They also provide the most access to the capabilities of the wearable
 device, such as accessing ANT+ sensors, the accelerometer and reading/recording
 FIT files.
 
-{{#each resources.device_app_active}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-### Older resources
-
-<details>
-  <summary>Click to expand</summary>
-
-{{#each resources.device_app_inactive}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
-
-</details>
+{{{resourceList resources.device_app_active resources.device_app_inactive}}}
 
 ## Audio content providers
 
@@ -137,9 +85,7 @@ lifestyle users who want to listen to music without carrying their phone on
 their rides, runs or other activities. The media player allows the user to
 listen to their music, podcasts, and audio-books on the go.
 
-{{#each resources.audio_content_provider}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
+{{{resourceList resources.audio_content_provider_active}}}
 
 ## Barrels
 
@@ -147,27 +93,19 @@ Developers can create custom Monkey C libraries, called [Monkey Barrels], that
 contain source code and resource information that are easily shared across
 Connect IQ Projects.
 
-{{#each resources.barrel}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
+{{{resourceList resources.barrel}}}
 
 ## Tools
 
-{{#each resources.tool}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
+{{{resourceList resources.tool}}}
 
 ## Companion apps
 
-{{#each resources.companion_app}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
+{{{resourceList resources.companion_app}}}
 
 ## Miscellaneous
 
-{{#each resources.miscellaneous}}
-- [{{this.name}}]({{this.url}}) - {{this.description}}{{#if this.last_updated}} ({{this.last_updated}}{{#if this.is_archived}}, archived{{/if}}){{/if}}
-{{/each}}
+{{{resourceList resources.miscellaneous}}}
 
 [awesome-toml]: ./awesome-generator/awesome.toml
 [Watch faces]: https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/#watchfaces
