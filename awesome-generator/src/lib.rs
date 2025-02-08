@@ -301,7 +301,7 @@ fn read_toml_file() -> anyhow::Result<TomlFile> {
 fn sorted_resources(resources: &mut [GarminResource]) {
     resources.sort_by(|a, b| match (a.last_updated, b.last_updated) {
         (None, None) => a.name.cmp(&b.name),
-        (Some(a), Some(b)) => b.cmp(&a),
+        (Some(u1), Some(u2)) => u2.cmp(&u1).then(a.name.cmp(&b.name)),
         (None, Some(_)) => std::cmp::Ordering::Greater,
         (Some(_), None) => std::cmp::Ordering::Less,
     });
@@ -560,7 +560,50 @@ mod ymd_date {
 mod test {
     use std::sync::Arc;
 
-    use crate::TomlFileItem;
+    use crate::{sorted_resources, GarminResource, TomlFileItem};
+
+    #[test]
+    fn same_updated_should_sort_on_name() {
+        let t0 = chrono::Utc::now();
+        let t1 = t0 - std::time::Duration::from_secs(5);
+
+        let mut r = vec![
+            GarminResource {
+                name: "Name A".to_string(),
+                last_updated: Some(t1),
+                description: None,
+                url: "#".to_string(),
+                is_archived: false,
+            },
+            GarminResource {
+                name: "Name C".to_string(),
+                last_updated: Some(t0),
+                description: None,
+                url: "#".to_string(),
+                is_archived: false,
+            },
+            GarminResource {
+                name: "Name B".to_string(),
+                last_updated: Some(t0),
+                description: None,
+                url: "#".to_string(),
+                is_archived: false,
+            },
+        ];
+
+        sorted_resources(&mut r);
+
+        let names = r.into_iter().map(|n| n.name).collect::<Vec<_>>();
+
+        assert_eq!(
+            names,
+            vec![
+                "Name B".to_string(),
+                "Name C".to_string(),
+                "Name A".to_string()
+            ]
+        );
+    }
 
     #[tokio::test]
     async fn test_github() {
