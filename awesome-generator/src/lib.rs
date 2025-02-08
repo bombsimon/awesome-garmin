@@ -232,18 +232,17 @@ fn resource_list_helper(
     if let Some(inactive_list) = h.param(1) {
         let inactive = resources_to_str(inactive_list.value(), show_description);
         if !inactive.is_empty() {
-            output.push_str(
+            output.push_str(&format!(
                 r#"
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
-"#,
-            );
+{inactive}
 
-            output.push_str(&inactive);
-            output.push_str("\n</details>");
+</details>"#
+            ));
         }
     }
 
@@ -264,7 +263,7 @@ fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> St
                 let last_updated = resource.get("last_updated").and_then(|l| l.as_str());
                 let is_archived = resource.get("is_archived").and_then(|a| a.as_bool());
 
-                output.push_str(&format!("- [{}]({})", name, url));
+                output.push_str(&format!("- [{name}]({url})"));
 
                 if show_description {
                     if let Some(description) = description {
