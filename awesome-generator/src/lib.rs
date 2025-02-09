@@ -255,38 +255,54 @@ fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> St
     let mut output = String::new();
 
     if let Some(active_list) = resources.as_array() {
+        if show_description {
+            output.push_str("| Name | Description | Last&nbsp;updated | Stars |\n");
+            output.push_str("| ---- | ----------- | ------------ | ----- |\n");
+        } else {
+            output.push_str("| Name | Last&nbsp;updated | Stars |\n");
+            output.push_str("| ---- | ------------ | ----- |\n");
+        }
+
         for resource in active_list {
             if let Some(name) = resource.get("name").and_then(|n| n.as_str()) {
                 let url = resource.get("url").and_then(|u| u.as_str()).unwrap_or("#");
-                let description = resource.get("description").and_then(|d| d.as_str());
+                let description = resource
+                    .get("description")
+                    .and_then(|d| d.as_str().map(|v| v.replace("|", "-")));
                 let star_count = resource.get("star_count").and_then(|s| s.as_u64());
                 let last_updated = resource.get("last_updated").and_then(|l| l.as_str());
                 let is_archived = resource.get("is_archived").and_then(|a| a.as_bool());
 
-                output.push_str(&format!("- [{name}]({url})"));
+                output.push_str(&format!("| [{name}]({url}) "));
 
                 if show_description {
                     if let Some(description) = description {
-                        output.push_str(&format!(" - {description}"));
+                        output.push_str(&format!("| {description} "));
+                    } else {
+                        output.push_str("| ");
                     }
                 }
+
+                let is_archived = if let Some(true) = is_archived {
+                    "🗄️"
+                } else {
+                    ""
+                };
 
                 if let Some(date) = last_updated {
-                    output.push_str(&format!(" ({date}"));
-                    if let Some(true) = is_archived {
-                        output.push_str(", archived");
-                    }
-
-                    if let Some(stars) = star_count {
-                        if stars > 0 {
-                            output.push_str(&format!(", ⭐{stars}"));
-                        }
-                    }
-
-                    output.push(')');
+                    output.push_str(&format!("| {date}&nbsp;{is_archived}"));
+                } else {
+                    output.push_str("| {is_archived}");
                 }
 
-                output.push('\n');
+                if let Some(stars) = star_count {
+                    output.push_str("| ");
+                    if stars > 0 {
+                        output.push_str(&format!("⭐{stars}"));
+                    }
+                }
+
+                output.push_str("|\n");
             }
         }
     }
@@ -367,8 +383,12 @@ async fn update_github_resource(
     let repo = owner_repo.next().unwrap();
     let result = match octocrab.repos(owner, repo).get().await {
         Ok(result) => result,
+        Err(octocrab::Error::GitHub { source, .. }) => {
+            eprintln!("⚠️ Could not get {resource_url}: {}", source.message);
+            return (None, false);
+        }
         Err(err) => {
-            eprintln!("⚠️ Could not get {}: {err}", resource_url);
+            eprintln!("⚠️ Could not get {resource_url}: {err}");
             return (None, false);
         }
     };
@@ -548,7 +568,7 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
 mod ymd_date {
     use serde::{self, Serializer};
 
-    const FORMAT: &str = "%Y-%m-%d";
+    const FORMAT: &str = "%Y&#x2011;%m&#x2011;%d";
 
     pub fn serialize<S>(
         date: &Option<chrono::DateTime<chrono::Utc>>,
