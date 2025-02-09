@@ -118,6 +118,7 @@ struct GarminResource {
     #[serde(with = "ymd_date")]
     last_updated: Option<chrono::DateTime<chrono::Utc>>,
     is_archived: bool,
+    star_count: Option<u32>,
 }
 
 /// The data that is passed to render the template. It contains all the resolved Garmin resources
@@ -136,6 +137,7 @@ struct GitLabProject {
     description: Option<String>,
     last_activity_at: chrono::DateTime<chrono::Utc>,
     archived: bool,
+    star_count: u32,
 }
 
 /// Generate the README based on all the contents in `awesome.toml`. If the element is a link to
@@ -230,18 +232,17 @@ fn resource_list_helper(
     if let Some(inactive_list) = h.param(1) {
         let inactive = resources_to_str(inactive_list.value(), show_description);
         if !inactive.is_empty() {
-            output.push_str(
+            output.push_str(&format!(
                 r#"
 ### Older resources
 
 <details>
   <summary>Click to expand</summary>
 
-"#,
-            );
+{inactive}
 
-            output.push_str(&inactive);
-            output.push_str("\n</details>");
+</details>"#
+            ));
         }
     }
 
@@ -254,31 +255,54 @@ fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> St
     let mut output = String::new();
 
     if let Some(active_list) = resources.as_array() {
+        if show_description {
+            output.push_str("| Name | Description | Last&nbsp;updated | Stars |\n");
+            output.push_str("| ---- | ----------- | ----------------- | ----- |\n");
+        } else {
+            output.push_str("| Name | Last&nbsp;updated | Stars |\n");
+            output.push_str("| ---- | ----------------- | ----- |\n");
+        }
+
         for resource in active_list {
             if let Some(name) = resource.get("name").and_then(|n| n.as_str()) {
                 let url = resource.get("url").and_then(|u| u.as_str()).unwrap_or("#");
-                let description = resource.get("description").and_then(|d| d.as_str());
+                let description = resource
+                    .get("description")
+                    .and_then(|d| d.as_str().map(|v| v.replace("|", "-")));
+                let star_count = resource.get("star_count").and_then(|s| s.as_u64());
                 let last_updated = resource.get("last_updated").and_then(|l| l.as_str());
                 let is_archived = resource.get("is_archived").and_then(|a| a.as_bool());
 
-                output.push_str(&format!("- [{}]({})", name, url));
+                output.push_str(&format!("| [{name}]({url}) "));
 
                 if show_description {
                     if let Some(description) = description {
-                        output.push_str(&format!(" - {description}"));
+                        output.push_str(&format!("| {description} "));
+                    } else {
+                        output.push_str("| ");
                     }
                 }
+
+                let is_archived = if let Some(true) = is_archived {
+                    "🗄️"
+                } else {
+                    ""
+                };
 
                 if let Some(date) = last_updated {
-                    output.push_str(&format!(" ({date}"));
-                    if let Some(true) = is_archived {
-                        output.push_str(", archived");
-                    }
-
-                    output.push(')');
+                    output.push_str(&format!("| {date}&nbsp;{is_archived} "));
+                } else {
+                    output.push_str("| {is_archived} ");
                 }
 
-                output.push('\n');
+                if let Some(stars) = star_count {
+                    output.push_str("| ");
+                    if stars > 0 {
+                        output.push_str(&format!("⭐{stars} "));
+                    }
+                }
+
+                output.push_str("|\n");
             }
         }
     }
@@ -331,6 +355,7 @@ async fn update_resource(
                 url: resource_url,
                 last_updated: None,
                 is_archived: false,
+                star_count: None,
             }),
             true,
         )
@@ -358,8 +383,12 @@ async fn update_github_resource(
     let repo = owner_repo.next().unwrap();
     let result = match octocrab.repos(owner, repo).get().await {
         Ok(result) => result,
+        Err(octocrab::Error::GitHub { source, .. }) => {
+            eprintln!("⚠️ Could not get {resource_url}: {}", source.message);
+            return (None, false);
+        }
         Err(err) => {
-            eprintln!("⚠️ Could not get {}: {err}", resource_url);
+            eprintln!("⚠️ Could not get {resource_url}: {err}");
             return (None, false);
         }
     };
@@ -375,6 +404,7 @@ async fn update_github_resource(
         url: resource_url.to_string(),
         last_updated: result.pushed_at,
         is_archived: result.archived.unwrap_or_default(),
+        star_count: result.stargazers_count,
     };
 
     let is_old = if let Some(pushed_at) = result.pushed_at {
@@ -417,6 +447,7 @@ async fn update_gitlab_resource(
         url: resource_url.to_string(),
         last_updated: Some(result.last_activity_at),
         is_archived: result.archived,
+        star_count: Some(result.star_count),
     };
 
     (
@@ -537,7 +568,7 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
 mod ymd_date {
     use serde::{self, Serializer};
 
-    const FORMAT: &str = "%Y-%m-%d";
+    const FORMAT: &str = "%Y&#x2011;%m&#x2011;%d";
 
     pub fn serialize<S>(
         date: &Option<chrono::DateTime<chrono::Utc>>,
@@ -574,6 +605,7 @@ mod test {
                 description: None,
                 url: "#".to_string(),
                 is_archived: false,
+                star_count: None,
             },
             GarminResource {
                 name: "Name C".to_string(),
@@ -581,6 +613,7 @@ mod test {
                 description: None,
                 url: "#".to_string(),
                 is_archived: false,
+                star_count: None,
             },
             GarminResource {
                 name: "Name B".to_string(),
@@ -588,6 +621,7 @@ mod test {
                 description: None,
                 url: "#".to_string(),
                 is_archived: false,
+                star_count: None,
             },
         ];
 
@@ -625,6 +659,7 @@ mod test {
         assert!(resource.is_some());
 
         let resource_data = resource.unwrap();
+        assert!(resource_data.star_count.unwrap_or(0) >= 1);
         assert!(resource_data.description.is_some());
         assert_eq!(resource_data.name, "garmin-seaside".to_string());
         assert_eq!(resource_data.url, url.to_string());
@@ -651,6 +686,7 @@ mod test {
         assert!(resource.is_some());
 
         let resource_data = resource.unwrap();
+        assert!(resource_data.star_count.unwrap_or(0) >= 1);
         assert!(resource_data.description.is_some());
         assert_eq!(resource_data.name, "Plotty McClockface".to_string());
         assert_eq!(resource_data.url, url.to_string());
