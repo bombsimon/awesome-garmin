@@ -205,7 +205,6 @@
 "https://github.com/wolffshots/snout" = {}
 "https://github.com/worksasdesigned/z1_watchface" = {}
 "https://github.com/wwarby/iconic" = {}
-"https://github.com/xuxumatu/marathon" = {}
 "https://github.com/yarmatr/BGConnectUI" = {}
 "https://github.com/zRenard/zRenardWatch" = {}
 "https://github.com/zRenard/zRenardWatch2" = {}
@@ -495,7 +494,6 @@
 "https://github.com/derjust/sos-now" = {}
 "https://github.com/dkappler/kraken" = {}
 "https://github.com/dliedke/Meditate" = {}
-"https://github.com/dmrrlc/connectiq-sailing" = { description = "Sailing app for connectIQ Garmin fenix 3" }
 "https://github.com/eden159/garmin-checkpoint" = { description = "For people who want to know when the next checkpoint for a competition is" }
 "https://github.com/eferreyr/SimonGame" = {}
 "https://github.com/electrofloat/BPTransport-Garmin" = { description = "A Garmin Connect IQ app to view realtime public transport data" }
