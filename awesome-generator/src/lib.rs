@@ -257,10 +257,10 @@ fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> St
     if let Some(active_list) = resources.as_array() {
         if show_description {
             output.push_str("| Name | Description | Last&nbsp;updated | Stars |\n");
-            output.push_str("| ---- | ----------- | ------------ | ----- |\n");
+            output.push_str("| ---- | ----------- | ----------------- | ----- |\n");
         } else {
             output.push_str("| Name | Last&nbsp;updated | Stars |\n");
-            output.push_str("| ---- | ------------ | ----- |\n");
+            output.push_str("| ---- | ----------------- | ----- |\n");
         }
 
         for resource in active_list {
@@ -290,15 +290,15 @@ fn resources_to_str(resources: &serde_json::Value, show_description: bool) -> St
                 };
 
                 if let Some(date) = last_updated {
-                    output.push_str(&format!("| {date}&nbsp;{is_archived}"));
+                    output.push_str(&format!("| {date}&nbsp;{is_archived} "));
                 } else {
-                    output.push_str("| {is_archived}");
+                    output.push_str("| {is_archived} ");
                 }
 
                 if let Some(stars) = star_count {
                     output.push_str("| ");
                     if stars > 0 {
-                        output.push_str(&format!("⭐{stars}"));
+                        output.push_str(&format!("⭐{stars} "));
                     }
                 }
 
