@@ -605,6 +605,20 @@
 "https://github.com/vtrifonov-esfiddle/ConnectIqDataPickers" = {}
 "https://gitlab.com/waterkip/opn-monkeyc" = {}
 
+[companion_apps]
+"https://github.com/AldoSusanto/mHealth-Project" = {}
+"https://github.com/Cougargriff/SensorTriggerIQ" = {}
+"https://github.com/MatyasKriz/ios-connect-iq-comms" = {}
+"https://github.com/Wheellog/Companion.Garmin" = {}
+"https://github.com/dougw/Garmin-ExampleApp-Swift" = {}
+"https://github.com/gimportexportdevs/gexporter" = {}
+"https://github.com/gimportexportdevs/gimporter" = {}
+"https://github.com/grigorye/Handsfree" = {}
+"https://github.com/kite247/Onewheel2Garmin" = {}
+"https://github.com/robertmpowell/OBD2Reader" = {}
+"https://github.com/starryalley/Unquestionify-android" = {}
+"https://github.com/urbandroid-team/Sleep-as-Android-Garmin-Addon" = {}
+
 [tools]
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
@@ -623,26 +637,13 @@
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
 "https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connect-iq-tester`"}
 "https://github.com/matco/connectiq-tester" = {}
+"https://github.com/matin/garth" = {}
 "https://github.com/pzl/ciqdb" = {}
 "https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
-
-[companion_apps]
-"https://github.com/AldoSusanto/mHealth-Project" = {}
-"https://github.com/Cougargriff/SensorTriggerIQ" = {}
-"https://github.com/MatyasKriz/ios-connect-iq-comms" = {}
-"https://github.com/Wheellog/Companion.Garmin" = {}
-"https://github.com/dougw/Garmin-ExampleApp-Swift" = {}
-"https://github.com/gimportexportdevs/gexporter" = {}
-"https://github.com/gimportexportdevs/gimporter" = {}
-"https://github.com/grigorye/Handsfree" = {}
-"https://github.com/kite247/Onewheel2Garmin" = {}
-"https://github.com/robertmpowell/OBD2Reader" = {}
-"https://github.com/starryalley/Unquestionify-android" = {}
-"https://github.com/urbandroid-team/Sleep-as-Android-Garmin-Addon" = {}
 
 [miscellaneous]
 "https://developer.garmin.com/connect-iq/overview" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
