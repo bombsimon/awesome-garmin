@@ -23,6 +23,24 @@ const MAX_CONCURRENT_REQUESTS: usize = 20;
 /// might still be useful for reference but are put away under a separate menu to reduce noise.
 const MAX_AGE_BEFORE_OLD: std::time::Duration = std::time::Duration::from_secs(86400 * 365 * 2);
 
+/// [`GarminResources`] is a nested [`BTreeMap`] that contains each resource type and for each type
+/// one active and one inactive key with a list of resources. The content looks something like
+/// this:
+///
+/// ```json
+/// {
+///   "watch_face": {
+///     "active": [ resource_1, resource_2, resource_3 ],
+///     "inactive": [ resource_4 ]
+///   },
+///   "device_app": {
+///     "active": [ resource_5, resource_6 ],
+///     "inactive": []
+///   }
+/// }
+/// ```
+type GarminResources = BTreeMap<String, BTreeMap<String, Vec<GarminResource>>>;
+
 /// A resource type is the type a resource can have mapped to the Garmin ecosystem. This also
 /// includes some extra types for those projects not related to device app development.
 /// https://developer.garmin.com/connect-iq/connect-iq-basics/app-types/
@@ -55,26 +73,35 @@ impl TryFrom<String> for ResourceType {
 }
 
 impl ResourceType {
-    /// The map key is the key that will be used in the [`BTreeMap`] used for rendering the
-    /// template file. Resources that have a section for old/inactive resources will have two keys,
-    /// one prefixed `_active` and one prefixed `_inactive`.
-    fn map_key(&self, is_old: bool) -> String {
-        let key = match self {
-            Self::WatchFace => "watch_face",
-            ResourceType::DataField => "data_field",
-            ResourceType::Widget => "widget",
-            ResourceType::DeviceApp => "device_app",
-            ResourceType::AudioContentProvider => return "audio_content_provider".to_string(),
-            ResourceType::Barrel => return "barrel".to_string(),
-            ResourceType::Tool => return "tool".to_string(),
-            ResourceType::CompanionApp => return "companion_app".to_string(),
-            ResourceType::Miscellaneous => return "miscellaneous".to_string(),
+    /// The status key will be based on the cut-off date for some resource types but not all. For
+    /// the specified resource types we never put them in the `inactive` key since we always want
+    /// to display them.
+    fn status_key(&self, is_old: bool) -> String {
+        let inactive = match self {
+            ResourceType::AudioContentProvider
+            | ResourceType::Barrel
+            | ResourceType::Tool
+            | ResourceType::CompanionApp
+            | ResourceType::Miscellaneous => false,
+            _ => is_old,
         };
 
-        if is_old {
-            format!("{}_inactive", key)
-        } else {
-            format!("{}_active", key)
+        String::from(if inactive { "inactive" } else { "active" })
+    }
+}
+
+impl std::fmt::Display for ResourceType {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            Self::WatchFace => write!(f, "watch_face"),
+            Self::DataField => write!(f, "data_field"),
+            Self::Widget => write!(f, "widget"),
+            Self::DeviceApp => write!(f, "device_app"),
+            Self::AudioContentProvider => write!(f, "audio_content_provider"),
+            Self::Barrel => write!(f, "barrel"),
+            Self::Tool => write!(f, "tool"),
+            Self::CompanionApp => write!(f, "companion_app"),
+            Self::Miscellaneous => write!(f, "miscellaneous"),
         }
     }
 }
@@ -125,7 +152,7 @@ struct GarminResource {
 /// grouped by type and a timestamp to set when the file was generated.
 #[derive(Serialize)]
 struct Template {
-    resources: BTreeMap<String, Vec<GarminResource>>,
+    resources: GarminResources,
     updated_at: String,
 }
 
@@ -156,8 +183,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
             .await?,
     );
 
-    let data: Arc<Mutex<BTreeMap<String, Vec<GarminResource>>>> =
-        Arc::new(Mutex::new(BTreeMap::new()));
+    let data: Arc<Mutex<GarminResources>> = Arc::new(Mutex::new(BTreeMap::new()));
 
     let resource_types = vec![
         (ResourceType::WatchFace, resources.watch_faces),
@@ -199,7 +225,9 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     {
         let mut d = data.lock().unwrap();
         for (_, v) in d.iter_mut() {
-            sorted_resources(v);
+            for (_, i) in v.iter_mut() {
+                sorted_resources(i);
+            }
         }
     }
 
@@ -331,7 +359,7 @@ fn sorted_resources(resources: &mut [GarminResource]) {
     });
 }
 
-/// A single resources is updated based on the URL. It will be added to the `BTreeMap` once
+/// A single resources is updated based on the URL. It will be added to the `GarminResources` once
 /// resolved and not return any data.
 async fn update_resource(
     resource_type: ResourceType,
@@ -339,7 +367,7 @@ async fn update_resource(
     resource: TomlFileItem,
     octocrab: Arc<Octocrab>,
     glab: Arc<AsyncGitlab>,
-    data: Arc<Mutex<BTreeMap<String, Vec<GarminResource>>>>,
+    data: Arc<Mutex<GarminResources>>,
 ) {
     eprintln!("Updating {}", resource_url);
 
@@ -364,10 +392,14 @@ async fn update_resource(
     };
 
     if let Some(resource) = resource {
-        let key = resource_type.map_key(is_old);
-        let mut m = data.lock().unwrap();
-        let elem = m.entry(key).or_default();
-        elem.push(resource)
+        let resource_type_name = resource_type.to_string();
+        let resource_status_key = resource_type.status_key(is_old);
+
+        let mut resource_type = data.lock().unwrap();
+        let resources = resource_type.entry(resource_type_name).or_default();
+        let resource_list = resources.entry(resource_status_key).or_default();
+
+        resource_list.push(resource)
     }
 }
 
