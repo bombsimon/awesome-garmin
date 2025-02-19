@@ -623,6 +623,7 @@
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
 "https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connect-iq-tester`"}
 "https://github.com/matco/connectiq-tester" = {}
+"https://github.com/matin/garth" = {}
 "https://github.com/pzl/ciqdb" = {}
 "https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
