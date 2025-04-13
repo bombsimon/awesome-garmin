@@ -35,7 +35,7 @@ The following sections are currently not sorted:
 EOF
 
     for s in "${invalid_sections[@]}"; do
-        echo " - \\\`$s\\\`"
+        echo " - $s" | tr -d "[]"
     done
 fi
 
