@@ -467,6 +467,7 @@
 "https://github.com/bderusha/GarminIQ-CoachCompanion" = {}
 "https://github.com/bhugh/ThePlanets" = {}
 "https://github.com/blackdogit/connectiq-apps" = {}
+"https://github.com/blackshadev/wayfinder" = {}
 "https://github.com/blaskovicz/garmin-tplink-cloud-control" = {}
 "https://github.com/blkfribourg/WheelDash" = { description = "This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV" }
 "https://github.com/bombsimon/garmin-pace-calculator" = {}
@@ -623,6 +624,7 @@
 [tools]
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
+"https://github.com/blackshadev/garmin-connectiq-release-action" = {}
 "https://github.com/bombsimon/garmin-screenshot" = {}
 "https://github.com/cedric-dufour/connectiq-app-rawlogger" = {}
 "https://github.com/cjsmith/react-native-connect-iq-mobile-sdk" = {}
