@@ -6,7 +6,6 @@ on:
     branches:
       - main
   pull_request:
-  pull_request_target:
 
 jobs:
   validate:
@@ -15,46 +14,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Validate sections
+      - name: Check sorting
         id: validate
-        run: |
-          set +e  # Allow the script to fail but capture its output
-          {
-            echo "output<<EOF"
-            bash .github/workflows/check_sorting.sh
-            exit_code="$?"
-            echo EOF
-          } >> "$GITHUB_OUTPUT"
-
-          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
-
-          exit 0
-
-      - name: Post PR Comment
-        if: github.event_name == 'pull_request'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          PR_NUMBER=${{ github.event.pull_request.number }}
-          COMMENT_BODY="${{ steps.validate.outputs.output }}"
-          EXIT_CODE="${{ steps.validate.outputs.exit_code }}"
-          EXISTING_COMMENT=$(gh pr view "$PR_NUMBER" \
-              --json comments \
-              --jq '.comments[] | select(.author.login=="github-actions")')
-
-          if [ "$EXIT_CODE" -ne 0 ]; then
-            if [ -n "$EXISTING_COMMENT" ]; then
-              gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY" --edit-last
-            else
-              gh pr comment "$PR_NUMBER" --body "$COMMENT_BODY"
-            fi
-
-            exit 1
-          else
-            if [ -n "$EXISTING_COMMENT" ]; then
-              # Currently the gh cli and the API fail to delete comments so we
-              # just update any existing one for now.
-              gh pr comment "$PR_NUMBER" --body "Thanks for fixing the CI issues!" --edit-last
-            fi
-          fi
+        run: bash .github/workflows/check_sorting.sh
