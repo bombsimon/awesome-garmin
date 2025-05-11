@@ -587,6 +587,7 @@
 "https://github.com/ydutertre/myvario" = {}
 "https://github.com/ydutertre/myvariolite" = {}
 "https://github.com/zbraniecki/ultitimer" = {}
+"https://github.com/zetxek/garmin-qr" = {}
 "https://github.com/zlelik/ConnectIqSailingApp" = {}
 "https://gitlab.com/ravenfeld/Connect-IQ-App-ChronoGym" = { name = "Chrono Gym", description = "Set count and rest timer" }
 "https://gitlab.com/ravenfeld/Connect-IQ-App-Compass" = { name = "Compass App", description = "Compass" }
