@@ -309,6 +309,7 @@
 "https://github.com/travisvitek/connectiq_laps_datafield" = {}
 "https://github.com/victornottat/garmin-trimp" = {}
 "https://github.com/victornottat/garmin-trimp-perhour" = {}
+"https://github.com/vinzenzs/garmin-fartlek4fun" = { description = "Play some fun Fartleks" }
 "https://github.com/vovan-/cyclist-datafiled-garmin" = {}
 "https://github.com/vovan-/swimmer-datafiled-garmin" = {}
 "https://github.com/wubbl0rz/DataChampGarmin" = { description = "More than one data field for bike computers" }
