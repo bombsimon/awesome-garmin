@@ -10,7 +10,7 @@ and tools that integrate with the Garmin ecosystem and services.
 > To help exploring relevant resources the items in each segmented are _sorted
 > by last activity_ if available.
 >
-> _This README was last generated at 2025-05-12_.
+> _This README was last generated at 2025-05-19_.
 
 Contributions are always welcome! To add a new resource, **do not edit this 
 file**. Instead, add it to [`awesome.toml`][awesome-toml]. If the resource is a 
@@ -41,16 +41,17 @@ allow them to have minimal impact on the device’s battery life.
 
 | Name | Last&nbsp;updated | Stars |
 | ---- | ----------------- | ----- |
-| [garmin-watchFace](https://github.com/victorpaul/garmin-watchFace) | 2025&#x2011;05&#x2011;11&nbsp; | ⭐26 |
+| [SimplePixels](https://github.com/shbumba/SimplePixels) | 2025&#x2011;05&#x2011;17&nbsp; | ⭐5 |
+| [smartarcs](https://github.com/okdar/smartarcs) | 2025&#x2011;05&#x2011;13&nbsp; | ⭐7 |
+| [smartarcsactive](https://github.com/okdar/smartarcsactive) | 2025&#x2011;05&#x2011;13&nbsp; | ⭐9 |
+| [HandAvoidance](https://github.com/pierre-muth/HandAvoidance) | 2025&#x2011;05&#x2011;13&nbsp; | |
+| [garmin-watchFace](https://github.com/victorpaul/garmin-watchFace) | 2025&#x2011;05&#x2011;11&nbsp; | ⭐27 |
 | [garmin-watchface-protomolecule](https://github.com/blotspot/garmin-watchface-protomolecule) | 2025&#x2011;05&#x2011;11&nbsp; | ⭐65 |
-| [HandAvoidance](https://github.com/pierre-muth/HandAvoidance) | 2025&#x2011;05&#x2011;09&nbsp; | |
-| [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) | 2025&#x2011;05&#x2011;07&nbsp; | ⭐12 |
-| [smartarcs](https://github.com/okdar/smartarcs) | 2025&#x2011;04&#x2011;26&nbsp; | ⭐7 |
+| [SwissRailwayClock](https://github.com/ahuggel/SwissRailwayClock) | 2025&#x2011;05&#x2011;07&nbsp; | ⭐13 |
 | [smartarcstrip](https://github.com/okdar/smartarcstrip) | 2025&#x2011;04&#x2011;26&nbsp; | ⭐4 |
-| [smartarcsactive](https://github.com/okdar/smartarcsactive) | 2025&#x2011;04&#x2011;26&nbsp; | ⭐9 |
 | [WWF5](https://github.com/fabrikant/WWF5) | 2025&#x2011;04&#x2011;25&nbsp; | ⭐1 |
 | [orbit-face](https://github.com/pencilitin/orbit-face) | 2025&#x2011;04&#x2011;22&nbsp; | ⭐1 |
-| [crystal-face](https://github.com/warmsound/crystal-face) | 2025&#x2011;04&#x2011;15&nbsp; | ⭐416 |
+| [crystal-face](https://github.com/warmsound/crystal-face) | 2025&#x2011;04&#x2011;15&nbsp; | ⭐418 |
 | [zRenardWatch](https://github.com/zRenard/zRenardWatch) | 2025&#x2011;03&#x2011;23&nbsp; | |
 | [garmin-abouttime](https://github.com/samuelmr/garmin-abouttime) | 2025&#x2011;03&#x2011;22&nbsp; | ⭐26 |
 | [MoveToBeActive](https://github.com/fevieira27/MoveToBeActive) | 2025&#x2011;03&#x2011;09&nbsp; | ⭐31 |
@@ -61,9 +62,8 @@ allow them to have minimal impact on the device’s battery life.
 | [ElegantAnalog-Watchface](https://github.com/bhugh/ElegantAnalog-Watchface) | 2025&#x2011;01&#x2011;29&nbsp; | ⭐3 |
 | [ThePlanets-Watchface](https://github.com/BDH-Software/ThePlanets-Watchface) | 2025&#x2011;01&#x2011;18&nbsp; | |
 | [Anker](https://github.com/oyvindse/Anker) | 2025&#x2011;01&#x2011;15&nbsp; | ⭐1 |
-| [SimplePixels](https://github.com/shbumba/SimplePixels) | 2025&#x2011;01&#x2011;10&nbsp; | ⭐5 |
 | [garmin-pedro-watchface](https://github.com/simllll/garmin-pedro-watchface) | 2025&#x2011;01&#x2011;07&nbsp; | ⭐2 |
-| [Yet-Another-WatchFace](https://github.com/Laverlin/Yet-Another-WatchFace) | 2024&#x2011;12&#x2011;07&nbsp; | ⭐60 |
+| [Yet-Another-WatchFace](https://github.com/Laverlin/Yet-Another-WatchFace) | 2024&#x2011;12&#x2011;07&nbsp; | ⭐61 |
 | [garmin-watchface-40d-mip-power](https://github.com/dryotta/garmin-watchface-40d-mip-power) | 2024&#x2011;11&#x2011;23&nbsp; | ⭐8 |
 | [garmin-seaside](https://github.com/bombsimon/garmin-seaside) | 2024&#x2011;11&#x2011;17&nbsp; | ⭐6 |
 | [Rainforest](https://github.com/SarahBass/Rainforest) | 2024&#x2011;09&#x2011;28&nbsp; | |
@@ -89,7 +89,7 @@ allow them to have minimal impact on the device’s battery life.
 | [Aviatorlike](https://github.com/shortattentionspan/Aviatorlike) | 2024&#x2011;02&#x2011;29&nbsp; | |
 | [Spotlight](https://github.com/nldroid/Spotlight) | 2024&#x2011;02&#x2011;29&nbsp; | ⭐9 |
 | [connectiq-logo-analog](https://github.com/douglasr/connectiq-logo-analog) | 2024&#x2011;02&#x2011;10&nbsp; | ⭐26 |
-| [late](https://github.com/myneur/late) | 2024&#x2011;02&#x2011;09&nbsp; | ⭐58 |
+| [late](https://github.com/myneur/late) | 2024&#x2011;02&#x2011;09&nbsp; | ⭐59 |
 | [m2](https://github.com/markdotai/m2) | 2024&#x2011;01&#x2011;26&nbsp; | ⭐1 |
 | [m1](https://github.com/markdotai/m1) | 2024&#x2011;01&#x2011;26&nbsp; | |
 | [GarminWatchFaceSuccessCircle](https://github.com/sura0111/GarminWatchFaceSuccessCircle) | 2024&#x2011;01&#x2011;25&nbsp; | ⭐4 |
@@ -174,8 +174,8 @@ allow them to have minimal impact on the device’s battery life.
 | [JSClock](https://github.com/jensws80/JSClock) | 2021&#x2011;01&#x2011;19&nbsp; | ⭐2 |
 | [DRG-Clutterless](https://github.com/DRG-developer/DRG-Clutterless) | 2021&#x2011;01&#x2011;17&nbsp; | ⭐1 |
 | [kudos](https://github.com/Peterdedecker/kudos) | 2021&#x2011;01&#x2011;01&nbsp; | ⭐5 |
-| [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) | 2020&#x2011;10&#x2011;08&nbsp; | |
 | [DRG-Nathos](https://github.com/DRG-developer/DRG-Nathos) | 2020&#x2011;10&#x2011;08&nbsp; | |
+| [DRG-Nathos](https://github.com/drg-developer/DRG-Nathos) | 2020&#x2011;10&#x2011;08&nbsp; | |
 | [Digital5Reloaded](https://github.com/erikvb/Digital5Reloaded) | 2020&#x2011;10&#x2011;04&nbsp; | |
 | [DRG_SNT_3](https://github.com/DRG-developer/DRG_SNT_3) | 2020&#x2011;09&#x2011;22&nbsp; | |
 | [digital-simplicity](https://github.com/kelnage/digital-simplicity) | 2020&#x2011;09&#x2011;07&nbsp; | ⭐8 |
@@ -277,9 +277,10 @@ the presentation.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
-| [SmartBikeLights](https://github.com/maca88/SmartBikeLights) | Garmin application for ANT+ bike lights | 2025&#x2011;05&#x2011;10&nbsp; | ⭐129 |
+| [spotlight](https://github.com/fabiobaltieri/spotlight) | Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. | 2025&#x2011;05&#x2011;15&nbsp; | ⭐6 |
+| [SmartBikeLights](https://github.com/maca88/SmartBikeLights) | Garmin application for ANT+ bike lights | 2025&#x2011;05&#x2011;10&nbsp; | ⭐130 |
 | [HikeDifficulty](https://github.com/AlexBarinov/HikeDifficulty) | Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site | 2025&#x2011;05&#x2011;10&nbsp; | ⭐4 |
-| [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) | A Zone Training app for Garmin Watches. | 2025&#x2011;04&#x2011;24&nbsp; | ⭐3 |
+| [ZoneTraining](https://github.com/ViktorStagge/ZoneTraining) | A Zone Training app for Garmin Watches. | 2025&#x2011;04&#x2011;24&nbsp; | ⭐4 |
 | [smart-cadence](https://gitlab.com/harryonline/smart-cadence) | Connect IQ display field cadence, distance/time when cadence 0 | 2025&#x2011;04&#x2011;18&nbsp; | |
 | [GRun-Chinese](https://github.com/Likenttt/GRun-Chinese) | Forked from GRun but localized for Chinese | 2025&#x2011;04&#x2011;10&nbsp; | |
 | [BodyBatteryDF](https://github.com/flocsy/BodyBatteryDF) | Body Battery data field for Garmin watches | 2025&#x2011;04&#x2011;07&nbsp; | ⭐1 |
@@ -294,7 +295,6 @@ the presentation.
 | [steps2fit](https://github.com/rgergely/steps2fit) | Garmin Connect IQ datafiled for counting steps during activities | 2024&#x2011;12&#x2011;19&nbsp; | ⭐9 |
 | [DaylightLeft](https://github.com/rconradharris/DaylightLeft) | Daylight Left DataField for Garmin ConnectIQ Watches | 2024&#x2011;11&#x2011;25&nbsp; | ⭐1 |
 | [Fellrnrs-Datafield-ActiveLook](https://github.com/fellrnr/Fellrnrs-Datafield-ActiveLook) | Fellrnr's Modification of ActiveLook Garmin Datafield | 2024&#x2011;11&#x2011;11&nbsp; | |
-| [spotlight](https://github.com/fabiobaltieri/spotlight) | Petzl Actik Core mod board with Bluetooth LE and Connect IQ remote control. | 2024&#x2011;10&#x2011;09&nbsp; | ⭐6 |
 | [ciq-nrf-blinky](https://github.com/fabiobaltieri/ciq-nrf-blinky) | Connect IQ application client for Nordic nRF Blinky BLE example | 2024&#x2011;10&#x2011;07&nbsp; | ⭐15 |
 | [anyaBike](https://github.com/mpl75/anyaBike) | Data field for cyclists who have their watch attached to their handlebars | 2024&#x2011;10&#x2011;01&nbsp; | ⭐4 |
 | [BTHomeIQ](https://github.com/ray0711/BTHomeIQ) | ConnectIQ datafield for displaying and recording BTHome temperature broadcasts | 2024&#x2011;09&#x2011;29&nbsp; | ⭐2 |
@@ -367,8 +367,8 @@ the presentation.
 | [CombiSpeed](https://github.com/ithiel01/CombiSpeed) | CombiSpeed | 2018&#x2011;01&#x2011;03&nbsp; | |
 | [Connect-iQ-CGM-datafield](https://github.com/snorrehu/Connect-iQ-CGM-datafield) |  | 2017&#x2011;11&#x2011;05&nbsp; | |
 | [405HR](https://github.com/janverley/405HR) | Forerunner 405 styled HR graph Connect IQ Data Field  | 2017&#x2011;09&#x2011;11&nbsp; | ⭐1 |
-| [Lap-average-vertical-speed](https://github.com/danielp27/Lap-average-vertical-speed) | Performance per kilometer calculation | 2017&#x2011;07&#x2011;19&nbsp; | ⭐1 |
 | [Lap-average-vertical-speed](https://github.com/danipindado/Lap-average-vertical-speed) | Average vertical lap speed | 2017&#x2011;07&#x2011;19&nbsp; | ⭐1 |
+| [Lap-average-vertical-speed](https://github.com/danielp27/Lap-average-vertical-speed) | Performance per kilometer calculation | 2017&#x2011;07&#x2011;19&nbsp; | ⭐1 |
 | [ColourHR](https://github.com/seajay/ColourHR) | Datafield for Garmin watches | 2017&#x2011;04&#x2011;12&nbsp; | ⭐2 |
 | [LandNavApp](https://github.com/landnavapp/LandNavApp) | Land Nav, dead reckoning, and orienteering training datafield for Garmin GPS Connect-IQ enabled devices | 2017&#x2011;04&#x2011;03&nbsp; | ⭐5 |
 | [connectiq_laps_datafield](https://github.com/travisvitek/connectiq_laps_datafield) | ConnectIQ: simple lap history data field | 2017&#x2011;02&#x2011;27&nbsp; | ⭐1 |
@@ -408,6 +408,8 @@ are also launchable at any time.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
+| [authentificator](https://github.com/jurask/authentificator) | OTP authentificator for Garmin devices | 2025&#x2011;05&#x2011;17&nbsp; | ⭐3 |
+| [CIQBitcoinWidget](https://github.com/11samype/CIQBitcoinWidget) | A Connect IQ widget that gets the current Bitcoin price. | 2025&#x2011;05&#x2011;12&nbsp; | ⭐2 |
 | [evcc-garmin](https://github.com/TheNinth7/evcc-garmin) | A widget and a glance for displaying information from evcc | 2025&#x2011;05&#x2011;10&nbsp; | ⭐5 |
 | [BikeLightsControl](https://github.com/maca88/BikeLightsControl) | Garmin widget for controlling ANT+ lights | 2025&#x2011;05&#x2011;10&nbsp; | ⭐18 |
 | [hasscontrol](https://github.com/hatl/hasscontrol) | Simple garmin widget to control home assistant scenes | 2025&#x2011;05&#x2011;03&nbsp; | ⭐171 |
@@ -426,14 +428,12 @@ are also launchable at any time.
 | [Tesla-Link](https://github.com/SylvainGa/Tesla-Link) | ConnectIQ widget for Tesla vehicle control | 2024&#x2011;12&#x2011;19&nbsp; | ⭐15 |
 | [GarminSmartHome](https://github.com/dabastynator/GarminSmartHome) | SmartHome client for Garmin Watches | 2024&#x2011;12&#x2011;19&nbsp; | |
 | [lostandfound](https://github.com/okdar/lostandfound) | Lost and Found Garmin widget | 2024&#x2011;12&#x2011;18&nbsp; | |
-| [CIQBitcoinWidget](https://github.com/11samype/CIQBitcoinWidget) | A Connect IQ widget that gets the current Bitcoin price. | 2024&#x2011;12&#x2011;12&nbsp; | ⭐2 |
 | [garmin-JustOneButton](https://github.com/GuMiner/garmin-JustOneButton) | A Garmin Watchface with one button to interact with a https://www.home-assistant.io/ switch | 2024&#x2011;11&#x2011;26&nbsp; | ⭐2 |
-| [authentificator](https://github.com/jurask/authentificator) | OTP authentificator for Garmin devices | 2024&#x2011;11&#x2011;10&nbsp; | ⭐3 |
 | [gopro-remote-connectiq](https://github.com/ad220/gopro-remote-connectiq) | Garmin ConnectIQ widget to control a GoPro from your wrist | 2024&#x2011;10&#x2011;17&nbsp; | ⭐2 |
 | [WoP](https://github.com/Marios007/WoP) | Pregnancy Widget for Garmin Watches | 2024&#x2011;09&#x2011;29&nbsp; | |
 | [otp-ciq](https://github.com/jctim/otp-ciq) | OTP Auth Widget for Garmin Connect IQ | 2024&#x2011;09&#x2011;27&nbsp; | ⭐20 |
 | [connectiq-sonos](https://github.com/zmullett/connectiq-sonos) | A Garmin Connect IQ watch widget that controls Sonos speaker groups. | 2024&#x2011;09&#x2011;19&nbsp; | ⭐8 |
-| [Barcode-Wallet](https://github.com/macherel/Barcode-Wallet) | Display various type of barcodes (Simple barcode or 2D barcodes like QR code or Aztec code) | 2024&#x2011;09&#x2011;01&nbsp; | ⭐62 |
+| [Barcode-Wallet](https://github.com/macherel/Barcode-Wallet) | Display various type of barcodes (Simple barcode or 2D barcodes like QR code or Aztec code) | 2024&#x2011;09&#x2011;01&nbsp; | ⭐63 |
 | [otpauth-ciq](https://github.com/uaraven/otpauth-ciq) | ConnectIQ widget for generating TOTP authentication codes. | 2024&#x2011;08&#x2011;31&nbsp; | ⭐16 |
 | [SolarStatus-Garmin](https://github.com/dividebysandwich/SolarStatus-Garmin) | A solar status display for the Garmin Epix | 2024&#x2011;08&#x2011;28&nbsp; | ⭐2 |
 | [garmin-swish-qr](https://github.com/bombsimon/garmin-swish-qr) | Show your Swish QR code on your wrist | 2024&#x2011;08&#x2011;19&nbsp; | |
@@ -467,7 +467,7 @@ are also launchable at any time.
 | [garmin-connect-seed](https://github.com/danielsiwiec/garmin-connect-seed) | This is a seed project for writing Garmin Connect IQ application | 2022&#x2011;07&#x2011;17&nbsp; | ⭐130 |
 | [connectiq-widget-pilotsrss](https://github.com/cedric-dufour/connectiq-widget-pilotsrss) | Pilot SR/SS/Twilight hours for Garmin ConnectIQ devices [GPLv3] | 2022&#x2011;07&#x2011;15&nbsp; | |
 | [connectiq-widget-pilotaltimeter](https://github.com/cedric-dufour/connectiq-widget-pilotaltimeter) | Pilot ICAO/ISA Altimeter for Garmin ConnectIQ devices [GPLv3] | 2022&#x2011;07&#x2011;15&nbsp; | ⭐1 |
-| [TogglIQ](https://github.com/gcaufield/TogglIQ) | ConnectIQ widget for controlling a Toggl Track Timer | 2022&#x2011;06&#x2011;26&nbsp; | ⭐14 |
+| [TogglIQ](https://github.com/gcaufield/TogglIQ) | ConnectIQ widget for controlling a Toggl Track Timer | 2022&#x2011;06&#x2011;26&nbsp; | ⭐15 |
 | [connectiq-widget-totp](https://github.com/cedric-dufour/connectiq-widget-totp) | TOTP (RFC6238) implementation for Garmin ConnectIQ devices [GPLv3] | 2022&#x2011;06&#x2011;26&nbsp; | ⭐1 |
 | [garmin-birds-around](https://github.com/starryalley/garmin-birds-around) | A Garmin Connect IQ widget showing possible bird species around your location | 2022&#x2011;06&#x2011;23&nbsp; | ⭐1 |
 | [DogecoinToTheMoon](https://github.com/Likenttt/DogecoinToTheMoon) | Garmin widget: get current price of the dogecoin. 佳明widget：获取当前狗狗币价格。https://apps.garmin.com/en-US/apps/c6168ee2-aa5b-42d3-964d-7a891fb8fc12 | 2022&#x2011;02&#x2011;16&nbsp; | ⭐5 |
@@ -483,8 +483,8 @@ are also launchable at any time.
 | [activity_view](https://github.com/mettyw/activity_view) | Garmin Forerunner 235 activity view widget | 2021&#x2011;04&#x2011;10&nbsp; | ⭐3 |
 | [Connect-IQ-QR-Code-Viewer](https://github.com/macherel/Connect-IQ-QR-Code-Viewer) | A widget that can display QR Code on Garmin watch | 2021&#x2011;02&#x2011;16&nbsp; | ⭐13 |
 | [WordOfTheDay](https://github.com/pedlarstudios/WordOfTheDay) | A widget for Garmin's Connect IQ mobile platform that displays the "word of the day" from Wordnik.com | 2021&#x2011;01&#x2011;19&nbsp; | ⭐1 |
-| [ForecastLine](https://github.com/mrfoto/ForecastLine) | Connect IQ App inspired by Weather Line | 2020&#x2011;12&#x2011;16&nbsp; | ⭐9 |
 | [ForecastLine](https://github.com/miharekar/ForecastLine) | Connect IQ App inspired by Weather Line | 2020&#x2011;12&#x2011;16&nbsp; | ⭐9 |
+| [ForecastLine](https://github.com/mrfoto/ForecastLine) | Connect IQ App inspired by Weather Line | 2020&#x2011;12&#x2011;16&nbsp; | ⭐9 |
 | [WeatherWid](https://github.com/valgit/WeatherWid) | Garrmin Connect Weather Widget | 2020&#x2011;10&#x2011;19&nbsp; | |
 | [ConnectIQ](https://github.com/admsteck/ConnectIQ) | Garmin ConnectIQ projects | 2020&#x2011;10&#x2011;08&nbsp; | |
 | [SunCalc](https://github.com/haraldh/SunCalc) | Garmin Connect IQ Widget to calculate Dusk, Dawn, Sunset, Sunrise, Blue Hour, etc. | 2020&#x2011;10&#x2011;02&nbsp; | ⭐38 |
@@ -531,25 +531,26 @@ FIT files.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
-| [garmin-qr](https://github.com/zetxek/garmin-qr) | Garmin IQ application to generate and display QR codes and barcodes | 2025&#x2011;05&#x2011;10&nbsp; | |
-| [wayfinder](https://github.com/blackshadev/wayfinder) | Garmin connect app for finding your way on the water | 2025&#x2011;05&#x2011;10&nbsp; | |
+| [garmin-qr](https://github.com/zetxek/garmin-qr) | Garmin IQ application to generate and display QR codes and barcodes | 2025&#x2011;05&#x2011;18&nbsp; | |
+| [wayfinder](https://github.com/blackshadev/wayfinder) | Garmin connect app for finding your way on the water | 2025&#x2011;05&#x2011;17&nbsp; | |
+| [Garmin-Contrast-Shower](https://github.com/aiMonster/Garmin-Contrast-Shower) | An application for Garmin watches to take a contrast shower | 2025&#x2011;05&#x2011;14&nbsp; | ⭐15 |
 | [Persian-Calendar-for-Garmin-Watch](https://github.com/mirmousaviii/Persian-Calendar-for-Garmin-Watch) | Persian-Calendar for Garmin Watch | 2025&#x2011;05&#x2011;04&nbsp; | |
-| [GarminHomeAssistant](https://github.com/house-of-abbey/GarminHomeAssistant) | Garmin application to provide a dashboard to control your Home Assistant | 2025&#x2011;04&#x2011;25&nbsp; | ⭐172 |
+| [GarminHomeAssistant](https://github.com/house-of-abbey/GarminHomeAssistant) | Garmin application to provide a dashboard to control your Home Assistant | 2025&#x2011;04&#x2011;25&nbsp; | ⭐173 |
 | [myvario](https://github.com/ydutertre/myvario) | Fork of GliderSK targeted towards paraglider pilots | 2025&#x2011;04&#x2011;23&nbsp; | ⭐21 |
 | [DiscGolf](https://github.com/marvik37/DiscGolf) | Disc golf app | 2025&#x2011;04&#x2011;21&nbsp; | ⭐4 |
-| [garmin-otp-authenticator](https://github.com/ch1bo/garmin-otp-authenticator) | Garmin ConnectIQ Widget for One Time Passwords (HOTP / TOTP / Steam Guard) | 2025&#x2011;04&#x2011;20&nbsp; | ⭐89 |
+| [garmin-otp-authenticator](https://github.com/ch1bo/garmin-otp-authenticator) | Garmin ConnectIQ Widget for One Time Passwords (HOTP / TOTP / Steam Guard) | 2025&#x2011;04&#x2011;20&nbsp; | ⭐90 |
 | [RoseOfWind](https://github.com/fabrikant/RoseOfWind) | Connect iq weather widget | 2025&#x2011;04&#x2011;10&nbsp; | ⭐1 |
-| [garmodoro](https://github.com/klimeryk/garmodoro) | Pomodoro for Garmin devices using Connect IQ | 2025&#x2011;04&#x2011;08&nbsp; | ⭐94 |
+| [garmodoro](https://github.com/klimeryk/garmodoro) | Pomodoro for Garmin devices using Connect IQ | 2025&#x2011;04&#x2011;08&nbsp; | ⭐95 |
 | [connectiq-app-towplanesk](https://github.com/cedric-dufour/connectiq-app-towplanesk) | The Towplane Swiss Knife for Garmin ConnectIQ devices [GPLv3] | 2025&#x2011;04&#x2011;07&nbsp; | |
 | [WheelDash](https://github.com/blkfribourg/WheelDash) | This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV | 2025&#x2011;03&#x2011;28&nbsp; | ⭐3 |
-| [Meditate](https://github.com/dliedke/Meditate) | [App no longer mainteined] - Totally free application developed by vtrifonov and compiled/enhanced for newer Garmin watch models by dliedke. Published in Garmin Connect IQ store at https://apps.garmin.com/en-US/apps/c5fc5ea5-7d12-4fb9-be9c-701663a39db7 | 2025&#x2011;03&#x2011;07&nbsp; | ⭐4 |
+| [Meditate](https://github.com/dliedke/Meditate) | [App no longer mainteined] - Totally free application developed by vtrifonov and compiled/enhanced for newer Garmin watch models by dliedke. Published in Garmin Connect IQ store at https://apps.garmin.com/en-US/apps/c5fc5ea5-7d12-4fb9-be9c-701663a39db7 | 2025&#x2011;03&#x2011;07&nbsp; | ⭐3 |
 | [garmin-padel](https://github.com/pedrorijo91/garmin-padel) | padel scorekeeper garmin watch app | 2025&#x2011;03&#x2011;04&nbsp; | ⭐3 |
 | [badminton](https://github.com/matco/badminton) | Badminton application for Garmin watches | 2025&#x2011;03&#x2011;04&nbsp; | ⭐33 |
 | [ultiCount](https://github.com/K4pes/ultiCount) | Keep track of scores and gender ratios during games of Ultimate Frisbee | 2025&#x2011;03&#x2011;03&nbsp; | ⭐4 |
 | [GarminApps](https://github.com/Sonicious/GarminApps) | My Personal Nice Garmin Apps | 2025&#x2011;03&#x2011;03&nbsp; | |
 | [SailingTools](https://github.com/pintail105/SailingTools) | A Garmin watch IQ app designed for sailing. | 2025&#x2011;02&#x2011;25&nbsp; | ⭐10 |
 | [8-min-abs](https://github.com/toomasr/8-min-abs) | App for Garmin watches to follow the 8 minute abs workout | 2025&#x2011;02&#x2011;24&nbsp; | ⭐5 |
-| [GpsPosition](https://github.com/xtruan/GpsPosition) | GPS Position app for Garmin ConnectIQ | 2025&#x2011;02&#x2011;18&nbsp; | ⭐5 |
+| [GpsPosition](https://github.com/xtruan/GpsPosition) | GPS Position app for Garmin ConnectIQ | 2025&#x2011;02&#x2011;18&nbsp; | ⭐6 |
 | [Garmin_SD](https://github.com/OpenSeizureDetector/Garmin_SD) | Garmin Watch Seizure Detector - A seizure detector data source based on Garmin IQ watches such as Vivoactive HR | 2025&#x2011;02&#x2011;12&nbsp; | ⭐11 |
 | [TheStars](https://github.com/BDH-Software/TheStars) | Garmin IQ app show the constellations | 2025&#x2011;01&#x2011;27&nbsp; | |
 | [ThePlanets](https://github.com/bhugh/ThePlanets) | Garmin IQ app to calculate position of sun, moon, & planets | 2025&#x2011;01&#x2011;21&nbsp; | ⭐1 |
@@ -575,7 +576,7 @@ FIT files.
 | [GarminDiscGolf](https://github.com/sdgriggs/GarminDiscGolf) | Attempt to make a Disc Golf app for Garmin Watches | 2024&#x2011;08&#x2011;15&nbsp; | ⭐2 |
 | [wormnav](https://github.com/andan67/wormnav) | Track navigation for Garmin watches | 2024&#x2011;07&#x2011;20&nbsp; | ⭐16 |
 | [iHIIT](https://github.com/adamjakab/iHIIT) | High Intensity Interval Training (HIIT) GarminIQ App | 2024&#x2011;07&#x2011;07&nbsp; | ⭐6 |
-| [TAKWatch-IQ](https://github.com/TDF-PL/TAKWatch-IQ) | TAKWatch-IQ is a Garmin ConnectIQ application that integrates ATAK with Garmin devices  | 2024&#x2011;07&#x2011;05&nbsp; | ⭐38 |
+| [TAKWatch-IQ](https://github.com/TDF-PL/TAKWatch-IQ) | TAKWatch-IQ is a Garmin ConnectIQ application that integrates ATAK with Garmin devices  | 2024&#x2011;07&#x2011;05&nbsp; | ⭐39 |
 | [Salati](https://github.com/bbary/Salati) | mawaqit | 2024&#x2011;07&#x2011;04&nbsp; | |
 | [ConnectIqSailingApp](https://github.com/zlelik/ConnectIqSailingApp) | Sailing App for Garmin's ConnectIQ system upgraded for latest Garmin Connect IQ SDK 7.2.1 | 2024&#x2011;07&#x2011;03&nbsp; | |
 | [Garmin-Coin-Flip](https://github.com/DylanBarratt/Garmin-Coin-Flip) | A coin flipper for the Garmin Forerunner 945 | 2024&#x2011;06&#x2011;21&nbsp; | |
@@ -594,7 +595,6 @@ FIT files.
 | [garmin-curling](https://github.com/phil-mitchell/garmin-curling) | A curling activity tracker for Garmin devices | 2024&#x2011;01&#x2011;20&nbsp; | |
 | [Connect-IQ-App-Timer](https://gitlab.com/ravenfeld/Connect-IQ-App-Timer) | Add several timer already registered | 2024&#x2011;01&#x2011;12&nbsp; | ⭐2 |
 | [CryptoPricesGarmin](https://github.com/YoungChulDK/CryptoPricesGarmin) | Garmin - Connect IQ App for Current Price of Top 10 Cryptocurrencies | 2023&#x2011;12&#x2011;13&nbsp; | ⭐19 |
-| [Garmin-Contrast-Shower](https://github.com/aiMonster/Garmin-Contrast-Shower) | An application for Garmin watches to take a contrast shower | 2023&#x2011;12&#x2011;09&nbsp; | ⭐15 |
 | [MBO](https://github.com/rjmccann101/MBO) | Garmin Watch Apps for Mountain Bike Orienteering | 2023&#x2011;11&#x2011;13&nbsp; | ⭐8 |
 | [rubik-watch-timer](https://github.com/CernovApps/rubik-watch-timer) | This is a timer for Rubik Cube, with features that makes it similar to the WCA rules. | 2023&#x2011;11&#x2011;05&nbsp; | ⭐1 |
 | [garmin-squash](https://github.com/miss-architect/garmin-squash) | Source code of Squash App for Garmin activity trackers. | 2023&#x2011;10&#x2011;06&nbsp; | ⭐18 |
@@ -727,8 +727,8 @@ Connect IQ Projects.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
+| [ciqtools-cryptography](https://github.com/douglasr/ciqtools-cryptography) | An attempt to streamline the use of the Connect IQ Cryptography library | 2025&#x2011;05&#x2011;15&nbsp; | ⭐2 |
 | [msgpack-monkeyc](https://github.com/douglasr/msgpack-monkeyc) | MessagePack for MonkeyC (Connect IQ) / msgpack.org[Monkey C] | 2025&#x2011;04&#x2011;19&nbsp; | ⭐4 |
-| [ciqtools-cryptography](https://github.com/douglasr/ciqtools-cryptography) | An attempt to streamline the use of the Connect IQ Cryptography library | 2025&#x2011;04&#x2011;02&nbsp; | ⭐2 |
 | [ciqtools-number-picker](https://github.com/douglasr/ciqtools-number-picker) | Number picker barrel | 2025&#x2011;02&#x2011;10&nbsp; | ⭐6 |
 | [OPN-MonkeyC](https://gitlab.com/waterkip/opn-monkeyc) | A MonkeyC Barrel for OPN / Waterkip projects | 2025&#x2011;01&#x2011;31&nbsp; | ⭐1 |
 | [garmin-touch-keypad](https://github.com/bombsimon/garmin-touch-keypad) | A barrel to display a numpad and read user input | 2024&#x2011;12&#x2011;08&nbsp; | ⭐1 |
@@ -744,7 +744,7 @@ Connect IQ Projects.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
-| [Handsfree](https://github.com/grigorye/Handsfree) | Make your phone calls from Garmin watch | 2025&#x2011;04&#x2011;07&nbsp; | ⭐7 |
+| [Handsfree](https://github.com/grigorye/Handsfree) | Make your phone calls from Garmin watch | 2025&#x2011;05&#x2011;18&nbsp; | ⭐7 |
 | [gimporter](https://github.com/gimportexportdevs/gimporter) | Garmin Connect App to import GPX and FIT files | 2025&#x2011;03&#x2011;17&nbsp; | ⭐27 |
 | [ios-connect-iq-comms](https://github.com/MatyasKriz/ios-connect-iq-comms) | An example of a two way communication between an iOS companion app and a ConnectIQ app on a Garmin device. | 2025&#x2011;02&#x2011;22&nbsp; | ⭐13 |
 | [Sleep-as-Android-Garmin-Addon](https://github.com/urbandroid-team/Sleep-as-Android-Garmin-Addon) | Code for both Android part and Garmin part of the Sleep as Android Garmin smartwatch integration | 2024&#x2011;07&#x2011;09&nbsp; | ⭐49 |
@@ -762,24 +762,24 @@ Connect IQ Projects.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
-| [GarminDB](https://github.com/tcgoetz/GarminDB) | Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks. | 2025&#x2011;05&#x2011;10&nbsp; | ⭐2415 |
-| [garth](https://github.com/matin/garth) | Garmin SSO auth + Connect Python client | 2025&#x2011;05&#x2011;04&nbsp; | ⭐461 |
-| [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) | Tools for Garmin CIQ developers | 2025&#x2011;04&#x2011;22&nbsp; | ⭐17 |
-| [export2garmin](https://github.com/RobertWojtowicz/export2garmin) | Export Miscale and Omron data to Garmin Connect | 2025&#x2011;04&#x2011;09&nbsp; | ⭐214 |
+| [garmin-dev-tools](https://github.com/flocsy/garmin-dev-tools) | Tools for Garmin CIQ developers | 2025&#x2011;05&#x2011;18&nbsp; | ⭐17 |
+| [garth](https://github.com/matin/garth) | Garmin SSO auth + Connect Python client | 2025&#x2011;05&#x2011;18&nbsp; | ⭐477 |
+| [fit](https://github.com/lindig/fit) | Minimal OCaml library to parse Garmin FIT files | 2025&#x2011;05&#x2011;16&nbsp; | ⭐8 |
+| [react-native-connect-iq-mobile-sdk](https://github.com/cjsmith/react-native-connect-iq-mobile-sdk) | This package provides a React Native wrapper around the Android and iOS Garmin Connect IQ Mobile SDKs | 2025&#x2011;05&#x2011;13&nbsp; | ⭐3 |
+| [GarminDB](https://github.com/tcgoetz/GarminDB) | Download and parse data from Garmin Connect or a Garmin watch, FitBit CSV, and MS Health CSV files into and analyze data in Sqlite serverless databases with Jupyter notebooks. | 2025&#x2011;05&#x2011;10&nbsp; | ⭐2434 |
+| [export2garmin](https://github.com/RobertWojtowicz/export2garmin) | Export Miscale and Omron data to Garmin Connect | 2025&#x2011;04&#x2011;09&nbsp; | ⭐217 |
 | [garmin-connectiq-release-action](https://github.com/blackshadev/garmin-connectiq-release-action) | Github action to release / export a garmin ConnectIQ app | 2025&#x2011;04&#x2011;04&nbsp; | ⭐1 |
 | [GarminSportsDev](https://github.com/flocsy/GarminSportsDev) | App for CIQ developers to examine SPORT and SUB_SPORT values | 2025&#x2011;04&#x2011;01&nbsp; | |
-| [fit](https://github.com/lindig/fit) | Minimal OCaml library to parse Garmin FIT files | 2025&#x2011;03&#x2011;29&nbsp; | ⭐8 |
 | [prettier-extension-monkeyc](https://github.com/markw65/prettier-extension-monkeyc) | A VSCode extension for Garmin MonkeyC | 2025&#x2011;02&#x2011;04&nbsp; | ⭐16 |
 | [monkeyc-optimizer](https://github.com/markw65/monkeyc-optimizer) | Utilities for optimizing monkeyc projects | 2025&#x2011;02&#x2011;04&nbsp; | ⭐13 |
 | [prettier-plugin-monkeyc](https://github.com/markw65/prettier-plugin-monkeyc) | A prettier plugin for Garmin monkey-c | 2025&#x2011;01&#x2011;28&nbsp; | ⭐13 |
 | [fitparse-rs](https://github.com/stadelmanma/fitparse-rs) | Rust library to parse FIT formatted files | 2025&#x2011;01&#x2011;21&nbsp; | ⭐63 |
-| [connectiq-tester](https://github.com/matco/connectiq-tester) |  | 2025&#x2011;01&#x2011;12&nbsp; | ⭐6 |
-| [react-native-connect-iq-mobile-sdk](https://github.com/cjsmith/react-native-connect-iq-mobile-sdk) | This package provides a React Native wrapper around the Android and iOS Garmin Connect IQ Mobile SDKs | 2024&#x2011;10&#x2011;28&nbsp; | ⭐3 |
+| [connectiq-tester](https://github.com/matco/connectiq-tester) |  | 2025&#x2011;01&#x2011;12&nbsp; | ⭐7 |
 | [garmin-screenshot](https://github.com/bombsimon/garmin-screenshot) | Build your project for all configured devices, fire it up in the Connect IQ Simulator and take a screenshot | 2024&#x2011;08&#x2011;10&nbsp; | |
 | [flowfit](https://github.com/hacdias/flowfit) | Convert Bosch's eBike Flow FIT file into a FIT file that can be imported by other tools. | 2024&#x2011;06&#x2011;25&nbsp; | ⭐4 |
 | [share-your-garmin-workout](https://github.com/fulippo/share-your-garmin-workout) | Chrome extension to share your Garmin Connect workout with your friends | 2024&#x2011;06&#x2011;01&nbsp; | ⭐16 |
 | [connectiq-app-rawlogger](https://github.com/cedric-dufour/connectiq-app-rawlogger) | RawLogger (Garmin ConnectIQ) App [GPLv3] | 2024&#x2011;05&#x2011;30&nbsp; | ⭐9 |
-| [action-connectiq-tester](https://github.com/matco/action-connectiq-tester) | GitHub action for `connect-iq-tester` | 2024&#x2011;05&#x2011;13&nbsp; | ⭐5 |
+| [action-connectiq-tester](https://github.com/matco/action-connectiq-tester) | GitHub action for `connect-iq-tester` | 2024&#x2011;05&#x2011;13&nbsp; | ⭐6 |
 | [ciqdb](https://github.com/pzl/ciqdb) | Connect IQ (PRG) parser and debugger | 2024&#x2011;04&#x2011;20&nbsp; | ⭐33 |
 | [garmin-tilemapper](https://github.com/sunpazed/garmin-tilemapper) | A command line tool that helps developers build tile-mapped anti-aliased graphics for Garmin wearables. | 2023&#x2011;10&#x2011;03&nbsp; | ⭐46 |
 | [docker-connectiq](https://github.com/kalemena/docker-connectiq) | Garmin Tools - Connect IQ SDK and Eclipse IDE plugins as a Docker container | 2023&#x2011;04&#x2011;20&nbsp; | ⭐35 |
@@ -793,11 +793,11 @@ Connect IQ Projects.
 
 | Name | Description | Last&nbsp;updated | Stars |
 | ---- | ----------- | ----------------- | ----- |
-| [home-assistant-garmin_connect](https://github.com/cyberjunky/home-assistant-garmin_connect) | The Garmin Connect integration allows you to expose data from Garmin Connect to Home Assistant. | 2025&#x2011;05&#x2011;05&nbsp; | ⭐323 |
-| [open-location-code](https://github.com/google/open-location-code) | Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. | 2025&#x2011;05&#x2011;02&nbsp; | ⭐4191 |
+| [open-location-code](https://github.com/google/open-location-code) | Open Location Code is a library to generate short codes, called "plus codes", that can be used as digital addresses where street addresses don't exist. | 2025&#x2011;05&#x2011;16&nbsp; | ⭐4194 |
+| [home-assistant-garmin_connect](https://github.com/cyberjunky/home-assistant-garmin_connect) | The Garmin Connect integration allows you to expose data from Garmin Connect to Home Assistant. | 2025&#x2011;05&#x2011;12&nbsp; | ⭐325 |
 | [VibraTest](https://github.com/flocsy/VibraTest) | vibration and tone tester for Garmin developers | 2025&#x2011;04&#x2011;07&nbsp; | |
 | [workspace-ConnectIQ](https://github.com/rbsexton/workspace-ConnectIQ) | Garmin Connect IQ Apps | 2025&#x2011;02&#x2011;11&nbsp; | ⭐6 |
-| [connectiq-apps](https://github.com/garmin/connectiq-apps) | A collection of Connect IQ apps. | 2025&#x2011;01&#x2011;08&nbsp; | ⭐526 |
+| [connectiq-apps](https://github.com/garmin/connectiq-apps) | A collection of Connect IQ apps. | 2025&#x2011;01&#x2011;08&nbsp; | ⭐527 |
 | [MonkeyAOC](https://github.com/YAWNICK/MonkeyAOC) | [Advent of Code](https://adventofcode.com) in Monkey C | 2024&#x2011;12&#x2011;03&nbsp; | ⭐3 |
 | [connect-iq](https://github.com/AndrewKhassapov/connect-iq) | Creating a Garmin watch-face 101 | 2024&#x2011;11&#x2011;14&nbsp; | ⭐40 |
 | [NextMatchReminder](https://github.com/ZachXu/NextMatchReminder) | Garmin Application including WatchFace project ,Widget project and a share lib which synchronizing data  | 2024&#x2011;10&#x2011;14&nbsp; | ⭐1 |
