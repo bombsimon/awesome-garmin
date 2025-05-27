@@ -336,8 +336,8 @@
 "https://github.com/SylvainGa/Flashlight" = {}
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
 "https://github.com/SylvainGa/Tesla-Link" = {}
-"https://github.com/TheNinth7/ohg" = { description = "A widget that connects your Garmin device to openHAB, an open-source home automation platform." }
-"https://github.com/TheNinth7/evccg" = { description = "A widget that displays data from evcc, an open-source software solution for solar-powered EV charging." }
+"https://github.com/TheNinth7/evccg" = {}
+"https://github.com/TheNinth7/ohg" = {}
 "https://github.com/TimZander/slope-widget" = {}
 "https://github.com/Vertumnus/garmin-ioBrokerVis" = {}
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
