@@ -336,7 +336,8 @@
 "https://github.com/SylvainGa/Flashlight" = {}
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
 "https://github.com/SylvainGa/Tesla-Link" = {}
-"https://github.com/TheNinth7/evcc-garmin" = { description = "A widget and a glance for displaying information from evcc" }
+"https://github.com/TheNinth7/evccg" = {}
+"https://github.com/TheNinth7/ohg" = {}
 "https://github.com/TimZander/slope-widget" = {}
 "https://github.com/Vertumnus/garmin-ioBrokerVis" = {}
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
