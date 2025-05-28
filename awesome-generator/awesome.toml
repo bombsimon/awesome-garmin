@@ -677,6 +677,7 @@
 "https://github.com/google/open-location-code" = {}
 "https://github.com/iperformance/garmin-conect" = { description = "A collection of Connect IQ apps and libraries" }
 "https://github.com/jstringer1/garmin-connectiq" = {}
+"https://github.com/klimeryk/vim-monkey-c" = {}
 "https://github.com/rbsexton/workspace-ConnectIQ" = {}
 "https://github.com/sunpazed/garmin-ciqsummit17" = { description = "A basic widget that displays tweets from #ciqsummit17" }
 "https://github.com/sunpazed/garmin-complicate" = { description = "An example application that demonstrates system6 complications" }
