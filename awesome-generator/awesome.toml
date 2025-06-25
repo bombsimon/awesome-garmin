@@ -627,6 +627,7 @@
 "https://github.com/urbandroid-team/Sleep-as-Android-Garmin-Addon" = {}
 
 [tools]
+"https://github.com/DavidBaddeley/connectiq-tester" = { description = "Fork of `connectiq-tester` with screenshot support"}
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/blackshadev/garmin-connectiq-release-action" = {}
@@ -644,8 +645,8 @@
 "https://github.com/markw65/monkeyc-optimizer" = {}
 "https://github.com/markw65/prettier-extension-monkeyc" = {}
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
-"https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connect-iq-tester`"}
-"https://github.com/matco/connectiq-tester" = {}
+"https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connectiq-tester`"}
+"https://github.com/matco/connectiq-tester" = { description = "Docker image that can be used to run the tests \"Run No Evil\" of a ConnectIQ application" }
 "https://github.com/matin/garth" = {}
 "https://github.com/pzl/ciqdb" = {}
 "https://github.com/stadelmanma/fitparse-rs" = {}
