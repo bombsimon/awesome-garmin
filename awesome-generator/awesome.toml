@@ -295,7 +295,8 @@
 "https://github.com/rgergely/polesteps" = {}
 "https://github.com/rgergely/steps2fit" = {}
 "https://github.com/roelofk/HeartRateRunner" = {}
-"https://github.com/samueldumont/RaceWithPower" = {}
+"https://github.com/sam-dumont/GarminGoProDatafield" = { description = "Control your GoPro camera from a Datafield" }
+"https://github.com/sam-dumont/RaceWithPower" = {}
 "https://github.com/seajay/ColourHR" = {}
 "https://github.com/simonl-ciq/RollingAverage" = {}
 "https://github.com/simonmacmullen/chart-datafields" = {}
