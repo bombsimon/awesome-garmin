@@ -334,7 +334,6 @@
 "https://github.com/Likenttt/DogecoinToTheMoon" = {}
 "https://github.com/Marios007/WoP" = { description = "Pregnancy Widget for Garmin Watches" }
 "https://github.com/PlanetTeamSpeakk/UC-Widget" = {}
-"https://github.com/openhab/openhab-garmin" = {}
 "https://github.com/SylvainGa/Calculator" = {}
 "https://github.com/SylvainGa/Flashlight" = {}
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
@@ -404,6 +403,7 @@
 "https://github.com/mriscott/GarminRings" = {}
 "https://github.com/natabat/FertiliQ" = {}
 "https://github.com/okdar/lostandfound" = {}
+"https://github.com/openhab/openhab-garmin" = {}
 "https://github.com/pedlarstudios/WordOfTheDay" = {}
 "https://github.com/pyrob2142/FastingWidget" = {}
 "https://github.com/serhuz/CryptoMarket" = {}
