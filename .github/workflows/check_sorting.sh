@@ -26,9 +26,15 @@ if [ $exit_code -ne 0 ]; then
     cat <<-EOF
 Thank you for adding new resources to this project!
 
-To ensure consistency and easier maintenance (e.g., spotting duplicates), the items in each section are sorted alphanumerically.
+To ensure consistency and easier maintenance (e.g., spotting duplicates), the
+items in each section are sorted alphanumerically.
 
-Your recent changes don't follow this convention, so please ensure the section(s) you've edited are properly sorted.
+Your recent changes don't follow this convention, so please ensure the
+section(s) you've edited are properly sorted.
+
+**NOTE** Sorting is case sensitive and since all uppercase letters comes before
+lowercase letters, ensure the whole section is sorted. This means that 'B' comes
+before 'a' and 'b' comes after 'C'.
 
 The following sections are currently not sorted:
 
