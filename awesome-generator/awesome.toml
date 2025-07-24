@@ -687,3 +687,4 @@
 "https://github.com/sunpazed/garmin-complicate-circle" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-waketest" = { description = "Watchface to verify timings, and poll frequency of `onUpdate()`" }
 "https://github.com/waterkip/connectiq-sdk-docker" = {}
+"https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
