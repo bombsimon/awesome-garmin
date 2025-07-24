@@ -339,7 +339,6 @@
 "https://github.com/SylvainGa/Garmin-WeeWX" = {}
 "https://github.com/SylvainGa/Tesla-Link" = {}
 "https://github.com/TheNinth7/evccg" = {}
-"https://github.com/TheNinth7/ohg" = {}
 "https://github.com/TimZander/slope-widget" = {}
 "https://github.com/Vertumnus/garmin-ioBrokerVis" = {}
 "https://github.com/YoungChulDK/GarminCryptoPrices" = {}
@@ -404,6 +403,7 @@
 "https://github.com/mriscott/GarminRings" = {}
 "https://github.com/natabat/FertiliQ" = {}
 "https://github.com/okdar/lostandfound" = {}
+"https://github.com/openhab/openhab-garmin" = {}
 "https://github.com/pedlarstudios/WordOfTheDay" = {}
 "https://github.com/pyrob2142/FastingWidget" = {}
 "https://github.com/serhuz/CryptoMarket" = {}
