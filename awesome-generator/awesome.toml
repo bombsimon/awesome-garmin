@@ -663,6 +663,7 @@
 "https://github.com/AndrewKhassapov/connect-iq" = {}
 "https://github.com/Artaud/CIQ-Comm-failure-sample" = {}
 "https://github.com/Likenttt/garmin-games" = {}
+"https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
 "https://github.com/Peterdedecker/connectiq" = {}
 "https://github.com/Shmuma/garmin-public" = {}
 "https://github.com/YAWNICK/MonkeyAOC" = { description = "[Advent of Code](https://adventofcode.com) in Monkey C" }
