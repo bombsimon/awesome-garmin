@@ -1,7 +1,7 @@
 use futures::StreamExt;
 use gitlab::{api::AsyncQuery, AsyncGitlab};
 use handlebars::{no_escape, Context, Handlebars, Helper, HelperResult, Output, RenderContext};
-use octocrab::Octocrab;
+use octocrab::{models::Author, Octocrab};
 use serde::{Deserialize, Serialize};
 use serde_with::{serde_as, NoneAsEmptyString};
 use std::{
@@ -422,6 +422,12 @@ async fn update_github_resource(
         Err(err) => {
             eprintln!("⚠️ Could not get {resource_url}: {err}");
             return (None, false);
+        }
+    };
+
+    if let Some(Author { login, .. }) = result.owner {
+        if owner.to_lowercase() != login.to_lowercase() {
+            eprintln!("⚠️ Owner in toml file ({owner}) does not match the repo ({login})");
         }
     };
 
