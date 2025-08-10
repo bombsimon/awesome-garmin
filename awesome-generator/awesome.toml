@@ -545,7 +545,7 @@
 "https://github.com/frenchtoast747/connectiq-packman" = {}
 "https://github.com/gaetanmarti/glidator" = {}
 "https://github.com/gatkin/commute-tracker" = {}
-"https://github.com/georgefang13/STRIDE_CIQ_CustomBleProfile" = {}
+"https://github.com/georgefang13/STRIDE_CIQ_CustomBleProfile" = { description = "Connect FR265 to your STRIDE hardware" }
 "https://github.com/gergo225/StepGetterWatch" = {}
 "https://github.com/Gualor/garmin-gotchi" = {}
 "https://github.com/hansiglaser/ConnectIQ" = {}
@@ -657,8 +657,8 @@
 "https://github.com/douglasr/ciqtools-number-picker" = { description = "Number picker barrel" }
 "https://github.com/douglasr/msgpack-monkeyc" = {}
 "https://github.com/hurenkam/WidgetBarrel" = {}
-"https://github.com/mannyray/ANTPlusHeartStrap" = {}
-"https://github.com/mannyray/GarminBytePacking" = {}
+"https://github.com/mannyray/ANTPlusHeartStrap" = { description = "Code for connecting your ANT+ heart strap to your garmin watch" }
+"https://github.com/mannyray/GarminBytePacking" = { description = "Garmin library that adds functions for manipulating ByteArrays, Floats, Doubles and Longs" }
 "https://github.com/mikkosh/AntAssetTracker" = {}
 "https://github.com/vtrifonov-esfiddle/ConnectIqDataPickers" = {}
 "https://gitlab.com/waterkip/opn-monkeyc" = {}
