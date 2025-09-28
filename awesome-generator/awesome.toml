@@ -386,6 +386,7 @@
 "https://github.com/cedric-dufour/connectiq-widget-pilotaltimeter" = {}
 "https://github.com/cedric-dufour/connectiq-widget-pilotsrss" = {}
 "https://github.com/cedric-dufour/connectiq-widget-totp" = {}
+"https://github.com/ChelsWin/Tasker-Trigger" = {}
 "https://github.com/chemikadze/garmin-authenticator" = {}
 "https://github.com/dabastynator/GarminSmartHome" = {}
 "https://github.com/danielsiwiec/garmin-connect-seed" = { description = "This is a seed project for writing Garmin Connect IQ application" }
