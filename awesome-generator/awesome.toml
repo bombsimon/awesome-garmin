@@ -230,7 +230,7 @@
 
 [data_fields]
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
-"https://github.com/AlexBarinov/HikeDifficulty" = { description = "Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site" }
+"https://github.com/AlexBarinov/GarminHikeDifficulty" = { description = "Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site" }
 "https://github.com/Bimtino/ActivityMonitor" = {}
 "https://github.com/Fra-Sti/Sailing-Instrument" = {}
 "https://github.com/Likenttt/GRun-Chinese" = {}
