@@ -718,6 +718,7 @@
 "https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
+"https://github.com/zzyandzzy/fit-rust" = {}
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
 
@@ -748,10 +749,12 @@
 "https://github.com/iperformance/garmin-conect" = { description = "A collection of Connect IQ apps and libraries" }
 "https://github.com/jstringer1/garmin-connectiq" = {}
 "https://github.com/klimeryk/vim-monkey-c" = {}
+"https://github.com/mkuthan/garmin-workouts" = {}
 "https://github.com/rbsexton/workspace-ConnectIQ" = {}
 "https://github.com/simonl-ciq/GridReference" = {}
 "https://github.com/sunpazed/garmin-ciqsummit17" = { description = "A basic widget that displays tweets from #ciqsummit17" }
 "https://github.com/sunpazed/garmin-complicate" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-complicate-circle" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-waketest" = { description = "Watchface to verify timings, and poll frequency of `onUpdate()`" }
+"https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator" = {}
 "https://github.com/waterkip/connectiq-sdk-docker" = {}
