@@ -89,8 +89,14 @@ jobs:
           git add awesome-generator/awesome.toml
           git commit -m "Fix owner mismatches and remove not-found repos"
 
-          # Push and create PR
-          git push origin "$BRANCH_NAME"
+          # Force push (branch may exist from previous run)
+          git push --force origin "$BRANCH_NAME"
+
+          # Check if PR already exists for this branch
+          if gh pr view "$BRANCH_NAME" &>/dev/null; then
+            echo "PR already exists for $BRANCH_NAME"
+            exit 0
+          fi
 
           gh pr create \
             --title "Auto-fix: Update awesome.toml URLs" \
