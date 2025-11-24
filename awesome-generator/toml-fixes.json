@@ -1,12 +1,12 @@
 {
   "owner_mismatches": [
     {
-      "old_url": "https://github.com/dev-lessismore/Essence",
-      "new_url": "https://github.com/dev-whiterice/Essence"
-    },
-    {
       "old_url": "https://github.com/supercoder3000/daytimeWatchFace",
       "new_url": "https://github.com/jrhahn/daytimeWatchFace"
+    },
+    {
+      "old_url": "https://github.com/dev-lessismore/Essence",
+      "new_url": "https://github.com/dev-whiterice/Essence"
     },
     {
       "old_url": "https://github.com/anhmv/ximpo",
@@ -21,12 +21,12 @@
       "new_url": "https://github.com/tanvir-dhanjal/Garmin-NBA-Widget"
     },
     {
-      "old_url": "https://github.com/forsb/Ticker",
-      "new_url": "https://github.com/filarl/Ticker"
-    },
-    {
       "old_url": "https://github.com/singh144401/Garmin-Sudoku-Watch-App",
       "new_url": "https://github.com/tanvir-dhanjal/Garmin-Sudoku-Watch-App"
+    },
+    {
+      "old_url": "https://github.com/forsb/Ticker",
+      "new_url": "https://github.com/filarl/Ticker"
     },
     {
       "old_url": "https://github.com/ggoraa/kumitateru",
