@@ -1,16 +1,16 @@
 {
   "owner_mismatches": [
     {
-      "old_url": "https://github.com/supercoder3000/daytimeWatchFace",
-      "new_url": "https://github.com/jrhahn/daytimeWatchFace"
-    },
-    {
       "old_url": "https://github.com/dev-lessismore/Essence",
       "new_url": "https://github.com/dev-whiterice/Essence"
     },
     {
       "old_url": "https://github.com/anhmv/ximpo",
       "new_url": "https://github.com/mcvnh/ximpo"
+    },
+    {
+      "old_url": "https://github.com/supercoder3000/daytimeWatchFace",
+      "new_url": "https://github.com/jrhahn/daytimeWatchFace"
     },
     {
       "old_url": "https://github.com/danielp27/Lap-average-vertical-speed",
