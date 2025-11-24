@@ -23,6 +23,22 @@ const MAX_CONCURRENT_REQUESTS: usize = 20;
 /// might still be useful for reference but are put away under a separate menu to reduce noise.
 const MAX_AGE_BEFORE_OLD: std::time::Duration = std::time::Duration::from_secs(86400 * 365 * 2);
 
+/// Represents an owner fix that needs to be applied to the toml file.
+#[derive(Debug, Serialize)]
+struct OwnerFix {
+    old_url: String,
+    new_url: String,
+}
+
+/// Collects all issues found during README generation that can be auto-fixed.
+#[derive(Debug, Default, Serialize)]
+struct TomlFixes {
+    /// URLs where the owner in the toml doesn't match the actual repo owner
+    owner_mismatches: Vec<OwnerFix>,
+    /// URLs that returned "Not Found" and should be removed
+    not_found: Vec<String>,
+}
+
 /// [`GarminResources`] is a nested [`BTreeMap`] that contains each resource type and for each type
 /// one active and one inactive key with a list of resources. The content looks something like
 /// this:
@@ -184,6 +200,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     );
 
     let data: Arc<Mutex<GarminResources>> = Arc::new(Mutex::new(BTreeMap::new()));
+    let fixes: Arc<Mutex<TomlFixes>> = Arc::new(Mutex::new(TomlFixes::default()));
 
     let resource_types = vec![
         (ResourceType::WatchFace, resources.watch_faces),
@@ -210,6 +227,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
                 octocrab.clone(),
                 glab.clone(),
                 data.clone(),
+                fixes.clone(),
             ));
         }
     }
@@ -238,6 +256,18 @@ pub async fn generate_readme() -> anyhow::Result<()> {
 
     println!("{}", hb.render("readme", &template)?);
 
+    // Write fixes file if there are any issues to fix
+    let fixes = Arc::try_unwrap(fixes).unwrap().into_inner()?;
+    if !fixes.owner_mismatches.is_empty() || !fixes.not_found.is_empty() {
+        let fixes_json = serde_json::to_string_pretty(&fixes)?;
+        std::fs::write("toml-fixes.json", fixes_json)?;
+        eprintln!(
+            "\n📝 Found {} owner mismatch(es) and {} not-found resource(s). Written to toml-fixes.json",
+            fixes.owner_mismatches.len(),
+            fixes.not_found.len()
+        );
+    }
+
     Ok(())
 }
 
@@ -252,7 +282,7 @@ fn resource_list_helper(
 
     let show_description = h
         .param(2)
-        .map_or(true, |p| p.value().as_bool().unwrap_or(true));
+        .is_none_or(|p| p.value().as_bool().unwrap_or(true));
 
     let active = h.param(0).unwrap().value();
     output.push_str(&resources_to_str(active, show_description));
@@ -368,11 +398,12 @@ async fn update_resource(
     octocrab: Arc<Octocrab>,
     glab: Arc<AsyncGitlab>,
     data: Arc<Mutex<GarminResources>>,
+    fixes: Arc<Mutex<TomlFixes>>,
 ) {
     eprintln!("Updating {}", resource_url);
 
     let (resource, is_old) = if resource_url.contains("github.com") {
-        update_github_resource(resource_url, &resource, octocrab).await
+        update_github_resource(resource_url, &resource, octocrab, fixes).await
     } else if resource_url.contains("gitlab.com") {
         update_gitlab_resource(resource_url, &resource, glab).await
     } else if let Some(name) = resource.name {
@@ -408,6 +439,7 @@ async fn update_github_resource(
     resource_url: String,
     resource: &TomlFileItem,
     octocrab: Arc<octocrab::Octocrab>,
+    fixes: Arc<Mutex<TomlFixes>>,
 ) -> (Option<GarminResource>, bool) {
     let u = url::Url::parse(&resource_url).unwrap();
     let mut owner_repo = u.path().strip_prefix('/').unwrap().split('/');
@@ -417,6 +449,11 @@ async fn update_github_resource(
         Ok(result) => result,
         Err(octocrab::Error::GitHub { source, .. }) => {
             eprintln!("⚠️ Could not get {resource_url}: {}", source.message);
+
+            if source.message.contains("Not Found") {
+                fixes.lock().unwrap().not_found.push(resource_url);
+            }
+
             return (None, false);
         }
         Err(err) => {
@@ -428,6 +465,15 @@ async fn update_github_resource(
     if let Some(Author { login, .. }) = result.owner {
         if owner.to_lowercase() != login.to_lowercase() {
             eprintln!("⚠️ Owner in toml file ({owner}) does not match the repo ({login})");
+            let new_url = resource_url.replace(
+                &format!("github.com/{owner}"),
+                &format!("github.com/{login}"),
+            );
+
+            fixes.lock().unwrap().owner_mismatches.push(OwnerFix {
+                old_url: resource_url.clone(),
+                new_url,
+            });
         }
     };
 
@@ -627,9 +673,9 @@ mod ymd_date {
 
 #[cfg(test)]
 mod test {
-    use std::sync::Arc;
+    use std::sync::{Arc, Mutex};
 
-    use crate::{sorted_resources, GarminResource, TomlFileItem};
+    use crate::{sorted_resources, GarminResource, TomlFileItem, TomlFixes};
 
     #[test]
     fn same_updated_should_sort_on_name() {
@@ -691,8 +737,10 @@ mod test {
         );
 
         let url = "https://github.com/bombsimon/garmin-seaside";
+        let fixes = Arc::new(Mutex::new(TomlFixes::default()));
         let (resource, _) =
-            super::update_github_resource(url.to_string(), &empy_toml, octocrab.clone()).await;
+            super::update_github_resource(url.to_string(), &empy_toml, octocrab.clone(), fixes)
+                .await;
 
         assert!(resource.is_some());
 

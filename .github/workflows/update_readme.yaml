@@ -15,18 +15,96 @@ jobs:
   generate:
     permissions:
       contents: write
+      pull-requests: write
 
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Generate README
         working-directory: ./awesome-generator
         run: cargo run generate-readme > ../README.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+
       - name: Commit updated README
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Re-generate README"
+
+      - name: Check for toml fixes
+        id: check-fixes
+        working-directory: ./awesome-generator
+        run: |
+          if [ -f toml-fixes.json ]; then
+            echo "has_fixes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_fixes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Apply fixes to awesome.toml
+        if: steps.check-fixes.outputs.has_fixes == 'true'
+        working-directory: ./awesome-generator
+        run: |
+          # Apply owner mismatch fixes (replace old URLs with new URLs)
+          jq -r '.owner_mismatches[] | "\(.old_url)|\(.new_url)"' toml-fixes.json | while IFS='|' read -r old_url new_url; do
+            echo "Fixing owner: $old_url -> $new_url"
+            sed -i "s|\"$old_url\"|\"$new_url\"|g" awesome.toml
+          done
+
+          # Remove not-found URLs
+          jq -r '.not_found[]' toml-fixes.json | while read -r url; do
+            echo "Removing not-found: $url"
+            sed -i "/\"$url\"/d" awesome.toml
+          done
+
+          # Clean up
+          rm toml-fixes.json
+
+      - name: Sort toml sections
+        if: steps.check-fixes.outputs.has_fixes == 'true'
+        run: bash .github/workflows/sort_toml.sh
+
+      - name: Create PR for toml fixes
+        if: steps.check-fixes.outputs.has_fixes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check if there are actual changes
+          if git diff --quiet awesome-generator/awesome.toml; then
+            echo "No changes to awesome.toml"
+            exit 0
+          fi
+
+          BRANCH_NAME="auto-fix/toml-updates-$(date +%Y%m%d)"
+
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create branch and commit
+          git checkout -b "$BRANCH_NAME"
+          git add awesome-generator/awesome.toml
+          git commit -m "Fix owner mismatches and remove not-found repos"
+
+          # Push and create PR
+          git push origin "$BRANCH_NAME"
+
+          gh pr create \
+            --title "Auto-fix: Update awesome.toml URLs" \
+            --body "$(cat <<'EOF'
+          ## Summary
+
+          This PR was automatically generated to fix issues found during README generation:
+
+          - **Owner mismatches**: Repository URLs where the owner in the toml file doesn't match the actual repository owner
+          - **Not found**: Repository URLs that returned 404 (deleted or made private)
+
+          Please review the changes before merging.
+
+          🤖 Generated automatically by CI
+          EOF
+          )" \
+            --base main
