@@ -54,10 +54,10 @@ jobs:
             sed -i "s|\"$old_url\"|\"$new_url\"|g" awesome.toml
           done
 
-          # Remove not-found URLs
+          # Remove not-found URLs (use # as delimiter since URLs contain /)
           jq -r '.not_found[]' toml-fixes.json | while read -r url; do
             echo "Removing not-found: $url"
-            sed -i "/\"$url\"/d" awesome.toml
+            sed -i "\#\"$url\"#d" awesome.toml
           done
 
           # Clean up
