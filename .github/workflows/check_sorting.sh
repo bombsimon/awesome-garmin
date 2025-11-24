@@ -14,7 +14,7 @@ sections=($(awk -v RS= -v ORS=";" '{print}' "$file"))
 for section in "${sections[@]}"; do
     header=$(echo "$section" | head -n 1)
     rows=$(echo "$section" | tail -n +2)
-    sorted=$(echo "$rows" | sort)
+    sorted=$(echo "$rows" | LC_ALL=C sort)
 
     if [ "$rows" != "$sorted" ]; then
         invalid_sections+=("$header")
