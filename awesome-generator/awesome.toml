@@ -78,7 +78,6 @@
 "https://github.com/aklarl/BavarianWatchFace" = {}
 "https://github.com/alni/AlniLargeTimeWatchFace" = {}
 "https://github.com/andriijas/connectiq-apps" = {}
-"https://github.com/anhmv/ximpo" = {}
 "https://github.com/ankineri/gweatherwatch" = {}
 "https://github.com/antonioasaro/GARMIN-AMD_Watchface" = {}
 "https://github.com/ayaromenok/WatchFaceMonospace" = {}
@@ -89,7 +88,6 @@
 "https://github.com/bodnar13/JBWatch" = {}
 "https://github.com/bodyazn/COVID19WF" = {}
 "https://github.com/bombsimon/garmin-seaside" = {}
-"https://github.com/botagergo/Garmin" = {}
 "https://github.com/cekeller6121/Garmin-Watchface" = {}
 "https://github.com/chakflying/tactix-fenix" = {}
 "https://github.com/cizi/Sundance" = {}
@@ -103,7 +101,7 @@
 "https://github.com/dbcm/KISSFace" = {}
 "https://github.com/dennybiasiolli/garmin-connect-iq" = {}
 "https://github.com/derbartigelady/Tac" = {}
-"https://github.com/dev-lessismore/Essence" = {}
+"https://github.com/dev-whiterice/Essence" = {}
 "https://github.com/deviammx/dexli-watchface" = {}
 "https://github.com/dimasmith/binary-clock" = {}
 "https://github.com/dmllr/vaguetime-watch-face" = {}
@@ -137,6 +135,7 @@
 "https://github.com/jonathan-beebe/garmin-offset-watch-face" = {}
 "https://github.com/jonathandaliva/Fenix5" = {}
 "https://github.com/jpg63/crystal-face-jpg63" = {}
+"https://github.com/jrhahn/daytimeWatchFace" = {}
 "https://github.com/kelnage/digital-simplicity" = {}
 "https://github.com/kevin940726/shy-watch-face" = {}
 "https://github.com/kevinboone/BAWF" = {}
@@ -156,6 +155,7 @@
 "https://github.com/markdotai/m1" = {}
 "https://github.com/markdotai/m2" = {}
 "https://github.com/matei-tm/garmin-m8m" = {}
+"https://github.com/mcvnh/ximpo" = {}
 "https://github.com/miamo/batman" = {}
 "https://github.com/micooke/LetsGetDigital" = {}
 "https://github.com/modus75/RaVel-GarminDigitalWatchFace" = {}
@@ -204,7 +204,6 @@
 "https://github.com/sunpazed/garmin-oz" = {}
 "https://github.com/sunpazed/garmin-pollock" = {}
 "https://github.com/sunpazed/garmin-vangogh" = {}
-"https://github.com/supercoder3000/daytimeWatchFace" = {}
 "https://github.com/sura0111/GarminWatchFaceSuccessCircle" = {}
 "https://github.com/thekr1s/garmin_wordclock" = {}
 "https://github.com/tomfogg/garmin-roundedtext" = {}
@@ -247,8 +246,8 @@
 "https://github.com/clementbarthes/GarminCogDisplay" = {}
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/danielmitd/datafields" = {}
-"https://github.com/danielp27/Lap-average-vertical-speed" = { description = "Performance per kilometer calculation" }
 "https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Average vertical lap speed" }
+"https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Performance per kilometer calculation" }
 "https://github.com/davisben/edgecycle" = {}
 "https://github.com/der-Dod/jumps" = {}
 "https://github.com/dhague/bt-ats-ciq-datafield" = {}
@@ -444,13 +443,12 @@
 "https://github.com/simonmacmullen/activity-widget" = {}
 "https://github.com/simonmacmullen/hr-widget" = {}
 "https://github.com/simonmacmullen/instrument-panel" = {}
-"https://github.com/singh144401/Garmin-NBA-Widget" = {}
 "https://github.com/srwalter/garmin-tesla" = {}
 "https://github.com/starryalley/Unquestionify" = {}
 "https://github.com/starryalley/garmin-birds-around" = {}
-"https://github.com/stv0g/connectiq-ura" = {}
 "https://github.com/tanstaaflFH/BabyLog-Feed-ConnectIQ" = {}
 "https://github.com/tanstaaflFH/BabyLog-Sleep-ConnectIQ" = {}
+"https://github.com/tanvir-dhanjal/Garmin-NBA-Widget" = {}
 "https://github.com/toskaw/ImageNotify" = {}
 "https://github.com/tumb1er/BetterBatteryWidget" = {}
 "https://github.com/uaraven/otpauth-ciq" = {}
@@ -540,11 +538,11 @@
 "https://github.com/electrofloat/BPTransport-Garmin" = { description = "A Garmin Connect IQ app to view realtime public transport data" }
 "https://github.com/eriklupander/Fenix3GolfDistance" = {}
 "https://github.com/fabrikant/RoseOfWind" = {}
+"https://github.com/filarl/Ticker" = {}
 "https://github.com/flori/S2C" = {}
 "https://github.com/floriangeigl/Meditate" = {}
 "https://github.com/fmercado/telemeter" = {}
 "https://github.com/fo2rist/garmin-vehicle-keyfob" = {}
-"https://github.com/forsb/Ticker" = {}
 "https://github.com/frenchtoast747/connectiq-packman" = {}
 "https://github.com/gaetanmarti/glidator" = {}
 "https://github.com/gatkin/commute-tracker" = {}
@@ -611,13 +609,13 @@
 "https://github.com/sharkbait-au/HRV_iq" = {}
 "https://github.com/shprung/garminIQ_HRonly" = {}
 "https://github.com/simonseo/garmin-otp-generator" = {}
-"https://github.com/singh144401/Garmin-Sudoku-Watch-App" = {}
 "https://github.com/sjager/GarminApps" = {}
 "https://github.com/slipperybee/connectiq-islamic-calendar" = {}
 "https://github.com/slipperybee/connectiq-jewish-calendar" = {}
 "https://github.com/sohaeb/Garmin_pomodoro" = {}
 "https://github.com/spikyjt/SailingTimer" = {}
 "https://github.com/sw-samuraj/garmin-inline-skating" = {}
+"https://github.com/tanvir-dhanjal/Garmin-Sudoku-Watch-App" = {}
 "https://github.com/toomasr/8-min-abs" = {}
 "https://github.com/toskaw/NotifyApp" = {}
 "https://github.com/tskf/MapOfflineGPS" = {}
@@ -699,7 +697,6 @@
 "https://github.com/gcaufield/MonkeyInject" = {}
 "https://github.com/gcaufield/MonkeyPack" = {}
 "https://github.com/gcaufield/MonkeyTest" = {}
-"https://github.com/ggoraa/kumitateru" = {}
 "https://github.com/hacdias/flowfit" = {}
 "https://github.com/himanushi/dithering-converter" = {}
 "https://github.com/kalemena/docker-connectiq" = {}
@@ -718,6 +715,7 @@
 "https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
+"https://github.com/voltangle/kumitateru" = {}
 "https://github.com/zzyandzzy/fit-rust" = {}
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
