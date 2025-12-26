@@ -247,7 +247,6 @@
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/danielmitd/datafields" = {}
 "https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Average vertical lap speed" }
-"https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Performance per kilometer calculation" }
 "https://github.com/davisben/edgecycle" = {}
 "https://github.com/der-Dod/jumps" = {}
 "https://github.com/dhague/bt-ats-ciq-datafield" = {}
