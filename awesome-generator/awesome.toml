@@ -677,6 +677,7 @@
 
 [tools]
 "https://github.com/DavidBaddeley/connectiq-tester" = { description = "Fork of `connectiq-tester` with screenshot support"}
+"https://github.com/KristianP26/ble-scale-sync" = {}
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
