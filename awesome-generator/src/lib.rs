@@ -153,7 +153,7 @@ struct TomlFile {
 /// A [`GarminResource`] is the resource that is populated after resolving the TOML file contents
 /// and fetching additional information from an API. It holds all the data used to render the
 /// README items.
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Deserialize)]
 struct GarminResource {
     name: String,
     description: Option<String>,
@@ -166,7 +166,7 @@ struct GarminResource {
 
 /// The data that is passed to render the template. It contains all the resolved Garmin resources
 /// grouped by type and a timestamp to set when the file was generated.
-#[derive(Serialize)]
+#[derive(Serialize, Deserialize)]
 struct Template {
     resources: GarminResources,
     updated_at: String,
@@ -677,7 +677,7 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
 /// [`ymd_date`] implements a serializer to show a more condensed date in the README. It will only
 /// show YYYY-MM-DD.
 mod ymd_date {
-    use serde::{self, Serializer};
+    use serde::{self, Deserialize, Deserializer, Serializer};
 
     const FORMAT: &str = "%Y&#x2011;%m&#x2011;%d";
 
@@ -694,6 +694,23 @@ mod ymd_date {
                 serializer.serialize_str(&s)
             }
             None => serializer.serialize_str(""),
+        }
+    }
+
+    pub fn deserialize<'de, D>(
+        deserializer: D,
+    ) -> Result<Option<chrono::DateTime<chrono::Utc>>, D::Error>
+    where
+        D: Deserializer<'de>,
+    {
+        let s: Option<String> = Option::deserialize(deserializer)?;
+        match s {
+            Some(s) if s.is_empty() => Ok(None),
+            Some(s) => s
+                .parse::<chrono::DateTime<chrono::Utc>>()
+                .map(Some)
+                .map_err(serde::de::Error::custom),
+            None => Ok(None),
         }
     }
 }
@@ -804,5 +821,70 @@ mod test {
         assert_eq!(resource_data.name, "Plotty McClockface".to_string());
         assert_eq!(resource_data.url, url.to_string());
         assert!(!resource_data.is_archived);
+    }
+
+    #[test]
+    fn test_readme_template_rendering() {
+        use crate::{resource_count_helper, resource_list_helper, Template, TEMPLATE};
+        use handlebars::{no_escape, Handlebars};
+        use serde_json::json;
+
+        let template: Template = serde_json::from_value(json!({
+            "updated_at": "2025-01-15",
+            "resources": {
+                "watch_face": {
+                    "active": [
+                        {
+                            "name": "ActiveFace",
+                            "url": "https://github.com/test/active-face",
+                            "description": "An active watch face",
+                            "last_updated": "2025-01-01T00:00:00Z",
+                            "is_archived": false,
+                            "star_count": 42
+                        }
+                    ],
+                    "inactive": [
+                        {
+                            "name": "OldFace",
+                            "url": "https://github.com/test/old-face",
+                            "description": "An old watch face",
+                            "last_updated": "2020-01-01T00:00:00Z",
+                            "is_archived": true,
+                            "star_count": 5
+                        }
+                    ]
+                },
+                "data_field": {
+                    "active": [
+                        {
+                            "name": "SpeedField",
+                            "url": "https://github.com/test/speed",
+                            "description": "Shows speed",
+                            "last_updated": "2024-06-01T00:00:00Z",
+                            "is_archived": false,
+                            "star_count": 10
+                        }
+                    ],
+                    "inactive": []
+                },
+                "widget": { "active": [], "inactive": [] },
+                "device_app": { "active": [], "inactive": [] },
+                "audio_content_provider": { "active": [], "inactive": [] },
+                "barrel": { "active": [], "inactive": [] },
+                "companion_app": { "active": [], "inactive": [] },
+                "tool": { "active": [], "inactive": [] },
+                "miscellaneous": { "active": [], "inactive": [] }
+            }
+        }))
+        .expect("Failed to deserialize template");
+
+        let mut hb = Handlebars::new();
+        hb.register_escape_fn(no_escape);
+        hb.register_template_string("readme", TEMPLATE).unwrap();
+        hb.register_helper("resourceList", Box::new(resource_list_helper));
+        hb.register_helper("resourceCount", Box::new(resource_count_helper));
+
+        let output = hb.render("readme", &template).expect("Failed to render");
+        println!("{}", output);
     }
 }
