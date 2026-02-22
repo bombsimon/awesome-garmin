@@ -239,6 +239,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     hb.register_escape_fn(no_escape);
     hb.register_template_string("readme", TEMPLATE).unwrap();
     hb.register_helper("resourceList", Box::new(resource_list_helper));
+    hb.register_helper("resourceCount", Box::new(resource_count_helper));
 
     {
         let mut d = data.lock().unwrap();
@@ -267,6 +268,32 @@ pub async fn generate_readme() -> anyhow::Result<()> {
             fixes.not_found.len()
         );
     }
+
+    Ok(())
+}
+
+fn resource_count_helper(
+    h: &Helper,
+    _: &Handlebars,
+    _: &Context,
+    _: &mut RenderContext,
+    out: &mut dyn Output,
+) -> HelperResult {
+    let mut count = 0;
+
+    if let Some(active) = h.param(0) {
+        if let Some(arr) = active.value().as_array() {
+            count += arr.len();
+        }
+    }
+
+    if let Some(inactive) = h.param(1) {
+        if let Some(arr) = inactive.value().as_array() {
+            count += arr.len();
+        }
+    }
+
+    out.write(&count.to_string())?;
 
     Ok(())
 }
