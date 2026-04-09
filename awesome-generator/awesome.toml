@@ -381,6 +381,7 @@
 "https://github.com/blaskovicz/garmin-nest-camera-control" = {}
 "https://github.com/bombsimon/garmin-swish-qr" = {}
 "https://github.com/britiger/criticalmaps-garmin-widget" = {}
+"https://github.com/bunburya/LPTG" = { description = "London Public Transport for Garmin" }
 "https://github.com/cedric-dufour/connectiq-widget-pilotaltimeter" = {}
 "https://github.com/cedric-dufour/connectiq-widget-pilotsrss" = {}
 "https://github.com/cedric-dufour/connectiq-widget-totp" = {}
