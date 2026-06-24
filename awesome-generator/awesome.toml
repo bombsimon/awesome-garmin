@@ -721,6 +721,7 @@
 "https://github.com/tcgoetz/GarminDB" = {}
 "https://github.com/voltangle/kumitateru" = {}
 "https://github.com/zzyandzzy/fit-rust" = {}
+"https://jiake.app" = { name = "JiaKe.app Garmin Mockup", description = "Garmin watch screenshot mockups generator" }
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
 
