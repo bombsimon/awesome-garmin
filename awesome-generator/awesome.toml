@@ -683,6 +683,7 @@
 "https://github.com/Nick2bad4u/FitFileViewer" = {}
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
+"https://github.com/deep0410/garmin-ai-notifier" = { description = "Free automated daily AI brief on Garmin Connect data: SQLite history, full-history stats, Gemini insight, phone push via ntfy/Telegram. GitHub Actions." }
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/blackshadev/garmin-connectiq-release-action" = {}
 "https://github.com/bombsimon/garmin-screenshot" = {}
