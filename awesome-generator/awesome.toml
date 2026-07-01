@@ -724,6 +724,7 @@
 "https://jiake.app" = { name = "JiaKe.app Garmin Mockup", description = "Garmin watch screenshot mockups generator" }
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
+"https://github.com/Wewoc/Garmin_Local_Archive" = { name = "Garmin Local Archive", description = "Local-first Windows desktop app to archive Garmin Connect health data (HRV, sleep, Body Battery, activities) and generate interactive HTML/Excel dashboards — no cloud, open source, standalone EXE" }
 
 [miscellaneous]
 "https://developer.garmin.com/connect-iq/overview" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
