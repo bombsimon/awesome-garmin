@@ -682,7 +682,7 @@
 "https://github.com/KristianP26/ble-scale-sync" = {}
 "https://github.com/Nick2bad4u/FitFileViewer" = {}
 "https://github.com/RobertWojtowicz/export2garmin" = {}
-"https://github.com/Wewoc/Garmin_Local_Archive" = { name = "Garmin Local Archive", description = "Local-first Windows desktop app to archive Garmin Connect health data." }
+"https://github.com/Wewoc/Garmin_Local_Archive" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/blackshadev/garmin-connectiq-release-action" = {}
