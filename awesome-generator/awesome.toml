@@ -761,3 +761,4 @@
 "https://github.com/sunpazed/garmin-waketest" = { description = "Watchface to verify timings, and poll frequency of `onUpdate()`" }
 "https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator" = {}
 "https://github.com/waterkip/connectiq-sdk-docker" = {}
+"https://github.com/wkusnierczyk/garmin-monkey-utils" = {}
