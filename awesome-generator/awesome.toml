@@ -242,7 +242,6 @@
 "https://github.com/bunnyhu/GarminSpeedBar" = {}
 "https://github.com/chfr/garmin-avg-speed-plus" = {}
 "https://github.com/christoph-lucas/garmin-minutes-per-powerkilometer-field" = { description = "A data field for Garmin devices that displays the minutes per power kilometer" }
-"https://github.com/clementbarthes/GarminCogDisplay" = {}
 "https://github.com/creacominc/connectiq-PowerField" = {}
 "https://github.com/danielmitd/datafields" = {}
 "https://github.com/danipindado/Lap-average-vertical-speed" = { description = "Average vertical lap speed" }
