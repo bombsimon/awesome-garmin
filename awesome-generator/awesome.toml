@@ -276,6 +276,7 @@
 "https://github.com/ithiel01/CombiSpeed" = {}
 "https://github.com/janverley/405HR" = {}
 "https://github.com/jimmyspets/HCU" = {}
+"https://github.com/Karth01/Garmin-RunInstinctDF" = {}
 "https://github.com/kolyuchii/TravelCalc" = {}
 "https://github.com/kopa/BikersField" = {}
 "https://github.com/kopa/RunnersField" = {}
@@ -412,6 +413,7 @@
 "https://github.com/jimmycaille/SensorHistoryWidget" = {}
 "https://github.com/jonathanburchmore/Enphase" = {}
 "https://github.com/jurask/authentificator" = {}
+"https://github.com/Karth01/Garmin-TaskerRemote" = {}
 "https://github.com/lkjh654/HabitTree" = { description = "Garmin widget that supports resisting bad habits by growing a tree" }
 "https://github.com/maca88/BikeLightsControl" = {}
 "https://github.com/macherel/Barcode-Wallet" = { description = "Display various type of barcodes (Simple barcode or 2D barcodes like QR code or Aztec code)" }
