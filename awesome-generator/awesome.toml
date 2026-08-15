@@ -226,11 +226,11 @@
 "https://gitlab.com/ravenfeld/Connect-IQ-WatchFace" = {}
 
 [data_fields]
-https://github.com/Karth01/Garmin-RunInstinctDF
 "https://github.com/ActiveLook/Garmin-Datafield-sample-code" = {}
 "https://github.com/AlexBarinov/GarminHikeDifficulty" = { description = "Calculates your real time Shenandoah's Hiking Difficulty as defined on National Park Service site" }
 "https://github.com/Bimtino/ActivityMonitor" = {}
 "https://github.com/Fra-Sti/Sailing-Instrument" = {}
+"https://github.com/Karth01/Garmin-RunInstinctDF"= {}
 "https://github.com/Likenttt/GRun-Chinese" = {}
 "https://github.com/ViktorStagge/ZoneTraining" = { description = "A Zone Training app for Garmin Watches." }
 "https://github.com/adamml/tempo-trainer" = {}
@@ -348,12 +348,12 @@ https://github.com/Karth01/Garmin-RunInstinctDF
 "https://gitlab.com/ravenfeld/connect-iq-datafield-runner" = { description = "Fields of data that can correct the distance course by pressing lap" }
 
 [widgets]
-https://github.com/Karth01/Garmin-TaskerRemote
 "https://github.com/11samype/CIQBitcoinWidget" = {}
 "https://github.com/BDH-Software/ThePlanets-Widget" = {}
 "https://github.com/ChelsWin/Tasker-Trigger" = {}
 "https://github.com/GuMiner/garmin-JustOneButton" = {}
 "https://github.com/JuliensLab/Garmin-BatteryAnalyzer" = {}
+"https://github.com/Karth01/Garmin-TaskerRemote" = {}
 "https://github.com/Likenttt/DogecoinToTheMoon" = {}
 "https://github.com/METIQ-Solutions/evccg" = {}
 "https://github.com/Marios007/WoP" = { description = "Pregnancy Widget for Garmin Watches" }
