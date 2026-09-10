@@ -758,6 +758,7 @@
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/Wewoc/Garmin_Local_Archive" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
+"https://github.com/bes-dev/garmy" = {}
 "https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
 "https://github.com/diegoscarabelli/garmin-health-data" = {}
 "https://github.com/etweisberg/garmin-connect-mcp" = { description = "MCP server for Garmin Connect data" }
@@ -770,7 +771,10 @@
 "https://github.com/matin/garth" = {}
 "https://github.com/mkuthan/garmin-workouts" = {}
 "https://github.com/muktihari/fit" = {}
+"https://github.com/nicohlr/garmin-fetch" = {}
+"https://github.com/nrvim/garmin-givemydata" = {}
 "https://github.com/openivity/openivity.github.io" = {}
+"https://github.com/petergardfjall/garminexport" = {}
 "https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator" = {}
 "https://github.com/tcgoetz/GarminDB" = {}
