@@ -681,12 +681,6 @@
 
 [tools]
 "https://github.com/DavidBaddeley/connectiq-tester" = { description = "Fork of `connectiq-tester` with screenshot support"}
-"https://github.com/KristianP26/ble-scale-sync" = {}
-"https://github.com/Nick2bad4u/FitFileViewer" = {}
-"https://github.com/RobertWojtowicz/export2garmin" = {}
-"https://github.com/Wewoc/Garmin_Local_Archive" = {}
-"https://github.com/anup-shesh/garmin-local-mcp" = {}
-"https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/blackshadev/garmin-connectiq-release-action" = {}
 "https://github.com/bombsimon/garmin-monkeyc.nvim" = {}
@@ -763,6 +757,7 @@
 "https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/Wewoc/Garmin_Local_Archive" = {}
+"https://github.com/anup-shesh/garmin-local-mcp" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/bes-dev/garmy" = {}
 "https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
