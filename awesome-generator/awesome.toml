@@ -374,6 +374,7 @@
 "https://github.com/antirez/iqmeteo" = {}
 "https://github.com/aronsommer/WebRequestGlance-Widget" = { description = "Modified version of the Garmin IQ Connect WebRequest sample" }
 "https://github.com/aronsommer/WebRequestMultiple-Widget" = {}
+"https://github.com/arsfabula/Insta360-Remote-CIQ" = {}
 "https://github.com/ascending-edge/garmin-tally" = {}
 "https://github.com/bbary/Jokes" = {}
 "https://github.com/bbary/book_read_counters" = { description = "Basic counter widget with 3 different counters to keep track of book reading or memorization" }
@@ -680,11 +681,6 @@
 
 [tools]
 "https://github.com/DavidBaddeley/connectiq-tester" = { description = "Fork of `connectiq-tester` with screenshot support"}
-"https://github.com/KristianP26/ble-scale-sync" = {}
-"https://github.com/Nick2bad4u/FitFileViewer" = {}
-"https://github.com/RobertWojtowicz/export2garmin" = {}
-"https://github.com/Wewoc/Garmin_Local_Archive" = {}
-"https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/blackdogit/connectiq-monkeyc" = {}
 "https://github.com/blackshadev/garmin-connectiq-release-action" = {}
 "https://github.com/bombsimon/garmin-monkeyc.nvim" = {}
@@ -698,39 +694,25 @@
 "https://github.com/cyberang3l/GarminSettingsFileParser" = {}
 "https://github.com/cyberang3l/garmin-linux-development-environment" = {}
 "https://github.com/cyberang3l/vim-monkey-c" = {}
-"https://github.com/diegoscarabelli/garmin-health-data" = {}
-"https://github.com/etweisberg/garmin-connect-mcp" = {}
 "https://github.com/flocsy/GarminSportsDev" = {}
 "https://github.com/flocsy/garmin-dev-tools" = {}
-"https://github.com/fulippo/share-your-garmin-workout" = {}
 "https://github.com/gcaufield/MonkeyContainer" = {}
 "https://github.com/gcaufield/MonkeyInject" = {}
 "https://github.com/gcaufield/MonkeyPack" = {}
 "https://github.com/gcaufield/MonkeyTest" = {}
-"https://github.com/hacdias/flowfit" = {}
 "https://github.com/himanushi/dithering-converter" = {}
-"https://github.com/jamiemitchellconsultants/MapToGarmin" = {}
-"https://github.com/jamiemitchellconsultants/RouteTimer" = {}
-"https://github.com/jmackie/garminfit" = {}
 "https://github.com/kalemena/docker-connectiq" = {}
-"https://github.com/lindig/fit" = {}
 "https://github.com/maca88/directive-preprocessor" = {}
 "https://github.com/markw65/monkeyc-optimizer" = {}
 "https://github.com/markw65/prettier-extension-monkeyc" = {}
 "https://github.com/markw65/prettier-plugin-monkeyc" = {}
 "https://github.com/matco/action-connectiq-tester" = { description = "GitHub action for `connectiq-tester`"}
 "https://github.com/matco/connectiq-tester" = { description = "Docker image that can be used to run the tests \"Run No Evil\" of a ConnectIQ application" }
-"https://github.com/matin/garth" = {}
-"https://github.com/muktihari/fit" = {}
-"https://github.com/openivity/openivity.github.io" = {}
 "https://github.com/pcolby/connectiq-sdk-manager" = {}
 "https://github.com/pzl/ciqdb" = {}
 "https://github.com/semolina-solutions/rules_ciq" = {}
-"https://github.com/stadelmanma/fitparse-rs" = {}
 "https://github.com/sunpazed/garmin-tilemapper" = {}
-"https://github.com/tcgoetz/GarminDB" = {}
 "https://github.com/voltangle/kumitateru" = {}
-"https://github.com/zzyandzzy/fit-rust" = {}
 "https://jiake.app" = { name = "JiaKe.app Garmin Mockup", description = "Garmin watch screenshot mockups generator" }
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
 "https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
@@ -742,16 +724,13 @@
 "https://github.com/AndrewKhassapov/connect-iq" = {}
 "https://github.com/Artaud/CIQ-Comm-failure-sample" = {}
 "https://github.com/Likenttt/garmin-games" = {}
-"https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
 "https://github.com/Peterdedecker/connectiq" = {}
 "https://github.com/Shmuma/garmin-public" = {}
 "https://github.com/YAWNICK/MonkeyAOC" = { description = "[Advent of Code](https://adventofcode.com) in Monkey C" }
 "https://github.com/ZachXu/NextMatchReminder" = {}
 "https://github.com/acrossthekyle/garmin" = { description = "Collection of projects created over the years for Garmin watches." }
-"https://github.com/arsfabula/Insta360-Remote-CIQ" = {}
 "https://github.com/creacominc/connectiq-PowerFieldTests" = {}
 "https://github.com/cyberang3l/garmin-monkey-c-neovim-language-server" = {}
-"https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
 "https://github.com/douglasr/connectiq-samples" = {}
 "https://github.com/ekutter/CIQTest" = {}
 "https://github.com/fagalto/ConnectIQ" = { description = "Collection of ConnectIQ apps" }
@@ -762,14 +741,37 @@
 "https://github.com/iperformance/garmin-conect" = { description = "A collection of Connect IQ apps and libraries" }
 "https://github.com/jstringer1/garmin-connectiq" = {}
 "https://github.com/klimeryk/vim-monkey-c" = {}
-"https://github.com/mkuthan/garmin-workouts" = {}
 "https://github.com/rbsexton/workspace-ConnectIQ" = {}
 "https://github.com/simonl-ciq/GridReference" = {}
 "https://github.com/sunpazed/garmin-ciqsummit17" = { description = "A basic widget that displays tweets from #ciqsummit17" }
 "https://github.com/sunpazed/garmin-complicate" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-complicate-circle" = { description = "An example application that demonstrates system6 complications" }
 "https://github.com/sunpazed/garmin-waketest" = { description = "Watchface to verify timings, and poll frequency of `onUpdate()`" }
-"https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator" = {}
 "https://github.com/tinymetrix/client" = { name = "Tinymetrix", description = "Platform to keep tracked analytics on garmin apps (installs, uninstall, engagement, etc)" }
 "https://github.com/waterkip/connectiq-sdk-docker" = {}
 "https://github.com/wkusnierczyk/garmin-monkey-utils" = {}
+
+[garmin_data]
+"https://github.com/KristianP26/ble-scale-sync" = {}
+"https://github.com/Nick2bad4u/FitFileViewer" = {}
+"https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
+"https://github.com/RobertWojtowicz/export2garmin" = {}
+"https://github.com/Wewoc/Garmin_Local_Archive" = {}
+"https://github.com/arpanghosh8453/garmin-grafana" = {}
+"https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
+"https://github.com/diegoscarabelli/garmin-health-data" = {}
+"https://github.com/etweisberg/garmin-connect-mcp" = { description = "MCP server for Garmin Connect data" }
+"https://github.com/fulippo/share-your-garmin-workout" = {}
+"https://github.com/hacdias/flowfit" = {}
+"https://github.com/jamiemitchellconsultants/MapToGarmin" = { description = "Convert a Google Maps route to a Garmin GPX course, entirely client-side" }
+"https://github.com/jamiemitchellconsultants/RouteTimer" = { description = "Predicts cycling route times from your own power history and elevation profile" }
+"https://github.com/jmackie/garminfit" = {}
+"https://github.com/lindig/fit" = {}
+"https://github.com/matin/garth" = {}
+"https://github.com/mkuthan/garmin-workouts" = {}
+"https://github.com/muktihari/fit" = {}
+"https://github.com/openivity/openivity.github.io" = {}
+"https://github.com/stadelmanma/fitparse-rs" = {}
+"https://github.com/sydspost/Garmin-Connect-Workout-and-Schedule-creator" = {}
+"https://github.com/tcgoetz/GarminDB" = {}
+"https://github.com/zzyandzzy/fit-rust" = {}

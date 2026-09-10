@@ -70,6 +70,7 @@ enum ResourceType {
     Barrel,
     Tool,
     CompanionApp,
+    GarminData,
     Miscellaneous,
 }
 
@@ -98,6 +99,7 @@ impl ResourceType {
             | ResourceType::Barrel
             | ResourceType::Tool
             | ResourceType::CompanionApp
+            | ResourceType::GarminData
             | ResourceType::Miscellaneous => false,
             _ => is_old,
         };
@@ -118,6 +120,7 @@ impl std::fmt::Display for ResourceType {
             Self::Tool => write!(f, "tool"),
             Self::CompanionApp => write!(f, "companion_app"),
             Self::Miscellaneous => write!(f, "miscellaneous"),
+            Self::GarminData => write!(f, "garmin_data"),
         }
     }
 }
@@ -147,6 +150,7 @@ struct TomlFile {
     barrels: HashMap<String, TomlFileItem>,
     tools: HashMap<String, TomlFileItem>,
     companion_apps: HashMap<String, TomlFileItem>,
+    garmin_data: HashMap<String, TomlFileItem>,
     miscellaneous: HashMap<String, TomlFileItem>,
 }
 
@@ -214,6 +218,7 @@ pub async fn generate_readme() -> anyhow::Result<()> {
         (ResourceType::Barrel, resources.barrels),
         (ResourceType::Tool, resources.tools),
         (ResourceType::CompanionApp, resources.companion_apps),
+        (ResourceType::GarminData, resources.garmin_data),
         (ResourceType::Miscellaneous, resources.miscellaneous),
     ];
 
@@ -585,6 +590,7 @@ pub async fn compare(keyword: &str) -> anyhow::Result<()> {
         resources.barrels.keys().collect::<HashSet<_>>(),
         resources.tools.keys().collect::<HashSet<_>>(),
         resources.companion_apps.keys().collect::<HashSet<_>>(),
+        resources.garmin_data.keys().collect::<HashSet<_>>(),
         resources.miscellaneous.keys().collect::<HashSet<_>>(),
     ];
 
@@ -873,6 +879,7 @@ mod test {
                 "barrel": { "active": [], "inactive": [] },
                 "companion_app": { "active": [], "inactive": [] },
                 "tool": { "active": [], "inactive": [] },
+                "garmin_data": { "active": [], "inactive": [] },
                 "miscellaneous": { "active": [], "inactive": [] }
             }
         }))
