@@ -126,7 +126,7 @@
 "https://github.com/hiddewie/garmin-watch-face" = {}
 "https://github.com/hurenkam/AnalogExplorerWatchFace" = {}
 "https://github.com/jchabsi/RunnerAttitude" = {}
-"https://github.com/jchen1/ripoff-watch-face" = { description = "Shows how to use custom fonts. https://jeffchen.dev/posts/Garmin-Watch-Faces-Custom-Fonts-On-MacOS/ " }
+"https://github.com/jchen1/ripoff-watch-face" = {}
 "https://github.com/jeffwyeh/Infocal" = {}
 "https://github.com/jensws80/JSClock" = {}
 "https://github.com/jm355/wf" = {}
@@ -508,7 +508,7 @@
 "https://github.com/blackdogit/connectiq-apps" = {}
 "https://github.com/blackshadev/wayfinder" = {}
 "https://github.com/blaskovicz/garmin-tplink-cloud-control" = {}
-"https://github.com/blkfribourg/WheelDash" = { description = "This is a standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV" }
+"https://github.com/blkfribourg/WheelDash" = { description = "Standalone application that works with Begode, Leaperkim, Kingsong, inmotion V11 & V12 wheels and VESC based PEV" }
 "https://github.com/bombsimon/garmin-pace-calculator" = {}
 "https://github.com/brandon-rhodes/brandon-garmin" = {}
 "https://github.com/breber/2048-iq" = {}
@@ -577,7 +577,7 @@
 "https://github.com/kzibart/Garmin_TriPeaks" = {}
 "https://github.com/kzibart/Garmin_Yahtzee" = {}
 "https://github.com/ldscavo/tea-timer" = {}
-"https://github.com/leCapi/RepCounter" = { description = "Repetition counter for Garmin" }
+"https://github.com/leCapi/RepCounter" = { description = "Count repetitions of a movement during a workout" }
 "https://github.com/lucamrod/TriathlonDuathlonAquathlon" = {}
 "https://github.com/lucasasselli/garmin-podcasts" = {}
 "https://github.com/lukasbeckercode/CPR-Timer" = {}
@@ -600,7 +600,7 @@
 "https://github.com/phil-mitchell/garmin-curling" = {}
 "https://github.com/pintail105/SailingTools" = {}
 "https://github.com/pukao/GarminEmergencyContact" = {}
-"https://github.com/pukao/GarminSailing" = { description = "Sailing app for connectIQ Garmin" }
+"https://github.com/pukao/GarminSailing" = { description = "Sailing activities displaying speed in knots and heading direction" }
 "https://github.com/quickdk/uPaddle" = {}
 "https://github.com/rexMingla/low-battery-mode" = {}
 "https://github.com/rgrellmann/connectiq-bergsteigen-app" = {}
@@ -627,7 +627,7 @@
 "https://github.com/vladmunteanu/monky" = {}
 "https://github.com/vtrifonov-esfiddle/Meditate" = {}
 "https://github.com/vtrifonov-esfiddle/TestHrv" = {}
-"https://github.com/weavercm/Connect-IQ-Work-Timer" = { description = "Allows you to keep track of your work time" }
+"https://github.com/weavercm/Connect-IQ-Work-Timer" = { description = "Keep track of your work time" }
 "https://github.com/werkkrew/ciq-hiit-tracker" = {}
 "https://github.com/werkkrew/ciq-orange-theory" = {}
 "https://github.com/winds-mobi/winds-mobi-client-garmin" = {}
@@ -715,7 +715,7 @@
 "https://github.com/voltangle/kumitateru" = {}
 "https://jiake.app" = { name = "JiaKe.app Garmin Mockup", description = "Garmin watch screenshot mockups generator" }
 "https://marketplace.visualstudio.com/items?itemName=garmin.monkey-c" = { name = "VS Code Monkey C", description = "Official VS Code extension for Monkey C"}
-"https://www.angelcode.com/products/bmfont" = { name = "BM Font", description = "This program will allow you to generate bitmap fonts from TrueType fonts" }
+"https://www.angelcode.com/products/bmfont" = { name = "Bitmap Font Generator", description = "Generate bitmap fonts from TrueType fonts" }
 
 [miscellaneous]
 "https://developer.garmin.com/connect-iq/overview" = { name = "Official Garmin developer site", description = "Information about Garmin development and the Monkey C language" }
@@ -754,7 +754,7 @@
 [garmin_data]
 "https://github.com/KristianP26/ble-scale-sync" = {}
 "https://github.com/Nick2bad4u/FitFileViewer" = {}
-"https://github.com/OpenGIS/Inreach-Mapshare" = { name = "inReach MapShare for WordPress", description = "Display your live inReach MapShare data on your WordPress Site" }
+"https://github.com/OpenGIS/Inreach-Mapshare" = {}
 "https://github.com/RobertWojtowicz/export2garmin" = {}
 "https://github.com/Wewoc/Garmin_Local_Archive" = {}
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
@@ -762,11 +762,11 @@
 "https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
 "https://github.com/cyberjunky/python-garminconnect" = {}
 "https://github.com/diegoscarabelli/garmin-health-data" = {}
-"https://github.com/etweisberg/garmin-connect-mcp" = { description = "MCP server for Garmin Connect data" }
+"https://github.com/etweisberg/garmin-connect-mcp" = {}
 "https://github.com/fulippo/share-your-garmin-workout" = {}
 "https://github.com/hacdias/flowfit" = {}
-"https://github.com/jamiemitchellconsultants/MapToGarmin" = { description = "Convert a Google Maps route to a Garmin GPX course, entirely client-side" }
-"https://github.com/jamiemitchellconsultants/RouteTimer" = { description = "Predicts cycling route times from your own power history and elevation profile" }
+"https://github.com/jamiemitchellconsultants/MapToGarmin" = {}
+"https://github.com/jamiemitchellconsultants/RouteTimer" = {}
 "https://github.com/jmackie/garminfit" = {}
 "https://github.com/lindig/fit" = {}
 "https://github.com/matin/garth" = {}
