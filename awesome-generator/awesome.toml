@@ -760,6 +760,7 @@
 "https://github.com/arpanghosh8453/garmin-grafana" = {}
 "https://github.com/bes-dev/garmy" = {}
 "https://github.com/cyberjunky/home-assistant-garmin_connect" = {}
+"https://github.com/cyberjunky/python-garminconnect" = {}
 "https://github.com/diegoscarabelli/garmin-health-data" = {}
 "https://github.com/etweisberg/garmin-connect-mcp" = { description = "MCP server for Garmin Connect data" }
 "https://github.com/fulippo/share-your-garmin-workout" = {}
