@@ -466,6 +466,7 @@
 "https://github.com/BDH-Software/TheStars" = {}
 "https://github.com/BleachDev/GarminQ" = {}
 "https://github.com/BleachDev/Rainy" = {}
+"https://github.com/Bowlinmaster/GarminBowlingApp" = { name = "Bowling Stats", description = "A memory-efficient Garmin Connect IQ bowling score tracker with game history, series tracking, detailed statistics, and device-specific layouts for touchscreen and button-controlled watches." }
 "https://github.com/Byeongcheol-Kim/Meditate" = {}
 "https://github.com/CernovApps/rubik-watch-timer" = { description = "This is a timer for Rubik Cube, with features that makes it similar to the WCA rules." }
 "https://github.com/Cybermite/GolfApp" = {}
