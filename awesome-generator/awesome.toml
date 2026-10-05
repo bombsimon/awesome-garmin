@@ -388,6 +388,7 @@
 "https://github.com/cedric-dufour/connectiq-widget-pilotsrss" = {}
 "https://github.com/cedric-dufour/connectiq-widget-totp" = {}
 "https://github.com/chemikadze/garmin-authenticator" = {}
+"https://github.com/cvindex/garmin-widget-battery" = {}
 "https://github.com/dabastynator/GarminSmartHome" = {}
 "https://github.com/danielsiwiec/garmin-connect-seed" = { description = "This is a seed project for writing Garmin Connect IQ application" }
 "https://github.com/dbucher97/iqbeerpongwidget" = {}
@@ -403,7 +404,6 @@
 "https://github.com/fabrikant/SensorHistoryWidget" = { description = "Displays sensor history: Heart rate, pressure, altitude, temperature, oxygen saturation" }
 "https://github.com/felwal/avganar" = {}
 "https://github.com/fhdeutschmann/ZuluTime" = {}
-"https://github.com/frontdevops/garmin-widget-battery" = {}
 "https://github.com/gcaufield/TogglIQ" = {}
 "https://github.com/geel97/dcc-connectiq" = {}
 "https://github.com/hakonrossebo/FootballFixtures" = {}
