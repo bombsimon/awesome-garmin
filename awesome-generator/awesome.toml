@@ -755,6 +755,7 @@
 "https://github.com/wkusnierczyk/garmin-monkey-utils" = {}
 
 [garmin_data]
+"https://github.com/DynamicsNinja/garminconnect-js" = {}
 "https://github.com/KristianP26/ble-scale-sync" = {}
 "https://github.com/Nick2bad4u/FitFileViewer" = {}
 "https://github.com/OpenGIS/Inreach-Mapshare" = {}
