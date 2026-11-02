@@ -475,6 +475,7 @@
 "https://github.com/Gualor/garmin-gotchi" = {}
 "https://github.com/HerrRiebmann/Stretch" = {}
 "https://github.com/IrishMarineInstitute/connectiq-ido" = {}
+"https://github.com/JanKazWasilewski/garmin-battery-drain" = { name = "Battery Drain Monitor" }
 "https://github.com/Judex-77/Moon-App-Simulator" = {}
 "https://github.com/K4pes/ultiCount" = { name = "UltiCount", description = "Keep track of scores and gender ratios during games of Ultimate Frisbee" }
 "https://github.com/KatieXC/GarMenu_GarminConnectIQApp" = {}
