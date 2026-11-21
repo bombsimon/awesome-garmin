@@ -740,6 +740,7 @@
 "https://github.com/fagalto/ConnectIQ" = { description = "Collection of ConnectIQ apps" }
 "https://github.com/ferranlala/GarminApps" = {}
 "https://github.com/flocsy/VibraTest" = {}
+"https://github.com/garmin/connect-personal-api-python" = {}
 "https://github.com/garmin/connectiq-apps" = {}
 "https://github.com/google/open-location-code" = {}
 "https://github.com/iperformance/garmin-conect" = { description = "A collection of Connect IQ apps and libraries" }
