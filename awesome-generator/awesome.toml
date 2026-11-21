@@ -670,6 +670,7 @@
 "https://github.com/AldoSusanto/mHealth-Project" = {}
 "https://github.com/Cougargriff/SensorTriggerIQ" = {}
 "https://github.com/MatyasKriz/ios-connect-iq-comms" = {}
+"https://github.com/VooZ2/terento" = { description = "Free Mac app and web installer for free maps on Garmin watches and Edge bike computers" }
 "https://github.com/Wheellog/Companion.Garmin" = {}
 "https://github.com/buessow/garmin" = {}
 "https://github.com/dougw/Garmin-ExampleApp-Swift" = {}
