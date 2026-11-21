@@ -190,18 +190,13 @@ struct GitLabProject {
 /// Generate the README based on all the contents in `awesome.toml`. If the element is a link to
 /// GitHub or GitLab their API will be called to fetch description and information about last
 /// activity.
-pub async fn generate_readme() -> anyhow::Result<()> {
+///
+/// If `sample` is set, only up to that many resources per section are included. See
+/// [`sample_resources`] for how they are picked.
+pub async fn generate_readme(sample: Option<usize>) -> anyhow::Result<()> {
     let resources = read_toml_file()?;
-    let octocrab = Arc::new(
-        octocrab::OctocrabBuilder::new()
-            .personal_token(std::env::var("GITHUB_TOKEN")?)
-            .build()?,
-    );
-    let glab = Arc::new(
-        gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN")?)
-            .build_async()
-            .await?,
-    );
+    let octocrab = Arc::new(github_client()?);
+    let glab = Arc::new(gitlab_client().await?);
 
     let data: Arc<Mutex<GarminResources>> = Arc::new(Mutex::new(BTreeMap::new()));
     let fixes: Arc<Mutex<TomlFixes>> = Arc::new(Mutex::new(TomlFixes::default()));
@@ -224,6 +219,11 @@ pub async fn generate_readme() -> anyhow::Result<()> {
 
     let mut futures = Vec::new();
     for (resource_type, resources) in resource_types {
+        let resources = match sample {
+            Some(limit) => sample_resources(resources, limit),
+            None => resources.into_iter().collect(),
+        };
+
         for (resource_url, resource) in resources {
             futures.push(update_resource(
                 resource_type.clone(),
@@ -275,6 +275,35 @@ pub async fn generate_readme() -> anyhow::Result<()> {
     }
 
     Ok(())
+}
+
+/// Build a GitHub client authenticated with the personal access token in `GITHUB_TOKEN`.
+fn github_client() -> anyhow::Result<Octocrab> {
+    let token = std::env::var("GITHUB_TOKEN")
+        .map_err(|err| anyhow::anyhow!("could not read `GITHUB_TOKEN`: {err:?}"))?;
+
+    Ok(octocrab::OctocrabBuilder::new()
+        .personal_token(token)
+        .build()?)
+}
+
+/// Build a GitLab client from `GITLAB_TOKEN` (personal access token) or `GITLAB_OAUTH_TOKEN`. The
+/// latter is what `glab` stores after a browser login and must be sent as a bearer token.
+async fn gitlab_client() -> anyhow::Result<AsyncGitlab> {
+    if let Ok(token) = std::env::var("GITLAB_TOKEN") {
+        return Ok(gitlab::GitlabBuilder::new("gitlab.com", token)
+            .build_async()
+            .await?);
+    }
+
+    let token = std::env::var("GITLAB_OAUTH_TOKEN").map_err(|_| {
+        anyhow::anyhow!("either `GITLAB_TOKEN` or `GITLAB_OAUTH_TOKEN` must be set")
+    })?;
+
+    Ok(gitlab::GitlabBuilder::new("gitlab.com", token)
+        .oauth2_token()
+        .build_async()
+        .await?)
 }
 
 fn resource_count_helper(
@@ -409,6 +438,59 @@ fn read_toml_file() -> anyhow::Result<TomlFile> {
         .expect("Failed to read awesome.toml");
 
     Ok(toml::from_str(&toml_content)?)
+}
+
+/// Pick up to `limit` resources by taking one from each host in turn, so a small sample still
+/// covers GitHub, GitLab and other sources. Hosts with the most resources go first and URLs are
+/// picked in sorted order to keep the result deterministic between runs.
+fn sample_resources(
+    resources: HashMap<String, TomlFileItem>,
+    limit: usize,
+) -> Vec<(String, TomlFileItem)> {
+    let mut resources_by_host: BTreeMap<String, Vec<(String, TomlFileItem)>> = BTreeMap::new();
+    for (resource_url, resource) in resources {
+        let host = url::Url::parse(&resource_url)
+            .ok()
+            .and_then(|parsed_url| parsed_url.host_str().map(str::to_string))
+            .unwrap_or_default();
+
+        resources_by_host
+            .entry(host)
+            .or_default()
+            .push((resource_url, resource));
+    }
+
+    let mut host_queues = resources_by_host
+        .into_values()
+        .map(|mut host_resources| {
+            host_resources.sort_by(|a, b| a.0.cmp(&b.0));
+            host_resources.into_iter()
+        })
+        .collect::<Vec<_>>();
+
+    // Stable sort keeps alphabetical host order for hosts with the same number of resources.
+    host_queues.sort_by_key(|queue| std::cmp::Reverse(queue.len()));
+
+    let mut sampled = Vec::with_capacity(limit);
+    while sampled.len() < limit {
+        let mut picked_any = false;
+        for queue in host_queues.iter_mut() {
+            if sampled.len() >= limit {
+                break;
+            }
+
+            if let Some(resource) = queue.next() {
+                sampled.push(resource);
+                picked_any = true;
+            }
+        }
+
+        if !picked_any {
+            break;
+        }
+    }
+
+    sampled
 }
 
 /// The resources will be sorted by date - if they have any, and then by name.
@@ -773,18 +855,69 @@ mod test {
         );
     }
 
+    fn toml_items(urls: &[&str]) -> std::collections::HashMap<String, TomlFileItem> {
+        urls.iter()
+            .map(|url| {
+                (
+                    url.to_string(),
+                    TomlFileItem {
+                        name: None,
+                        description: None,
+                    },
+                )
+            })
+            .collect()
+    }
+
+    #[test]
+    fn sample_resources_mixes_hosts() {
+        let resources = toml_items(&[
+            "https://github.com/a/one",
+            "https://github.com/a/two",
+            "https://github.com/a/three",
+            "https://github.com/a/four",
+            "https://gitlab.com/b/one",
+            "https://gitlab.com/b/two",
+            "https://example.com",
+        ]);
+
+        let urls = super::sample_resources(resources, 4)
+            .into_iter()
+            .map(|(url, _)| url)
+            .collect::<Vec<_>>();
+
+        assert_eq!(
+            urls,
+            vec![
+                "https://github.com/a/four".to_string(),
+                "https://gitlab.com/b/one".to_string(),
+                "https://example.com".to_string(),
+                "https://github.com/a/one".to_string(),
+            ]
+        );
+    }
+
+    #[test]
+    fn sample_resources_limit_larger_than_section() {
+        let resources = toml_items(&["https://github.com/a/one", "https://gitlab.com/b/one"]);
+
+        assert_eq!(super::sample_resources(resources, 10).len(), 2);
+    }
+
+    #[test]
+    fn sample_resources_zero_limit() {
+        let resources = toml_items(&["https://github.com/a/one"]);
+
+        assert!(super::sample_resources(resources, 0).is_empty());
+    }
+
     #[tokio::test]
     async fn test_github() {
         let empy_toml = TomlFileItem {
             name: None,
             description: None,
         };
-        let octocrab = Arc::new(
-            octocrab::OctocrabBuilder::new()
-                .personal_token(std::env::var("GITHUB_TOKEN").unwrap())
-                .build()
-                .unwrap(),
-        );
+        let octocrab = Arc::new(super::github_client().unwrap());
 
         let url = "https://github.com/bombsimon/garmin-seaside";
         let fixes = Arc::new(Mutex::new(TomlFixes::default()));
@@ -808,12 +941,7 @@ mod test {
             name: None,
             description: None,
         };
-        let glab = Arc::new(
-            gitlab::GitlabBuilder::new("gitlab.com", std::env::var("GITLAB_TOKEN").unwrap())
-                .build_async()
-                .await
-                .unwrap(),
-        );
+        let glab = Arc::new(super::gitlab_client().await.unwrap());
 
         let url = "https://gitlab.com/knusprjg/plotty-mcclockface";
         let (resource, _) =
