@@ -461,7 +461,7 @@
 "https://gitlab.com/harryonline/timerwidget" = {}
 
 [device_apps]
-"https://github.com/333fred/fta-monitor-garmin-watchapp" = {}
+"https://github.com/333fred/fta-garmin-companion" = {}
 "https://github.com/BDH-Software/TheStars" = {}
 "https://github.com/BleachDev/GarminQ" = {}
 "https://github.com/BleachDev/Rainy" = {}
