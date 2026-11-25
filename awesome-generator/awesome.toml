@@ -771,7 +771,7 @@
 "https://github.com/cyberjunky/python-garminconnect" = {}
 "https://github.com/diegoscarabelli/garmin-health-data" = {}
 "https://github.com/etweisberg/garmin-connect-mcp" = {}
-"https://github.com/eye1/ai-garmin-trainer" = { name = "AI Trainer for Garmin Connect" }
+"https://github.com/eye1/ai-garmin-trainer" = {}
 "https://github.com/fulippo/share-your-garmin-workout" = {}
 "https://github.com/hacdias/flowfit" = {}
 "https://github.com/jamiemitchellconsultants/MapToGarmin" = {}
